@@ -1,43 +1,46 @@
 # Estado del proyecto
 
-Última actualización: 14 de octubre de 2026.
+Última actualización: 27 de octubre de 2026.
 
 ## Fase actual
 
-**Propuesta de portada en revisión.** El 14 de octubre se publicó la portada provisional en GitHub Pages y se envió al departamento de Marketing de Medical Shields para que den sus comentarios (por correo o WhatsApp, a Jenny).
+**Segunda propuesta de diseño en revisión.** El 27 de octubre se aplicaron los comentarios de Marketing (informe del 27 oct) y se reemplazó la portada en GitHub Pages por la versión **"Claro B · Patrocinio"**: fondo claro, fotos reales de 2026 y una sección completa de expositores y patrocinadores con formulario. Se envía a Marketing para una segunda ronda.
 
-La construcción del sitio definitivo (Astro, formularios, base de datos, panel) **no ha empezado**. Espera el cierre del diseño y los datos de la nueva edición.
+La construcción del sitio definitivo (Astro, formularios reales, base de datos, panel) **no ha empezado**. Espera el visto bueno de esta propuesta.
+
+El formulario de patrocinio de esta propuesta **no guarda datos**: valida los campos y simula el envío para mostrar el recorrido completo.
 
 ## Qué existe y dónde
 
 | Recurso | Dónde | Nota |
 | --- | --- | --- |
-| Propuesta publicada | https://cuidamostuheridainfo.github.io/cumbre-web/ | GitHub Pages, repo público, con `noindex` para no aparecer en Google. |
-| Código de la propuesta | `index.html` + `assets/img/` en este repo | Fuente vigente de la portada. |
-| Lienzo de diseño | https://claude.ai/artifact/Y3fY9ZsVsxjCkVx7hy3QpX | Misma portada en el lienzo de Claude (privado de Jenny). Se mantuvo sincronizado con `index.html` hasta el 14 oct. |
-| Documento de estructura | https://claude.ai/code/artifact/960f03ad-7931-4096-b44d-ec686a8a1d73 | Versión colaborativa; el contenido vigente está en `docs/ESTRUCTURA.md`. |
-| Logo original | Drive de infocumbrechp@gmail.com: https://drive.google.com/file/d/1DEoi97ksRyvtfmTBqj_F8--_kaV-_lEG/view | PNG 1664×576, versión blanca para fondo oscuro. Copia en `assets/img/logo-cumbre-original.png`. |
-| Sitio actual | https://cumbrechp.org | WordPress con Elementor. Sigue activo hasta el cambio de DNS. |
-| Repositorio | github.com/cuidamostuheridainfo/cumbre-web | Clonado en `C:\Users\Jenny Lopez\Documents\GitHub\cumbre-web`. |
+| Propuesta publicada | https://cuidamostuheridainfo.github.io/cumbre-web/ | GitHub Pages, repo público, con `noindex`. |
+| Código de la propuesta | `index.html` + `assets/img/` + `assets/video/` | Generado desde el artboard `Claro-B-Patrocinio` del lienzo. |
+| Versión anterior (fondo oscuro) | Historial de git, commit `5a6e76b` y anteriores | Reemplazada el 27 oct. |
+| Lienzo de diseño | https://claude.ai/artifact/Y3fY9ZsVsxjCkVx7hy3QpX | Privado de Jenny. Artboards: `Main` (oscuro, v1), `Claro-A`, `Claro-B`, `Claro-C`, `Claro-B-Patrocinio` (**vigente**). |
+| Documento de estructura | https://claude.ai/code/artifact/960f03ad-7931-4096-b44d-ec686a8a1d73 | El contenido vigente está en `docs/ESTRUCTURA.md`. |
+| Fotos originales 2026 | PC de Jenny, `Documents\Cumbre-fotos-web` (dia-1, dia-2, dia 3, sponsor, head, drone) | Copia web optimizada en `assets/img/evento-*.jpg` y `hero-*.jpg`. |
+| Informe de cambios de Marketing | `Documents\Cumbre-fotos-web\Informe de Cambios Pagina Web - Cumbre Internacional 2027 (1).pdf` | Fuente de los cambios del 27 oct. |
+| Sitio actual | https://cumbrechp.org | WordPress. Activo hasta el cambio de DNS. |
+| Repositorio | github.com/cuidamostuheridainfo/cumbre-web | Clonado en `C:\Users\Jenny Lopez\Documents\GitHub\cumbre-web\cumbre-web`. |
 
 ## Qué tiene hoy la portada (en orden)
 
-1. **Encabezado:** menú (Programa, Ponentes, La sede, Expón tu marca, Inscríbete), etiqueta "Nueva edición · [FECHA] · [SEDE]", nombre oficial con animación letra por letra, botones "Inscríbete como estudiante" y "Reserva tu stand", cuenta regresiva [00], y el anillo del logo girando.
-2. **Cifras 2026:** +4.000 asistentes, 3 días, 4 países, [N] ponentes. Conteo animado al hacer scroll.
-3. **Cinta de organizadores:** Medical Shields, Cuidamos tu Herida, C.C. Líder, Producciones 24, Espacio, y aval de la Sociedad Venezolana de Cirugía.
-4. **Video de bienvenida:** espacio reservado, "Disponible pronto".
-5. **Participa:** dos tarjetas, Estudiantes y Stand comercial.
-6. **Programa:** pestañas por día y sesiones de ejemplo.
-7. **Ponentes:** cuatro fichas de ejemplo con marco de colores del logo.
-8. **La sede y los stands:** espacio para el plano (futuro plano 3D), leyenda de zonas y recuadro para expositores.
-9. **Así se vivió la edición 2026:** tres fotos.
-10. **Pie:** íconos de Instagram, YouTube y TikTok, Política de Privacidad, copyright con año automático.
+1. **Cinta superior fija** (azul marino): "Expositores y patrocinadores · Haz que tu marca forme parte de la Cumbre 2027… · Ver oportunidades →".
+2. **Encabezado claro:** 6 fotos de 2026 que rotan cada 6 s detrás de un velo blanco; logo, menú, "Regístrate ahora". Nombre oficial con "HERIDAS Y PIEL" escribiéndose letra por letra y la etiqueta "2da edición" al lado; "Heridas y protocolos de actuación en desastres"; "12 al 14 de mayo de 2027 · Centro Comercial Líder, Caracas"; botones "Regístrate ahora" (azul marino) y "Solicitar propuesta de patrocinio" (rojo); cuenta regresiva al 12 de mayo de 2027, 8:00 a. m.; anillo del logo girando.
+3. **Franja de cifras:** +4.000 asistentes en la 1ra edición · +2.000 asistentes por día previstos en la 2da edición · 3 días de conferencias · 3 talleres especializados.
+4. **Nuestro enfoque:** video del dron (24 s en bucle, sin sonido) y tres ejes: Manejo integral de heridas, Cuidado de la piel, Emergencias y desastres.
+5. **Participa · Escoge tu participación en la Cumbre:** tarjetas Día 1 (Enfermería y rescate), Días 2 y 3 (Especialistas médicos) y Talleres, cada una con 9 fotos reales que rotan.
+6. **Expositores y patrocinadores** (sección propia): presentación, beneficios, opciones de participación (Espacios de exposición / Activaciones y presencia de marca), fotos de stands 2026, plano del área de exhibición y formulario "Da el primer paso para participar con tu marca".
+7. **Organizan y avalan:** cinta de logos en movimiento.
+8. **Pie azul marino:** logo, menú y copyright.
+9. **WhatsApp flotante** (abajo a la derecha): +58 414-2577408 con el mensaje "Hola, deseo información sobre los stands para la Cumbre".
 
-Se adapta a celular (menú reducido, títulos y fichas ajustados). Una etiqueta fija abajo a la derecha dice "Propuesta de diseño · borrador para revisión".
+Se adapta a celular. Una etiqueta fija abajo a la izquierda dice "Propuesta de diseño · borrador para revisión".
 
 ## Cómo se publica un cambio
 
-1. Editar `index.html` (o archivos en `assets/img/`).
+1. Editar el artboard en el lienzo y regenerar `index.html` (Claude), o editar `index.html` directamente.
 2. Jenny hace commit en GitHub Desktop y Push origin.
 3. GitHub Pages actualiza en uno o dos minutos. Si alguien ve la versión anterior, recargar la página.
 

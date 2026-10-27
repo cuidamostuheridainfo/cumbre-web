@@ -28,13 +28,15 @@ Después de leer, decir en dos o tres líneas en qué punto estamos y cuál es e
 
 - **Nombre oficial:** Cumbre Internacional para el Cuidado Avanzado de Heridas y Piel (con "Avanzado", igual que el logo).
 - **Cifras confirmadas de la edición 2026:** más de 4.000 asistentes, 3 días, ponentes de 4 países (Venezuela, Argentina, España y Canadá). Mayo de 2026, Caracas.
+- **2da edición (según informe de Marketing del 27 oct):** 12 al 14 de mayo de 2027, Centro Comercial Líder, Caracas. Previsión: más de 2.000 asistentes por día.
 
 ## Mapa del repositorio
 
 | Ruta | Qué es |
 | --- | --- |
-| `index.html` | Propuesta provisional de la portada, publicada en GitHub Pages. HTML, CSS y JS en un solo archivo. |
-| `assets/img/` | Imágenes de la propuesta: fotos 2026, logo, cintas del anillo, logos de organizadores y aval. |
+| `index.html` | Propuesta provisional de la portada (v2, "Claro B · Patrocinio"), publicada en GitHub Pages. HTML, CSS y JS en un solo archivo, generado desde el lienzo. |
+| `assets/img/` | Imágenes: fotos 2026 (`hero-*`, `evento-*`), plano, logos, cintas del anillo, fondos. |
+| `assets/video/` | Video del dron en bucle para "Nuestro enfoque". |
 | `docs/` | Documentación del proyecto (ritual de inicio). |
 
 Cuando empiece la construcción definitiva en Astro, la propuesta se reemplaza en este mismo repositorio.
