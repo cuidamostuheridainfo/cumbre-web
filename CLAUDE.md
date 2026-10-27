@@ -11,6 +11,7 @@ Antes de proponer o tocar algo, leer en este orden:
 3. `docs/PENDIENTES.md`: qué falta, quién lo tiene y qué está bloqueado.
 4. `docs/DECISIONES-VIGENTES.md`: lo que ya se decidió y no se vuelve a discutir sin motivo.
 5. `docs/ESTRUCTURA.md`: solo si la sesión toca contenido, formularios, base de datos o construcción.
+6. `docs/FLUJO-DISENO.md`: solo si la sesión cambia el diseño (lienzo, imágenes o `index.html`).
 
 Después de leer, decir en dos o tres líneas en qué punto estamos y cuál es el siguiente paso, y esperar confirmación antes de cambiar archivos.
 
@@ -38,5 +39,6 @@ Después de leer, decir en dos o tres líneas en qué punto estamos y cuál es e
 | `assets/img/` | Imágenes: fotos 2026 (`hero-*`, `evento-*`), plano, logos, cintas del anillo, fondos. |
 | `assets/video/` | Video del dron en bucle para "Nuestro enfoque". |
 | `docs/` | Documentación del proyecto (ritual de inicio). |
+| `herramientas/build_index.py` | Script que convierte el artboard del lienzo en `index.html`. |
 
 Cuando empiece la construcción definitiva en Astro, la propuesta se reemplaza en este mismo repositorio.
