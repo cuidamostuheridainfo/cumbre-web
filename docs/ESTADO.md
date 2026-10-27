@@ -20,6 +20,7 @@ El formulario de patrocinio de esta propuesta **no guarda datos**: valida los ca
 | Lienzo de diseño | https://claude.ai/artifact/Y3fY9ZsVsxjCkVx7hy3QpX | Privado de Jenny. Artboards: `Main` (oscuro, v1), `Claro-A`, `Claro-B`, `Claro-C`, `Claro-B-Patrocinio` (**vigente**). |
 | Documento de estructura | https://claude.ai/code/artifact/960f03ad-7931-4096-b44d-ec686a8a1d73 | El contenido vigente está en `docs/ESTRUCTURA.md`. |
 | Fotos originales 2026 | PC de Jenny, `Documents\Cumbre-fotos-web` (dia-1, dia-2, dia 3, sponsor, head, drone) | Copia web optimizada en `assets/img/evento-*.jpg` y `hero-*.jpg`. |
+| Plano del área de exhibición | `assets/img/plano-sede-v2.jpg` (27 oct, numeración corregida, stands 1 a 142). Original en PDF vectorial de Producciones 24 ("cumbrefinal copia"). | Reemplaza al plano de WhatsApp del 22 oct. |
 | Informe de cambios de Marketing | `Documents\Cumbre-fotos-web\Informe de Cambios Pagina Web - Cumbre Internacional 2027 (1).pdf` | Fuente de los cambios del 27 oct. |
 | Sitio actual | https://cumbrechp.org | WordPress. Activo hasta el cambio de DNS. |
 | Repositorio | github.com/cuidamostuheridainfo/cumbre-web | Clonado en `C:\Users\Jenny Lopez\Documents\GitHub\cumbre-web\cumbre-web`. |

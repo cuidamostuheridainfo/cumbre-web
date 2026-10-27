@@ -8,7 +8,6 @@
 | --- | --- | --- |
 | Comentarios de Marketing sobre la segunda propuesta (Claro B · Patrocinio) | Marketing MS → Jenny | Cierre del diseño |
 | ¿Activaciones va en "Espacios de exposición" o en "Activaciones y presencia de marca"? (hoy en la segunda) | Comité de la Cumbre | Opciones de patrocinio |
-| Plano del área de exhibición en alta resolución, con la numeración corregida (salta de 141 a 144; Marketing pide 142) | Organización del evento / Producciones 24 | Sección del plano |
 | ¿Se publican las cantidades disponibles (3 coffee breaks, 10 microcápsulas, 20 publicidades)? | Comercial | Opciones de patrocinio (hoy no se muestran) |
 | ¿Se publican precios de stands y patrocinio? (la tabla del brochure los tiene) | Comercial / Daniel | Opciones de patrocinio (hoy sin precios) |
 | Fecha de cierre de la venta anticipada, si existe | Comercial | Mensaje de urgencia |

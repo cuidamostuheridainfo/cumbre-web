@@ -89,6 +89,16 @@ a{color:#0A1040}a:hover{color:#0A6CFF}
 .wa-float:hover .wa-tip{opacity:1;transform:none}
 .btn-stand{transition:background 180ms ease,box-shadow 180ms ease}
 .btn-stand:hover{background:#D90F30!important;color:#FFFFFF!important;box-shadow:0 10px 24px rgba(247,21,59,0.32)}
+@media (max-width: 760px){
+section h2{font-size:30px!important;line-height:1.05!important}
+section h3{font-size:26px!important;line-height:1.08!important}
+section h4{font-size:20px!important}
+section:not(#inicio) p{font-size:16px!important}
+.stats-band span[style*="font-size: 46px"]{font-size:34px!important}
+#enfoque [style*="min-height: 200px"]{min-height:110px!important;padding:20px!important}
+.sp-card{padding:24px!important}
+.gal-grid{grid-auto-rows:130px!important}
+}
 @media (max-width: 760px){.topbar-msg{display:none}.wa-float .wa-tip{display:none}}
 @media (max-width: 760px){.nav-links a:not(.nav-cta){display:none}.ring-box{opacity:0.25;width:260px!important;right:-80px!important}}
 </style>
@@ -162,7 +172,7 @@ html{scroll-behavior:smooth}
 </div>
 </section>
 
-<section style="background: #0A1040; color: #FFFFFF">
+<section class="stats-band" style="background: #0A1040; color: #FFFFFF">
 <div style="max-width: 1280px; margin: 0 auto; padding: 40px 32px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 28px 40px">
 <div style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 46px; line-height: 1; color: #F3E3A6">+4.000</span><span style="font-size: 14px; color: #C8CEEA">asistentes en la 1ra edición</span></div>
 <div style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 46px; line-height: 1; color: #F3E3A6">+2.000</span><span style="font-size: 14px; line-height: 1.45; color: #C8CEEA">asistentes por día previstos<br>en la 2da edición</span></div>
@@ -279,8 +289,8 @@ html{scroll-behavior:smooth}
 <p style="margin: 0; max-width: 640px; font-size: 17px; line-height: 1.55; color: #4A5280">Consulta la distribución de los espacios y conversa con nuestro equipo sobre las opciones disponibles para tu marca.</p>
 </div>
 <figure class="plan-card" style="margin: 0 auto; width: 100%; max-width: 980px; box-sizing: border-box; background: #F7F9FD; border: 2px solid #E3E7F2; border-radius: 22px; padding: 22px; display: flex; flex-direction: column; gap: 16px">
-<div style="display: flex; justify-content: flex-end"><a href="assets/img/plano-sede.jpg" target="_blank" rel="noopener" style="font-size: 15px; font-weight: 700; color: #0A1040; text-decoration: none">Ampliar plano ↗</a></div>
-<a href="assets/img/plano-sede.jpg" target="_blank" rel="noopener" style="display: block; border-radius: 14px; overflow: hidden; background: #FFFFFF"><img src="assets/img/plano-sede.jpg" alt="Plano del área de exhibición con la ubicación numerada de los stands, la sala de conferencias, las estaciones de café y el área VIP" style="display: block; width: 100%; height: auto"></a>
+<div style="display: flex; justify-content: flex-end"><a href="assets/img/plano-sede-v2.jpg" target="_blank" rel="noopener" style="font-size: 15px; font-weight: 700; color: #0A1040; text-decoration: none">Ampliar plano ↗</a></div>
+<a href="assets/img/plano-sede-v2.jpg" target="_blank" rel="noopener" style="display: block; border-radius: 14px; overflow: hidden; background: #FFFFFF"><img src="assets/img/plano-sede-v2.jpg" alt="Plano del área de exhibición con la ubicación numerada de los stands, la sala de conferencias, las estaciones de café y el área VIP" style="display: block; width: 100%; height: auto"></a>
 <figcaption style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px 24px">
 <span style="font-size: 14px; color: #4A5280">Distribución sujeta a actualización. La disponibilidad de cada espacio se confirma con el equipo comercial.</span>
 <a href="#formulario-patrocinio" id="pre-stand" style="font-size: 16px; font-weight: 700; color: #F7153B; text-decoration: none">Consultar disponibilidad de stands →</a>
