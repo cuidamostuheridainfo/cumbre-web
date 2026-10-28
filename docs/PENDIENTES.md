@@ -1,12 +1,16 @@
 # Pendientes
 
-Última actualización: 27 de octubre de 2026.
+Última actualización: 28 de octubre de 2026.
 
 ## Esperando de otros
 
 | Pendiente | Quién | Bloquea |
 | --- | --- | --- |
-| Comentarios de Marketing sobre la segunda propuesta (Claro B · Patrocinio) | Marketing MS → Jenny | Cierre del diseño |
+| Comentarios sobre la v3 (Marketing, Social media) | Marketing MS → Jenny | Cierre del diseño |
+| Ponente de 6 videos sin nombre en el título (ver `docs/VIDEOS-2026.md`) | Organización / Social media | Tarjetas de ponencias |
+| Especialidad de cada ponente | Organización | Tarjetas de ponencias y filtros por disciplina |
+| Verificar título de Valentina Kube: el canal dice "Dra." y la miniatura dice "Lic." | Organización | Tarjeta destacada 2 |
+| Revisión de títulos de ponencias por el comité o la Dra. Milagros (contenido médico) | Comité científico | Publicación |
 | ¿Activaciones va en "Espacios de exposición" o en "Activaciones y presencia de marca"? (hoy en la segunda) | Comité de la Cumbre | Opciones de patrocinio |
 | ¿Se publican las cantidades disponibles (3 coffee breaks, 10 microcápsulas, 20 publicidades)? | Comercial | Opciones de patrocinio (hoy no se muestran) |
 | ¿Se publican precios de stands y patrocinio? (la tabla del brochure los tiene) | Comercial / Daniel | Opciones de patrocinio (hoy sin precios) |

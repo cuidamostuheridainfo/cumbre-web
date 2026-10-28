@@ -1,25 +1,33 @@
 # Flujo de diseño: del lienzo a `index.html`
 
-Última actualización: 27 de octubre de 2026.
+Última actualización: 28 de octubre de 2026.
 
 Leer solo si la sesión va a cambiar el diseño de la propuesta.
 
 ## Dónde está la fuente del diseño
 
-- **Lienzo de Claude:** https://claude.ai/artifact/Y3fY9ZsVsxjCkVx7hy3QpX (privado de Jenny).
-- **Artboard vigente:** `project/Claro-B-Patrocinio.dc.html`. Es la fuente de `index.html`.
-- **Otros artboards (solo referencia):** `Main` (v1 oscura), `Claro-A`, `Claro-B` (igual a la vigente pero con el bloque de sponsors anterior), `Claro-C`, y `Artboard-e94t` (creado por Jenny a mano; no tocar sin preguntar).
-- En el lienzo, las imágenes se referencian como `/_blob/<id>`. En el repo son archivos de `assets/`.
+**Desde la v3 (28 oct), en este repositorio:**
+
+| Archivo | Qué contiene |
+| --- | --- |
+| `index.html` | Portada. Estilos en línea heredados del lienzo + clases de `sitio.css`. |
+| `ponencias.html` | Página interna con la galería de ponencias. Comparte cinta, cabecera, pie y estilos con la portada. |
+| `assets/css/sitio.css` | Todos los estilos compartidos, incluidas las reglas de teléfono (hasta 760 px). |
+| `assets/js/sitio.js` | Menú del teléfono, fotos del encabezado, cuenta regresiva, botones "ver más", opciones plegables, reproductor de YouTube y formulario. |
+| `assets/js/ponencias.js` | Lista de videos. **Para agregar una ponencia, se edita solo este archivo** (instrucciones dentro). |
+
+El lienzo de Claude (https://claude.ai/artifact/Y3fY9ZsVsxjCkVx7hy3QpX) y `herramientas/build_index.py` corresponden a la v2. Ya no se usan para publicar; si se cambia el lienzo, hay que llevar el cambio al código a mano.
+
+Si se cambia la cinta, la cabecera o el pie de `index.html`, hay que repetir el cambio en `ponencias.html`.
 
 ## Cómo se publica un cambio de diseño
 
-1. Leer el artboard actual del lienzo (puede tener ediciones de Jenny hechas a mano).
-2. Hacer el cambio en el artboard y publicarlo en el lienzo para que Jenny lo vea.
-3. Cuando Jenny lo apruebe, regenerar `index.html` con `herramientas/build_index.py` (ver sus instrucciones arriba del archivo).
-4. Revisar en navegador (computadora y 390 px de ancho): sin desplazamiento lateral, sin imágenes faltantes, formulario funcionando.
-5. Copiar los archivos a la carpeta del repo en la PC de Jenny. Ella hace commit y push con GitHub Desktop.
+1. Hacer el cambio en el código del repositorio.
+2. Revisar en navegador (computadora y 390 px de ancho): sin desplazamiento lateral, sin imágenes faltantes, formulario, menú del teléfono y videos funcionando.
+3. Copiar los archivos a la carpeta del repo en la PC de Jenny. Ella hace commit y push con GitHub Desktop.
+4. Después del push, comprobar en la página publicada que los videos se reproducen dentro del sitio.
 
-Lección del 27 oct: al copiar a la PC, si un archivo con el mismo nombre ya se envió antes en la sesión, la copia puede repetir la versión vieja. Enviar desde una carpeta o nombre nuevo y comprobar con `md5sum` en la PC.
+Lección del 27 oct: al copiar a la PC, si un archivo con el mismo nombre ya se envió antes en la sesión, la copia puede repetir la versión vieja. Enviar desde una carpeta nueva y comprobar con `md5sum` en la PC.
 
 ## Imágenes: qué es cada archivo
 
@@ -46,4 +54,5 @@ Las fotos web se generan desde los originales (HEIC o JPG) a 1800 px de ancho m�
 - **Cinta superior fija:** usa `position: sticky`. Por eso el contenedor principal usa `overflow-x: clip` y no `overflow: hidden`, que la desactiva. Las secciones tienen `scroll-margin-top: 84px` para que la cinta no tape su inicio.
 - **Celular (hasta 760 px):** títulos de sección a 30 px, subtítulos a 26 px, párrafos a 16 px, cifras a 34 px.
 - **Formulario de patrocinio:** validación en el navegador y envío simulado de 1,2 s. Al construir el definitivo, el envío va a la función de Vercel y la confirmación solo aparece si el guardado fue exitoso.
+- **Videos:** la miniatura viene de `i.ytimg.com/vi/<id>/hqdefault.jpg`; al pulsar se carga `youtube-nocookie.com/embed/<id>` con reproducción automática (ya la pidió la persona al pulsar).
 - **WhatsApp:** `https://wa.me/584142577408` con el mensaje "Hola, deseo información sobre los stands para la Cumbre".

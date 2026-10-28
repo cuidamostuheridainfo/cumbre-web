@@ -8,118 +8,18 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,500;0,600;1,600;1,700;1,800&amp;family=Barlow:wght@400;500;600&amp;display=swap" rel="stylesheet">
-<style>
-body{margin:0;background:#FFFFFF}
-a{color:#0A1040}a:hover{color:#0A6CFF}
-.hero-light{isolation:isolate;background:#FFFFFF}
-.hero-veil{background-image:linear-gradient(100deg, rgba(255,255,255,0.97) 0%, rgba(255,255,255,0.9) 42%, rgba(240,246,255,0.55) 72%, rgba(220,235,255,0.35) 100%)}
-.hero-slides{overflow:hidden;background:url(assets/img/hero-88A3359.jpg) 50% 40%/cover no-repeat}
-.hero-slide{position:absolute;inset:0;background-size:cover;background-repeat:no-repeat;opacity:0;transform:scale(1);transition:opacity 1400ms ease-in-out,transform 0s linear 1400ms}
-.hero-slide.on{opacity:1;transform:scale(1.06);transition:opacity 1400ms ease-in-out,transform 7400ms linear}
-@media (prefers-reduced-motion: reduce){.hero-slide,.hero-slide.on{transition:none;transform:none}}
-.glow{background:radial-gradient(circle at center, rgba(0,189,255,0.22) 0%, rgba(205,176,102,0.12) 38%, rgba(255,255,255,0) 68%)}
-.ph-a{background-image:url(assets/img/foto-88A3286.jpg);background-size:cover}
-.ph-b{background-image:url(assets/img/foto-88A3317.jpg);background-size:cover}
-.ph-c{background-image:url(assets/img/foto-88A4347.jpg);background-size:cover}
-.ph-d{background-image:url(assets/img/foto-88A3286.jpg);background-size:cover}
-.days-bg{background-color:#F7F9FD;background-repeat:no-repeat, repeat}
-.bg-panal{background-image:linear-gradient(180deg, rgba(247,249,253,0.85) 0%, rgba(247,249,253,0) 18%, rgba(247,249,253,0) 82%, rgba(247,249,253,0.85) 100%), url(assets/img/panal-claro-suave.svg);background-size:auto, 35.33px 61.2px}
-.bg-silicona{background-image:linear-gradient(180deg, rgba(247,249,253,0.85) 0%, rgba(247,249,253,0) 18%, rgba(247,249,253,0) 82%, rgba(247,249,253,0.85) 100%), url(assets/img/fondo-silicona.svg);background-size:auto, 18px 31.18px}
-.bg-gasa{background-image:linear-gradient(180deg, rgba(247,249,253,0.85) 0%, rgba(247,249,253,0) 18%, rgba(247,249,253,0) 82%, rgba(247,249,253,0.85) 100%), url(assets/img/fondo-gasa.svg);background-size:auto, 16px 16px}
-.sp-card{border:2px solid rgba(205,176,102,0.45);box-shadow:0 24px 60px rgba(10,16,64,0.28);transition:transform 260ms cubic-bezier(0.23,1,0.32,1),box-shadow 260ms ease,border-color 200ms ease}
-.sp-card:hover{transform:translateY(-6px);border-color:#CDB066;box-shadow:0 34px 80px rgba(10,16,64,0.34)}
-.sp-opt{transition:background 200ms ease,border-color 200ms ease}
-.sp-opt:hover{background:rgba(243,227,166,0.12)!important;border-color:rgba(243,227,166,0.7)!important}
-@media (hover: none){.sp-card:hover{transform:none}}
-@media (prefers-reduced-motion: reduce){.sp-card{transition:border-color 200ms ease}.sp-card:hover{transform:none}}
-@media (max-width: 760px){.sp-card{padding:28px!important}.sp-card h3{font-size:32px!important}}
-.day-card{border:2px solid transparent;box-shadow:0 2px 4px rgba(10,16,64,0.04),0 18px 44px rgba(10,16,64,0.10);transition:transform 260ms cubic-bezier(0.23,1,0.32,1),box-shadow 260ms ease,border-color 200ms ease}
-.day-card:hover{transform:translateY(-8px);border-color:#0A1040;box-shadow:0 6px 12px rgba(10,16,64,0.08),0 30px 60px rgba(10,16,64,0.20)}
-.strip{position:relative;overflow:hidden;transition:transform 600ms cubic-bezier(0.23,1,0.32,1)}
-.day-card:hover .strip{transform:scale(1.04)}
-.strip>div{position:absolute;inset:0;background-size:cover;opacity:0;animation:fadeCycle 12s ease-in-out infinite}
-@keyframes fadeCycle{0%{opacity:0}6%{opacity:1}33%{opacity:1}40%{opacity:0}100%{opacity:0}}
-.day-photos{overflow:hidden}
-.gal-tile{position:relative;overflow:hidden;border-radius:18px;background:#E3E7F2}
-.gal-tile>div{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform 700ms cubic-bezier(0.23,1,0.32,1)}
-.gal-tile:hover>div{transform:scale(1.05)}
-.gal-3>div{opacity:0;animation:fadeCycle 12s ease-in-out infinite}
-.gal-2>div{opacity:0;animation:fadeTwo 10s ease-in-out infinite}
-@keyframes fadeTwo{0%{opacity:0}8%{opacity:1}50%{opacity:1}58%{opacity:0}100%{opacity:0}}
-.plan-card{transition:border-color 200ms ease,box-shadow 260ms ease}
-.plan-card:hover{border-color:#0A1040!important;box-shadow:0 30px 60px rgba(10,16,64,0.16)}
-@media (prefers-reduced-motion: reduce){.gal-3>div,.gal-2>div{animation:none}.gal-3>div:first-child,.gal-2>div:first-child{opacity:1}.gal-tile:hover>div{transform:none}}
-@media (max-width: 900px){.sede-grid{grid-template-columns:1fr!important}.gal-grid{grid-auto-rows:140px!important}}
-@media (hover: none){.day-card:hover{transform:none}}
-@media (prefers-reduced-motion: reduce){.day-card,.strip{transition:border-color 200ms ease}.day-card:hover{transform:none}.day-card:hover .strip{transform:none}.strip>div{animation:none}.strip>div:first-child{opacity:1}}
-.mq-band::before,.mq-band::after{content:"";position:absolute;left:0;right:0;height:3px;background:linear-gradient(90deg,#CDB066,#F3E3A6,#0A6CFF,#00BDFF,#CDB066);background-size:200% 100%;animation:bandFlow 6s linear infinite}
-.mq-band::before{top:0}.mq-band::after{bottom:0;animation-direction:reverse}
-@keyframes bandFlow{from{background-position:0 0}to{background-position:200% 0}}
-@media (prefers-reduced-motion: reduce){.mq-band::before,.mq-band::after{animation:none}}
-.mq-wrap{-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 8%,#000 92%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 8%,#000 92%,transparent 100%)}
-.mq-track{display:flex;width:max-content;animation:mqMove 32s linear infinite}
-.mq-wrap:hover .mq-track{animation-play-state:paused}
-.mq-set{display:flex;align-items:center;gap:88px;padding-right:88px}
-@keyframes mqMove{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-@media (prefers-reduced-motion: reduce){.mq-track{animation:none}.mq-wrap{overflow-x:auto}}
-.ring-spin{position:absolute;inset:0;animation:ringSpin 60s linear infinite}
-.ring-layer{position:absolute;inset:0;width:100%;height:100%;display:block;filter:drop-shadow(0 22px 34px rgba(10,16,64,0.28))}
-@keyframes ringSpin{from{transform:rotate(-12deg)}to{transform:rotate(348deg)}}
-.kt-line{display:block;animation:ktLine 800ms cubic-bezier(0.23,1,0.32,1) both}
-.kt-letter{position:relative;display:inline-block;opacity:0;animation:ktType 220ms cubic-bezier(0.23,1,0.32,1) var(--d) forwards}
-.kt-letter::after{content:"";position:absolute;right:-0.06em;top:0.08em;bottom:0.08em;width:0.07em;background:#CDB066;opacity:0;animation:ktCaret 110ms linear var(--d) 1 forwards}
-.kt-last::after{display:none}
-.kt-sweep{display:block;height:3px;width:100%;max-width:560px;border-radius:3px;background:linear-gradient(90deg, #CDB066 0%, #0A6CFF 55%, rgba(0,189,255,0) 100%);animation:ktLine 800ms cubic-bezier(0.23,1,0.32,1) 2.3s both}
-@keyframes ktType{0%{opacity:0;transform:scale(1.18);color:#CDB066}40%{opacity:1}100%{opacity:1;transform:none;color:#0A1040}}
-@keyframes ktCaret{0%{opacity:1}99%{opacity:1}100%{opacity:0}}
-@keyframes ktLine{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
-@media (prefers-reduced-motion: reduce){.ring-spin,.kt-line,.kt-sweep{animation:none}.kt-letter{animation:none;opacity:1}.kt-letter::after{display:none}}
-[id]{scroll-margin-top:84px}
-.pt-card{transition:border-color 200ms ease,transform 260ms cubic-bezier(0.23,1,0.32,1),box-shadow 260ms ease}
-.pt-card:hover{border-color:#0A1040!important;transform:translateY(-4px);box-shadow:0 18px 40px rgba(10,16,64,0.12)}
-#formulario-patrocinio input:focus,#formulario-patrocinio select:focus,#formulario-patrocinio textarea:focus{outline:3px solid #CDB066;outline-offset:1px;border-color:#0A1040}
-#formulario-patrocinio [aria-invalid="true"]{border-color:#C40F2E!important}
-#formulario-patrocinio button[disabled]{opacity:0.7;cursor:progress}
-@media (max-width: 760px){.pf-row{grid-template-columns:1fr!important}#formulario-patrocinio>div>div:first-child{padding-top:0!important}}
-@media (hover: none){.pt-card:hover{transform:none}}
-.topbar a:hover{color:#FFFFFF!important}
-.wa-float{transition:transform 200ms cubic-bezier(0.23,1,0.32,1),box-shadow 200ms ease}
-.wa-float:hover{transform:translateY(-3px);box-shadow:0 18px 36px rgba(10,16,64,0.32)}
-.wa-float .wa-tip{opacity:0;transform:translateX(8px);transition:opacity 180ms ease,transform 180ms ease;pointer-events:none}
-.wa-float:hover .wa-tip{opacity:1;transform:none}
-.btn-stand{transition:background 180ms ease,box-shadow 180ms ease}
-.btn-stand:hover{background:#D90F30!important;color:#FFFFFF!important;box-shadow:0 10px 24px rgba(247,21,59,0.32)}
-@media (min-width: 901px){.enf-video{flex:1 1 100%!important;min-height:0!important;aspect-ratio:16/9}.enf-text{flex:1 1 100%!important}}
-@media (max-width: 760px){
-section h2{font-size:30px!important;line-height:1.05!important}
-section h3{font-size:26px!important;line-height:1.08!important}
-section h4{font-size:20px!important}
-section:not(#inicio) p{font-size:16px!important}
-.stats-band span[style*="font-size: 46px"]{font-size:34px!important}
-#enfoque [style*="min-height: 200px"]{min-height:110px!important;padding:20px!important}
-.sp-card{padding:24px!important}
-.gal-grid{grid-auto-rows:130px!important}
-}
-@media (max-width: 760px){.topbar-msg{display:none}.wa-float .wa-tip{display:none}}
-@media (max-width: 760px){.nav-links a:not(.nav-cta){display:none}.ring-box{opacity:0.25;width:260px!important;right:-80px!important}}
-</style>
 
-<style>
-html{scroll-behavior:smooth}
-[hidden]{display:none!important}
-.draft-badge{position:fixed;left:16px;bottom:16px;z-index:80;font-family:'Barlow',system-ui,sans-serif;font-size:13px;font-weight:600;letter-spacing:0.04em;color:#0A1040;background:#F3E3A6;padding:8px 14px;border-radius:999px;box-shadow:0 6px 20px rgba(10,16,64,0.25)}
-@media (max-width: 760px){.draft-badge{font-size:11px;left:10px;bottom:10px;padding:6px 10px}}
-</style>
+<link rel="stylesheet" href="assets/css/sitio.css">
 </head>
 <body>
 
 <div style="font-family: 'Barlow', system-ui, sans-serif; color: #0A1040; background: #FFFFFF; min-height: 100vh; overflow-x: clip">
 
-<div class="topbar" style="position: sticky; top: 0; z-index: 60; background: #0A1040; color: #FFFFFF; box-shadow: 0 4px 14px rgba(10,16,64,0.18)">
-<div style="max-width: 1280px; margin: 0 auto; padding: 16px 32px; display: flex; align-items: center; justify-content: center; gap: 18px; flex-wrap: wrap; font-size: 17px">
-<span style="font-size: 14px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #0A1040; background: linear-gradient(135deg, #F3E3A6, #CDB066); padding: 6px 14px; border-radius: 999px">Expositores y patrocinadores</span>
-<span class="topbar-msg" style="color: #DDE3FF">Haz que tu marca forme parte de la Cumbre 2027. Conoce las opciones de exposición y patrocinio.</span>
-<a href="#patrocinio" style="color: #F3E3A6; font-weight: 700; font-size: 18px; text-decoration: none">Ver oportunidades →</a>
+<div class="topbar">
+<div class="topbar-in">
+<span class="topbar-tag">Expositores y patrocinadores</span>
+<span class="topbar-msg"><span class="t-largo">Tu marca en la Cumbre 2027: conoce las oportunidades de exposición y patrocinio.</span><span class="t-corto">Tu marca en la Cumbre 2027</span></span>
+<a class="topbar-cta" href="#patrocinio">Conocer oportunidades →</a>
 </div>
 </div>
 
@@ -135,16 +35,28 @@ html{scroll-behavior:smooth}
 </div>
 </div>
 
-<header style="position: relative">
-<nav style="max-width: 1280px; margin: 0 auto; padding: 20px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px">
-<a href="#inicio" aria-label="Inicio"><img src="assets/img/logo-cumbre-oscuro.png" alt="Cumbre Internacional para el Cuidado Avanzado de Heridas y Piel" style="height: 46px; width: auto; display: block"></a>
-<div class="nav-links" style="display: flex; flex-wrap: wrap; align-items: center; gap: 28px; font-size: 14px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase">
-<a href="#programa" style="text-decoration: none">Programa</a>
-<a href="#ponentes" style="text-decoration: none">Ponentes</a>
-<a href="#plano" style="text-decoration: none">La sede</a>
-<a href="#patrocinio" style="text-decoration: none">Expón tu marca</a>
-<a class="nav-cta" href="#inscripcion" style="color: #FFFFFF; background: #0A1040; text-decoration: none; padding: 12px 20px; border-radius: 999px">Regístrate ahora</a>
+<header class="cab">
+<nav class="cab-in" aria-label="Principal">
+<a href="#inicio" aria-label="Inicio"><img src="assets/img/logo-cumbre-oscuro.png" alt="Cumbre Internacional para el Cuidado Avanzado de Heridas y Piel" class="cab-logo"></a>
+<div class="nav-links">
+<a href="#inscripcion">Programa 2027</a>
+<a href="ponencias.html">Ponencias 2026</a>
+<a href="#plano">La sede</a>
+<a class="nav-patro" href="#patrocinio">Patrocinios</a>
+<a class="nav-cta" href="#inscripcion">Regístrate</a>
 </div>
+<div class="cab-movil">
+<a class="nav-patro" href="#patrocinio">Patrocinios</a>
+<button id="menu-btn" type="button" class="menu-btn" aria-expanded="false" aria-controls="menu-movil" aria-label="Abrir menú"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
+</div>
+</nav>
+<nav id="menu-movil" class="menu-movil" aria-label="Menú" hidden>
+<a href="#patrocinio" class="mm-destacado">Patrocinios</a>
+<a href="ponencias.html">Ponencias 2026</a>
+<a href="#inscripcion">Programa 2027</a>
+<a href="#plano">La sede</a>
+<a href="#formulario-patrocinio">Solicitar propuesta de patrocinio</a>
+<a href="#inscripcion">Regístrate como asistente</a>
 </nav>
 </header>
 
@@ -164,8 +76,8 @@ html{scroll-behavior:smooth}
 </div>
 <p style="margin: 0; max-width: 540px; font-size: 18px; line-height: 1.55; color: #4A5280">Ponencias, talleres prácticos y exhibición comercial con especialistas nacionales e internacionales.</p>
 <div style="display: flex; flex-wrap: wrap; gap: 12px; padding-top: 4px">
-<a href="#inscripcion" style="color: #FFFFFF; background: #0A1040; text-decoration: none; padding: 16px 28px; border-radius: 999px; font-weight: 600; font-size: 16px">Regístrate ahora</a>
-<a class="btn-stand" href="#formulario-patrocinio" style="color: #FFFFFF; background: #F7153B; text-decoration: none; padding: 16px 28px; border-radius: 999px; font-weight: 700; font-size: 16px">Solicitar propuesta de patrocinio</a>
+<a class="btn-stand" href="#patrocinio" style="color: #FFFFFF; background: #F7153B; text-decoration: none; padding: 17px 30px; border-radius: 999px; font-weight: 700; font-size: 17px; box-shadow: 0 10px 24px rgba(247,21,59,0.28)">Conocer opciones de patrocinio</a>
+<a class="btn-sec" href="#inscripcion" style="color: #0A1040; background: rgba(255,255,255,0.85); border: 2px solid #0A1040; text-decoration: none; padding: 15px 26px; border-radius: 999px; font-weight: 600; font-size: 16px">Regístrate como asistente</a>
 </div>
 <div role="timer" aria-label="Tiempo para el inicio de la Cumbre" style="margin-top: 28px; align-self: flex-start; display: flex; background: rgba(255,255,255,0.8); backdrop-filter: blur(10px); border: 1px solid #E3E7F2; border-radius: 18px">
 <div style="padding: 14px 24px; display: flex; flex-direction: column; gap: 2px"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 32px; color: #0A1040; font-variant-numeric: tabular-nums"><span data-cd="d">–</span></span><span style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #8A6F2A; font-weight: 600">Días</span></div><div style="padding: 14px 24px; display: flex; flex-direction: column; gap: 2px"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 32px; color: #0A1040; font-variant-numeric: tabular-nums"><span data-cd="h">–</span></span><span style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #8A6F2A; font-weight: 600">Horas</span></div><div style="padding: 14px 24px; display: flex; flex-direction: column; gap: 2px"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 32px; color: #0A1040; font-variant-numeric: tabular-nums"><span data-cd="m">–</span></span><span style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #8A6F2A; font-weight: 600">Min</span></div><div style="padding: 14px 24px; display: flex; flex-direction: column; gap: 2px"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 32px; color: #0A1040; font-variant-numeric: tabular-nums"><span data-cd="s">–</span></span><span style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #8A6F2A; font-weight: 600">Seg</span></div>
@@ -173,65 +85,33 @@ html{scroll-behavior:smooth}
 </div>
 </section>
 
-<section class="stats-band" style="background: #0A1040; color: #FFFFFF">
-<div style="max-width: 1280px; margin: 0 auto; padding: 40px 32px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 28px 40px">
-<div style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 46px; line-height: 1; color: #F3E3A6">+4.000</span><span style="font-size: 14px; color: #C8CEEA">asistentes en la 1ra edición</span></div>
-<div style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 46px; line-height: 1; color: #F3E3A6">+2.000</span><span style="font-size: 14px; line-height: 1.45; color: #C8CEEA">asistentes por día previstos<br>en la 2da edición</span></div>
-<div style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 46px; line-height: 1; color: #F3E3A6">3 días</span><span style="font-size: 14px; color: #C8CEEA">de conferencias</span></div>
-<div style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 46px; line-height: 1; color: #F3E3A6">3 talleres</span><span style="font-size: 14px; color: #C8CEEA">especializados en cuidado de heridas</span></div>
+<section class="stats-band">
+<div class="stats-in">
+<div class="st-grupo"><span class="st-ed">1ra edición · 2026</span><div class="st-fila"><div class="st"><span class="st-n">+4.000</span><span class="st-t">asistentes</span></div><div class="st"><span class="st-n">+30</span><span class="st-t">ponencias de médicos especialistas</span></div></div></div>
+<div class="st-grupo st-27"><span class="st-ed">2da edición · 2027</span><div class="st-fila"><div class="st"><span class="st-n">+2.000</span><span class="st-t">asistentes por día previstos</span></div><div class="st"><span class="st-n">3 días</span><span class="st-t">de conferencias</span></div><div class="st"><span class="st-n">3 talleres</span><span class="st-t">especializados en cuidado de heridas</span></div></div></div>
 </div>
 </section>
 
-<section id="enfoque" style="max-width: 1280px; margin: 0 auto; padding: 110px 32px 100px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
+<section id="enfoque" class="sec" style="max-width: 1280px; margin: 0 auto; padding: 110px 32px 100px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
 <div class="enf-video" style="position: relative; flex: 1 1 380px; min-height: 420px; align-self: stretch; border-radius: 26px; overflow: hidden; background: #0A1040; box-shadow: 0 18px 44px rgba(10,16,64,0.12)"><video src="assets/video/dron-loop.mp4" poster="assets/img/dron-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Vista aérea del área de exhibición en la 1ra edición" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block"></video><span style="position: absolute; left: 16px; bottom: 16px; font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #0A1040; background: rgba(255,255,255,0.92); padding: 7px 12px; border-radius: 999px">Vista aérea · 1ra edición 2026</span></div>
 <div class="enf-text" style="flex: 1.4 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
 <h2 style="margin: 0; text-align: center; font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; text-transform: uppercase; font-weight: 700; font-size: 44px; line-height: 1; color: #0A1040">Nuestro enfoque</h2>
 <p style="margin: 0 auto; max-width: 620px; text-align: center; font-size: 17px; line-height: 1.55; color: #4A5280">Intercambio académico y actualización profesional en el manejo integral de heridas, el cuidado de la piel y los protocolos de actuación en emergencias y desastres.</p>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 18px; padding-top: 8px"><div style="background: #0A1040; color: #FFFFFF; border: 3px solid #0A1040; border-radius: 20px; min-height: 200px; padding: 26px; display: flex; align-items: center; justify-content: center; text-align: center; box-shadow: 0 16px 36px rgba(10,16,64,0.14); box-sizing: border-box"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 30px; line-height: 1.1; text-transform: uppercase">Manejo integral de heridas</span></div><div style="background: #FFFFFF; color: #0A1040; border: 3px solid #0A1040; border-radius: 20px; min-height: 200px; padding: 26px; display: flex; align-items: center; justify-content: center; text-align: center; box-shadow: 0 16px 36px rgba(10,16,64,0.14); box-sizing: border-box"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 30px; line-height: 1.1; text-transform: uppercase">Cuidado de la piel</span></div><div style="background: #F7153B; color: #FFFFFF; border: 3px solid #F7153B; border-radius: 20px; min-height: 200px; padding: 26px; display: flex; align-items: center; justify-content: center; text-align: center; box-shadow: 0 16px 36px rgba(10,16,64,0.14); box-sizing: border-box"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 30px; line-height: 1.1; text-transform: uppercase">Emergencias y desastres</span></div></div>
+<div class="enf-tiles"><div style="background: #0A1040; color: #FFFFFF; border: 3px solid #0A1040; border-radius: 20px; min-height: 200px; padding: 26px; display: flex; align-items: center; justify-content: center; text-align: center; box-shadow: 0 16px 36px rgba(10,16,64,0.14); box-sizing: border-box"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 30px; line-height: 1.1; text-transform: uppercase">Manejo integral de heridas</span></div><div style="background: #FFFFFF; color: #0A1040; border: 3px solid #0A1040; border-radius: 20px; min-height: 200px; padding: 26px; display: flex; align-items: center; justify-content: center; text-align: center; box-shadow: 0 16px 36px rgba(10,16,64,0.14); box-sizing: border-box"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 30px; line-height: 1.1; text-transform: uppercase">Cuidado de la piel</span></div><div style="background: #F7153B; color: #FFFFFF; border: 3px solid #F7153B; border-radius: 20px; min-height: 200px; padding: 26px; display: flex; align-items: center; justify-content: center; text-align: center; box-shadow: 0 16px 36px rgba(10,16,64,0.14); box-sizing: border-box"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 30px; line-height: 1.1; text-transform: uppercase">Emergencias y desastres</span></div><div style="background: linear-gradient(135deg, #F3E3A6, #CDB066); color: #0A1040; border: 3px solid #CDB066; border-radius: 20px; min-height: 200px; padding: 26px; display: flex; align-items: center; justify-content: center; text-align: center; box-shadow: 0 16px 36px rgba(10,16,64,0.14); box-sizing: border-box"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 30px; line-height: 1.1; text-transform: uppercase">Visión multidisciplinaria</span></div></div>
+<div class="disc-box">
+<h3 class="disc-tit">Una primera edición con visión multidisciplinaria</h3>
+<p class="disc-txt">En 2026, la Cumbre reunió conocimientos y experiencias de distintas disciplinas para abordar el cuidado avanzado de heridas y piel desde una perspectiva integral.</p>
+<span class="disc-lab">Especialidades y disciplinas participantes</span>
+<ul id="disciplinas" class="disc"><li>Enfermería</li><li>Nutrición</li><li>Cirugía plástica</li><li>Bacteriología</li><li>Inmunología</li><li class="disc-extra">Cardiovascular</li><li class="disc-extra">Traumatología</li><li class="disc-extra">Cirugía vascular</li><li class="disc-extra">Psiquiatría</li><li class="disc-extra">Dermatología</li><li class="disc-extra">Anatomía patológica</li></ul>
+<button type="button" class="ver-mas solo-movil" data-toggle="disciplinas" aria-controls="disciplinas" aria-expanded="false" data-mas="Ver todas las disciplinas" data-menos="Ver menos">Ver todas las disciplinas</button>
+</div>
 </div>
 </section>
 
-<section id="inscripcion" class="days-bg bg-panal" style="padding: 110px 32px 120px">
-<div style="max-width: 1180px; margin: 0 auto; display: flex; flex-direction: column; gap: 44px">
-<div style="display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center">
-<span style="font-size: 20px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #8A6F2A">Participa</span>
-<h2 style="margin: 0; font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; text-transform: uppercase; font-weight: 700; font-size: 48px; line-height: 1; color: #0A1040">Escoge tu participación en la Cumbre</h2>
-</div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 26px"><article class="day-card" style="background: #FFFFFF; border-radius: 22px; overflow: hidden; display: flex; flex-direction: column">
-<div style="padding: 22px 24px 16px; text-align: center"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 26px; text-transform: uppercase; color: #0A1040">Día 1</span></div>
-<div class="day-photos" aria-hidden="true" style="display: grid; grid-template-columns: 1fr 2.2fr 1fr; gap: 10px; height: 300px"><div class="strip"><div style="background-image: url(assets/img/evento-img-7671.jpg); background-position: 50% 40%; animation-delay: -0s"></div><div style="background-image: url(assets/img/evento-88a2667.jpg); background-position: 40% 50%; animation-delay: -4s"></div><div style="background-image: url(assets/img/evento-88a2456.jpg); background-position: 50% 50%; animation-delay: -8s"></div></div><div class="strip"><div style="background-image: url(assets/img/evento-img-7739.jpg); background-position: 50% 50%; animation-delay: -0.9s"></div><div style="background-image: url(assets/img/evento-88a2298.jpg); background-position: 50% 50%; animation-delay: -4.9s"></div><div style="background-image: url(assets/img/evento-88a2462.jpg); background-position: 50% 50%; animation-delay: -8.9s"></div></div><div class="strip"><div style="background-image: url(assets/img/evento-88a2394.jpg); background-position: 50% 50%; animation-delay: -1.8s"></div><div style="background-image: url(assets/img/evento-88a2749.jpg); background-position: 50% 50%; animation-delay: -5.8s"></div><div style="background-image: url(assets/img/evento-88a2774.jpg); background-position: 50% 50%; animation-delay: -9.8s"></div></div></div>
-<div style="padding: 24px 28px 30px; display: flex; flex-direction: column; gap: 14px; flex: 1">
-<h3 style="margin: 0 auto 4px; font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 30px; line-height: 1.05; text-transform: uppercase; text-align: center; color: #0A1040; padding-bottom: 10px; border-bottom: 2px solid #F7153B">Enfermería y rescate</h3>
-<div style="display: flex; gap: 10px; align-items: flex-start; font-size: 18px; font-weight: 600; color: #0A1040"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F7153B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M5 6l6 6-6 6"></path><path d="M12 6l6 6-6 6"></path></svg><span>Personal de enfermería, paramédicos y rescatistas</span></div>
-<div style="display: flex; gap: 10px; align-items: flex-start; font-size: 15px; line-height: 1.45; color: #4A5280"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F7153B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M12 21s-6.5-5.7-6.5-11A6.5 6.5 0 0 1 18.5 10c0 5.3-6.5 11-6.5 11z"></path><circle cx="12" cy="10" r="2.4"></circle></svg><span>Centro Comercial Líder, Caracas</span></div>
-<div style="display: flex; gap: 10px; align-items: center; font-size: 15px; color: #4A5280"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F7153B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><rect x="3.5" y="5" width="17" height="15" rx="2.5"></rect><path d="M3.5 10h17M8 3v4M16 3v4"></path></svg><span>12 de mayo de 2027</span></div>
-<a href="#inscripcion" style="margin-top: auto; align-self: center; color: #FFFFFF; background: #0A1040; text-decoration: none; padding: 13px 26px; border-radius: 999px; font-weight: 600; font-size: 15px">Regístrate al Día 1</a>
-</div>
-</article><article class="day-card" style="background: #FFFFFF; border-radius: 22px; overflow: hidden; display: flex; flex-direction: column">
-<div style="padding: 22px 24px 16px; text-align: center"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 26px; text-transform: uppercase; color: #0A1040">Días 2 y 3</span></div>
-<div class="day-photos" aria-hidden="true" style="display: grid; grid-template-columns: 1fr 2.2fr 1fr; gap: 10px; height: 300px"><div class="strip"><div style="background-image: url(assets/img/evento-88a3261.jpg); background-position: 55% 50%; animation-delay: -2.7s"></div><div style="background-image: url(assets/img/evento-88a3494.jpg); background-position: 80% 50%; animation-delay: -6.7s"></div><div style="background-image: url(assets/img/evento-88a3692.jpg); background-position: 45% 50%; animation-delay: -10.7s"></div></div><div class="strip"><div style="background-image: url(assets/img/evento-88a3276.jpg); background-position: 50% 50%; animation-delay: -3.6s"></div><div style="background-image: url(assets/img/evento-88a3253.jpg); background-position: 50% 50%; animation-delay: -7.6s"></div><div style="background-image: url(assets/img/evento-88a3297.jpg); background-position: 50% 50%; animation-delay: -11.6s"></div></div><div class="strip"><div style="background-image: url(assets/img/evento-88a2370.jpg); background-position: 45% 50%; animation-delay: -4.5s"></div><div style="background-image: url(assets/img/evento-88a3226.jpg); background-position: 40% 50%; animation-delay: -8.5s"></div><div style="background-image: url(assets/img/evento-88a3319.jpg); background-position: 50% 50%; animation-delay: -12.5s"></div></div></div>
-<div style="padding: 24px 28px 30px; display: flex; flex-direction: column; gap: 14px; flex: 1">
-<h3 style="margin: 0 auto 4px; font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 30px; line-height: 1.05; text-transform: uppercase; text-align: center; color: #0A1040; padding-bottom: 10px; border-bottom: 2px solid #F7153B">Especialistas médicos</h3>
-<div style="display: flex; gap: 10px; align-items: flex-start; font-size: 18px; font-weight: 600; color: #0A1040"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F7153B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M5 6l6 6-6 6"></path><path d="M12 6l6 6-6 6"></path></svg><span>Cirujanos, dermatólogos, intensivistas y médicos generales</span></div>
-<div style="display: flex; gap: 10px; align-items: flex-start; font-size: 15px; line-height: 1.45; color: #4A5280"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F7153B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M12 21s-6.5-5.7-6.5-11A6.5 6.5 0 0 1 18.5 10c0 5.3-6.5 11-6.5 11z"></path><circle cx="12" cy="10" r="2.4"></circle></svg><span>Centro Comercial Líder, Caracas</span></div>
-<div style="display: flex; gap: 10px; align-items: center; font-size: 15px; color: #4A5280"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F7153B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><rect x="3.5" y="5" width="17" height="15" rx="2.5"></rect><path d="M3.5 10h17M8 3v4M16 3v4"></path></svg><span>13 y 14 de mayo de 2027</span></div>
-<a href="#inscripcion" style="margin-top: auto; align-self: center; color: #FFFFFF; background: #0A1040; text-decoration: none; padding: 13px 26px; border-radius: 999px; font-weight: 600; font-size: 15px">Regístrate a los Días 2 y 3</a>
-</div>
-</article><article class="day-card" style="background: #FFFFFF; border-radius: 22px; overflow: hidden; display: flex; flex-direction: column">
-<div style="padding: 22px 24px 16px; text-align: center"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 26px; text-transform: uppercase; color: #0A1040">Talleres</span></div>
-<div class="day-photos" aria-hidden="true" style="display: grid; grid-template-columns: 1fr 2.2fr 1fr; gap: 10px; height: 300px"><div class="strip"><div style="background-image: url(assets/img/evento-88a3482.jpg); background-position: 85% 50%; animation-delay: -5.4s"></div><div style="background-image: url(assets/img/evento-88a3342.jpg); background-position: 50% 40%; animation-delay: -9.4s"></div><div style="background-image: url(assets/img/evento-img-7709.jpg); background-position: 72% 50%; animation-delay: -13.4s"></div></div><div class="strip"><div style="background-image: url(assets/img/evento-img-7771.jpg); background-position: 50% 50%; animation-delay: -6.3s"></div><div style="background-image: url(assets/img/evento-88a3191.jpg); background-position: 50% 50%; animation-delay: -10.3s"></div><div style="background-image: url(assets/img/evento-88a3147.jpg); background-position: 50% 50%; animation-delay: -14.3s"></div></div><div class="strip"><div style="background-image: url(assets/img/evento-88a3136.jpg); background-position: 70% 50%; animation-delay: -7.2s"></div><div style="background-image: url(assets/img/evento-img-7677.jpg); background-position: 30% 50%; animation-delay: -11.2s"></div><div style="background-image: url(assets/img/evento-88a2513.jpg); background-position: 70% 50%; animation-delay: -15.2s"></div></div></div>
-<div style="padding: 24px 28px 30px; display: flex; flex-direction: column; gap: 14px; flex: 1">
-<h3 style="margin: 0 auto 4px; font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 30px; line-height: 1.05; text-transform: uppercase; text-align: center; color: #0A1040; padding-bottom: 10px; border-bottom: 2px solid #F7153B">Talleres prácticos</h3>
-<div style="display: flex; gap: 10px; align-items: flex-start; font-size: 18px; font-weight: 600; color: #0A1040"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F7153B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M5 6l6 6-6 6"></path><path d="M12 6l6 6-6 6"></path></svg><span>Presión negativa · Curación en crisis y desastres · Pie diabético y quemaduras</span></div>
-<div style="display: flex; gap: 10px; align-items: flex-start; font-size: 15px; line-height: 1.45; color: #4A5280"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F7153B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M12 21s-6.5-5.7-6.5-11A6.5 6.5 0 0 1 18.5 10c0 5.3-6.5 11-6.5 11z"></path><circle cx="12" cy="10" r="2.4"></circle></svg><span>Centro Comercial Líder, Caracas</span></div>
-<div style="display: flex; gap: 10px; align-items: center; font-size: 15px; color: #4A5280"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F7153B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><rect x="3.5" y="5" width="17" height="15" rx="2.5"></rect><path d="M3.5 10h17M8 3v4M16 3v4"></path></svg><span>[Fechas y horarios por confirmar]</span></div>
-<a href="#inscripcion" style="margin-top: auto; align-self: center; color: #FFFFFF; background: #0A1040; text-decoration: none; padding: 13px 26px; border-radius: 999px; font-weight: 600; font-size: 15px">Inscríbete en un taller</a>
-</div>
-</article></div>
-</div>
-</section>
 
-<section id="patrocinio" style="background: #FFFFFF; padding: 100px 32px 0">
+
+
+<section id="patrocinio" class="sec" style="background: #FFFFFF; padding: 100px 32px 0">
 <div style="max-width: 1280px; margin: 0 auto; display: flex; flex-direction: column; gap: 96px">
 
 <article class="sp-card" style="position: relative; overflow: hidden; border-radius: 26px; background: linear-gradient(135deg, #0A1040 0%, #121A5A 60%, #0A1040 100%); color: #FFFFFF; padding: 48px; display: flex; flex-wrap: wrap; gap: 40px; align-items: stretch">
@@ -264,8 +144,8 @@ html{scroll-behavior:smooth}
 <h3 style="margin: 0; font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; text-transform: uppercase; font-weight: 700; line-height: 1.02; color: #0A1040; font-size: 40px">Elige cómo quieres participar</h3>
 <p style="margin: 0; max-width: 640px; font-size: 17px; line-height: 1.55; color: #4A5280">Ya sea que busques exhibir tus productos o dar mayor visibilidad a tu marca, conoce los formatos disponibles.</p>
 </div>
-<div style="display: flex; flex-direction: column; gap: 14px"><div style="font-size: 16px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #8A6F2A; padding-bottom: 8px; border-bottom: 2px solid #F7153B; align-self: flex-start">Espacios de exposición</div><div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px"><div class="pt-card" style="background: #FFFFFF; border: 2px solid #E3E7F2; border-radius: 16px; padding: 20px 22px; display: flex; flex-direction: column; gap: 8px"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 21px; text-transform: uppercase; color: #0A1040; line-height: 1.1">Stand con producción</span><span style="font-size: 15px; line-height: 1.5; color: #4A5280">Un espacio de 2 × 2 m listo para exhibir tus productos y recibir visitantes.</span></div><div class="pt-card" style="background: #FFFFFF; border: 2px solid #E3E7F2; border-radius: 16px; padding: 20px 22px; display: flex; flex-direction: column; gap: 8px"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 21px; text-transform: uppercase; color: #0A1040; line-height: 1.1">Metro cuadrado libre</span><span style="font-size: 15px; line-height: 1.5; color: #4A5280">Espacio para marcas que cuentan con un stand propio y desean instalarlo en el área de exhibición.</span></div></div></div>
-<div style="display: flex; flex-direction: column; gap: 14px"><div style="font-size: 16px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #8A6F2A; padding-bottom: 8px; border-bottom: 2px solid #F7153B; align-self: flex-start">Activaciones y presencia de marca</div><div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px"><div class="pt-card" style="background: #FFFFFF; border: 2px solid #E3E7F2; border-radius: 16px; padding: 20px 22px; display: flex; flex-direction: column; gap: 8px"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 21px; text-transform: uppercase; color: #0A1040; line-height: 1.1">Activaciones</span><span style="font-size: 15px; line-height: 1.5; color: #4A5280">Espacio de 6 × 2,5 m para vehículos o unidades móviles.</span></div><div class="pt-card" style="background: #FFFFFF; border: 2px solid #E3E7F2; border-radius: 16px; padding: 20px 22px; display: flex; flex-direction: column; gap: 8px"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 21px; text-transform: uppercase; color: #0A1040; line-height: 1.1">Patrocinio de coffee breaks</span><span style="font-size: 15px; line-height: 1.5; color: #4A5280">Presencia de tu marca en las estaciones de refrigerio y networking.</span></div><div class="pt-card" style="background: #FFFFFF; border: 2px solid #E3E7F2; border-radius: 16px; padding: 20px 22px; display: flex; flex-direction: column; gap: 8px"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 21px; text-transform: uppercase; color: #0A1040; line-height: 1.1">Microcápsulas de video</span><span style="font-size: 15px; line-height: 1.5; color: #4A5280">Exhibe tus videos en tótems y pantallas táctiles durante los 3 días del evento.</span></div><div class="pt-card" style="background: #FFFFFF; border: 2px solid #E3E7F2; border-radius: 16px; padding: 20px 22px; display: flex; flex-direction: column; gap: 8px"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 21px; text-transform: uppercase; color: #0A1040; line-height: 1.1">Presencia gráfica en conferencia destacada</span><span style="font-size: 15px; line-height: 1.5; color: #4A5280">Consulta las opciones de presencia gráfica de marca asociadas a una conferencia destacada.</span></div><div class="pt-card" style="background: #FFFFFF; border: 2px solid #E3E7F2; border-radius: 16px; padding: 20px 22px; display: flex; flex-direction: column; gap: 8px"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 21px; text-transform: uppercase; color: #0A1040; line-height: 1.1">Publicidad entre conferencias</span><span style="font-size: 15px; line-height: 1.5; color: #4A5280">Dale visibilidad a tu marca mediante menciones del moderador y presencia de tu logo en diapositivas.</span></div></div></div>
+<div style="display: flex; flex-direction: column; gap: 14px"><div style="font-size: 16px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #8A6F2A; padding-bottom: 8px; border-bottom: 2px solid #F7153B; align-self: flex-start">Espacios de exposición</div><div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px"><details class="opt pt-card" open><summary>Stand con producción</summary><p>Un espacio de 2 × 2 m listo para exhibir tus productos y recibir visitantes.</p></details><details class="opt pt-card" open><summary>Metro cuadrado libre</summary><p>Espacio para marcas que cuentan con un stand propio y desean instalarlo en el área de exhibición.</p></details></div></div>
+<div style="display: flex; flex-direction: column; gap: 14px"><div style="font-size: 16px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #8A6F2A; padding-bottom: 8px; border-bottom: 2px solid #F7153B; align-self: flex-start">Activaciones y presencia de marca</div><div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px"><details class="opt pt-card" open><summary>Activaciones</summary><p>Espacio de 6 × 2,5 m para vehículos o unidades móviles.</p></details><details class="opt pt-card" open><summary>Patrocinio de coffee breaks</summary><p>Presencia de tu marca en las estaciones de refrigerio y networking.</p></details><details class="opt pt-card" open><summary>Microcápsulas de video</summary><p>Exhibe tus videos en tótems y pantallas táctiles durante los 3 días del evento.</p></details><details class="opt pt-card" open><summary>Presencia gráfica en conferencia destacada</summary><p>Consulta las opciones de presencia gráfica de marca asociadas a una conferencia destacada.</p></details><details class="opt pt-card" open><summary>Publicidad entre conferencias</summary><p>Dale visibilidad a tu marca mediante menciones del moderador y presencia de tu logo en diapositivas.</p></details></div></div>
 <div style="background: #0A1040; border-radius: 20px; padding: 28px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px">
 <div style="display: flex; flex-direction: column; gap: 6px; flex: 1 1 320px"><span style="font-size: 19px; font-weight: 600; color: #FFFFFF">Te ayudamos a identificar el formato que mejor se adapte a tus objetivos.</span><span style="font-size: 13px; color: #A9B1D6">Opciones sujetas a disponibilidad. Consulta inclusiones y condiciones en la propuesta comercial.</span></div>
 <a href="#formulario-patrocinio" style="color: #0A1040; background: linear-gradient(135deg, #F3E3A6, #CDB066); text-decoration: none; padding: 16px 28px; border-radius: 999px; font-weight: 700; font-size: 16px; display: inline-block">Solicitar propuesta de patrocinio</a>
@@ -274,10 +154,14 @@ html{scroll-behavior:smooth}
 
 <div style="display: flex; flex-direction: column; gap: 28px">
 <div style="display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center">
-<h3 style="margin: 0; font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; text-transform: uppercase; font-weight: 700; line-height: 1.02; color: #0A1040; font-size: 40px">Marcas que fueron parte de la experiencia</h3>
-<p style="margin: 0; max-width: 640px; font-size: 17px; line-height: 1.55; color: #4A5280">Así se vivió la participación de expositores en la primera edición de la Cumbre, en 2026.</p>
+<h3 style="margin: 0; font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; text-transform: uppercase; font-weight: 700; line-height: 1.02; color: #0A1040; font-size: 40px">Así se vivió la Cumbre 2026</h3>
+<p style="margin: 0; max-width: 640px; font-size: 17px; line-height: 1.55; color: #4A5280">Conoce el encuentro del que tu marca puede formar parte en 2027.</p>
 </div>
-<div class="gal-grid" role="img" aria-label="Fotos de los stands de la 1ra edición" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-auto-rows: 200px; gap: 12px"><div class="gal-tile gal-3" style="grid-column: 1 / span 2; grid-row: 1 / span 2"><div style="background-image: url(assets/img/evento-img-7831.jpg); background-position: 50% 40%; animation-delay: 0s;"></div><div style="background-image: url(assets/img/evento-img-7900.jpg); background-position: 50% 45%; animation-delay: -8s;"></div><div style="background-image: url(assets/img/evento-img-7882.jpg); background-position: 50% 40%; animation-delay: -4s;"></div><span style="position: absolute; left: 16px; bottom: 16px; z-index: 1; font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #0A1040; background: rgba(255,255,255,0.92); padding: 7px 12px; border-radius: 999px">Expositores · 1ra edición 2026</span></div><div class="gal-tile gal-2" style=""><div style="background-image: url(assets/img/evento-img-7847.jpg); background-position: 50% 30%; animation-delay: 0s;"></div><div style="background-image: url(assets/img/evento-img-7819.jpg); background-position: 40% 40%; animation-delay: -5s;"></div></div><div class="gal-tile gal-2" style=""><div style="background-image: url(assets/img/evento-img-7826.jpg); background-position: 55% 35%; animation-delay: 0s;"></div><div style="background-image: url(assets/img/evento-img-7825.jpg); background-position: 40% 30%; animation-delay: -5s;"></div></div><div class="gal-tile" style=""><div style="background-image: url(assets/img/evento-img-7879.jpg); background-position: 50% 40%;"></div></div><div class="gal-tile" style=""><div style="background-image: url(assets/img/evento-88a2516.jpg); background-position: 50% 50%;"></div></div><div class="gal-tile" style=""><div style="background-image: url(assets/img/evento-img-7844.jpg); background-position: 50% 35%;"></div></div></div>
+<div id="galeria-stands" class="gal-grid" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-auto-rows: 200px; gap: 12px"><div class="yt-tile" style="grid-column: 1 / span 2; grid-row: 1 / span 2">
+<div class="yt-frame"><button type="button" class="yt-play" data-yt="SizpFb5RWT4" aria-label="Ver video: Tres días que cambiaron el cuidado de heridas"><img src="https://i.ytimg.com/vi/SizpFb5RWT4/hqdefault.jpg" alt="" loading="lazy"><span class="yt-ico" aria-hidden="true"><svg width="30" height="30" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M8 5.5v13l11-6.5z"></path></svg></span><span class="pv-tag">Edición 2026</span><span class="yt-cap"><strong>Tres días que cambiaron el cuidado de heridas</strong><span>Video resumen · 1:44</span></span></button></div>
+<a class="yt-link" href="https://www.youtube.com/watch?v=SizpFb5RWT4" target="_blank" rel="noopener">Ver en YouTube ↗</a>
+</div><div class="gal-tile gal-2" style=""><div style="background-image: url(assets/img/evento-img-7847.jpg); background-position: 50% 30%; animation-delay: 0s;"></div><div style="background-image: url(assets/img/evento-img-7819.jpg); background-position: 40% 40%; animation-delay: -5s;"></div></div><div class="gal-tile gal-2" style=""><div style="background-image: url(assets/img/evento-img-7826.jpg); background-position: 55% 35%; animation-delay: 0s;"></div><div style="background-image: url(assets/img/evento-img-7825.jpg); background-position: 40% 30%; animation-delay: -5s;"></div></div><div class="gal-tile gal-extra" style=""><div style="background-image: url(assets/img/evento-img-7879.jpg); background-position: 50% 40%;"></div></div><div class="gal-tile gal-extra" style=""><div style="background-image: url(assets/img/evento-88a2516.jpg); background-position: 50% 50%;"></div></div><div class="gal-tile gal-extra" style=""><div style="background-image: url(assets/img/evento-img-7844.jpg); background-position: 50% 35%;"></div></div></div>
+<button type="button" class="ver-mas solo-movil" data-toggle="galeria-stands" aria-controls="galeria-stands" aria-expanded="false" data-mas="Ver más fotos" data-menos="Ver menos fotos">Ver más fotos</button>
 <div style="border: 2px solid #CDB066; background: #FBF7EA; border-radius: 20px; padding: 26px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px">
 <div style="display: flex; flex-direction: column; gap: 6px; flex: 1 1 320px"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 28px; text-transform: uppercase; color: #0A1040; line-height: 1.05">Tu marca puede ser parte de la próxima edición</span><span style="font-size: 16px; color: #4A5280">Conoce las oportunidades de exposición y patrocinio para 2027.</span></div>
 <a href="#formulario-patrocinio" style="color: #FFFFFF; background: #0A1040; text-decoration: none; padding: 16px 28px; border-radius: 999px; font-weight: 700; font-size: 16px; display: inline-block">Solicitar propuesta de patrocinio</a>
@@ -302,7 +186,7 @@ html{scroll-behavior:smooth}
 </div>
 </section>
 
-<section id="formulario-patrocinio" style="background: linear-gradient(180deg, #FFFFFF 0px, #FFFFFF 80px, #0A1040 80px, #0A1040 100%); padding: 96px 32px 110px; margin-top: 16px">
+<section id="formulario-patrocinio" class="sec" style="background: linear-gradient(180deg, #FFFFFF 0px, #FFFFFF 80px, #0A1040 80px, #0A1040 100%); padding: 96px 32px 110px; margin-top: 16px">
 <div style="max-width: 1180px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-start">
 <div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 16px; color: #FFFFFF; padding-top: 70px">
 <span style="font-size: 15px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #F3E3A6">Expositores y patrocinadores</span>
@@ -331,6 +215,62 @@ html{scroll-behavior:smooth}
 </div>
 </section>
 
+<section id="ponencias" class="pv-sec sec">
+<div class="pv-in">
+<div class="pv-head">
+<span class="eyebrow">Ponencias · Edición 2026</span>
+<h2 class="sec-tit">Más de 30 ponencias de médicos especialistas en nuestra primera edición</h2>
+<p class="sec-txt">Explora una selección de las conferencias de 2026 y conoce las distintas perspectivas que hicieron parte de la Cumbre.</p>
+</div>
+<div id="pv-destacadas" class="pv-grid"></div>
+<div class="pv-pie">
+<a class="btn-navy" href="ponencias.html">Explorar ponencias 2026</a>
+<a class="btn-yt" href="https://www.youtube.com/@ComunidadCumbreHeridasyPiel?sub_confirmation=1" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4" fill="#FF0000"></rect><path d="M10 9v6l5-3z" fill="#FFFFFF"></path></svg>Suscríbete al canal</a>
+</div>
+<p class="pv-nota">Hay más ponencias publicadas en el canal de YouTube "Comunidad Cumbre Heridas y Piel".</p>
+</div>
+</section>
+
+<section id="inscripcion" class="days-bg bg-panal sec" style="padding: 110px 32px 120px">
+<div style="max-width: 1180px; margin: 0 auto; display: flex; flex-direction: column; gap: 44px">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center">
+<span style="font-size: 20px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #8A6F2A">Participa · 2027</span>
+<h2 style="margin: 0; font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; text-transform: uppercase; font-weight: 700; font-size: 48px; line-height: 1; color: #0A1040">Modalidades de participación</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 26px"><article class="day-card" style="background: #FFFFFF; border-radius: 22px; overflow: hidden; display: flex; flex-direction: column">
+<div style="padding: 22px 24px 16px; text-align: center"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 26px; text-transform: uppercase; color: #0A1040">Día 1</span></div>
+<div class="day-photos" aria-hidden="true" style="display: grid; grid-template-columns: 1fr 2.2fr 1fr; gap: 10px; height: 300px"><div class="strip"><div style="background-image: url(assets/img/evento-img-7671.jpg); background-position: 50% 40%; animation-delay: -0s"></div><div style="background-image: url(assets/img/evento-88a2667.jpg); background-position: 40% 50%; animation-delay: -4s"></div><div style="background-image: url(assets/img/evento-88a2456.jpg); background-position: 50% 50%; animation-delay: -8s"></div></div><div class="strip"><div style="background-image: url(assets/img/evento-img-7739.jpg); background-position: 50% 50%; animation-delay: -0.9s"></div><div style="background-image: url(assets/img/evento-88a2298.jpg); background-position: 50% 50%; animation-delay: -4.9s"></div><div style="background-image: url(assets/img/evento-88a2462.jpg); background-position: 50% 50%; animation-delay: -8.9s"></div></div><div class="strip"><div style="background-image: url(assets/img/evento-88a2394.jpg); background-position: 50% 50%; animation-delay: -1.8s"></div><div style="background-image: url(assets/img/evento-88a2749.jpg); background-position: 50% 50%; animation-delay: -5.8s"></div><div style="background-image: url(assets/img/evento-88a2774.jpg); background-position: 50% 50%; animation-delay: -9.8s"></div></div></div>
+<div style="padding: 24px 28px 30px; display: flex; flex-direction: column; gap: 14px; flex: 1">
+<h3 style="margin: 0 auto 4px; font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 30px; line-height: 1.05; text-transform: uppercase; text-align: center; color: #0A1040; padding-bottom: 10px; border-bottom: 2px solid #F7153B">Enfermería y rescate</h3>
+<div style="display: flex; gap: 10px; align-items: flex-start; font-size: 18px; font-weight: 600; color: #0A1040"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F7153B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M5 6l6 6-6 6"></path><path d="M12 6l6 6-6 6"></path></svg><span>Personal de enfermería, paramédicos y rescatistas</span></div>
+<div style="display: flex; gap: 10px; align-items: flex-start; font-size: 15px; line-height: 1.45; color: #4A5280"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F7153B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M12 21s-6.5-5.7-6.5-11A6.5 6.5 0 0 1 18.5 10c0 5.3-6.5 11-6.5 11z"></path><circle cx="12" cy="10" r="2.4"></circle></svg><span>Centro Comercial Líder, Caracas</span></div>
+<div style="display: flex; gap: 10px; align-items: center; font-size: 15px; color: #4A5280"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F7153B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><rect x="3.5" y="5" width="17" height="15" rx="2.5"></rect><path d="M3.5 10h17M8 3v4M16 3v4"></path></svg><span>12 de mayo de 2027</span></div>
+<a href="#inscripcion" data-destino="registro" style="margin-top: auto; align-self: center; color: #FFFFFF; background: #0A1040; text-decoration: none; padding: 13px 26px; border-radius: 999px; font-weight: 600; font-size: 15px">Inscribirme al Día 1</a>
+</div>
+</article><article class="day-card" style="background: #FFFFFF; border-radius: 22px; overflow: hidden; display: flex; flex-direction: column">
+<div style="padding: 22px 24px 16px; text-align: center"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 26px; text-transform: uppercase; color: #0A1040">Días 2 y 3</span></div>
+<div class="day-photos" aria-hidden="true" style="display: grid; grid-template-columns: 1fr 2.2fr 1fr; gap: 10px; height: 300px"><div class="strip"><div style="background-image: url(assets/img/evento-88a3261.jpg); background-position: 55% 50%; animation-delay: -2.7s"></div><div style="background-image: url(assets/img/evento-88a3494.jpg); background-position: 80% 50%; animation-delay: -6.7s"></div><div style="background-image: url(assets/img/evento-88a3692.jpg); background-position: 45% 50%; animation-delay: -10.7s"></div></div><div class="strip"><div style="background-image: url(assets/img/evento-88a3276.jpg); background-position: 50% 50%; animation-delay: -3.6s"></div><div style="background-image: url(assets/img/evento-88a3253.jpg); background-position: 50% 50%; animation-delay: -7.6s"></div><div style="background-image: url(assets/img/evento-88a3297.jpg); background-position: 50% 50%; animation-delay: -11.6s"></div></div><div class="strip"><div style="background-image: url(assets/img/evento-88a2370.jpg); background-position: 45% 50%; animation-delay: -4.5s"></div><div style="background-image: url(assets/img/evento-88a3226.jpg); background-position: 40% 50%; animation-delay: -8.5s"></div><div style="background-image: url(assets/img/evento-88a3319.jpg); background-position: 50% 50%; animation-delay: -12.5s"></div></div></div>
+<div style="padding: 24px 28px 30px; display: flex; flex-direction: column; gap: 14px; flex: 1">
+<h3 style="margin: 0 auto 4px; font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 30px; line-height: 1.05; text-transform: uppercase; text-align: center; color: #0A1040; padding-bottom: 10px; border-bottom: 2px solid #F7153B">Especialistas médicos</h3>
+<div style="display: flex; gap: 10px; align-items: flex-start; font-size: 18px; font-weight: 600; color: #0A1040"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F7153B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M5 6l6 6-6 6"></path><path d="M12 6l6 6-6 6"></path></svg><span>Cirujanos, dermatólogos, intensivistas y médicos generales</span></div>
+<div style="display: flex; gap: 10px; align-items: flex-start; font-size: 15px; line-height: 1.45; color: #4A5280"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F7153B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M12 21s-6.5-5.7-6.5-11A6.5 6.5 0 0 1 18.5 10c0 5.3-6.5 11-6.5 11z"></path><circle cx="12" cy="10" r="2.4"></circle></svg><span>Centro Comercial Líder, Caracas</span></div>
+<div style="display: flex; gap: 10px; align-items: center; font-size: 15px; color: #4A5280"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F7153B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><rect x="3.5" y="5" width="17" height="15" rx="2.5"></rect><path d="M3.5 10h17M8 3v4M16 3v4"></path></svg><span>13 y 14 de mayo de 2027</span></div>
+<a href="#inscripcion" data-destino="registro" style="margin-top: auto; align-self: center; color: #FFFFFF; background: #0A1040; text-decoration: none; padding: 13px 26px; border-radius: 999px; font-weight: 600; font-size: 15px">Inscribirme a los Días 2 y 3</a>
+</div>
+</article><article class="day-card" style="background: #FFFFFF; border-radius: 22px; overflow: hidden; display: flex; flex-direction: column">
+<div style="padding: 22px 24px 16px; text-align: center"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 26px; text-transform: uppercase; color: #0A1040">Talleres</span></div>
+<div class="day-photos" aria-hidden="true" style="display: grid; grid-template-columns: 1fr 2.2fr 1fr; gap: 10px; height: 300px"><div class="strip"><div style="background-image: url(assets/img/evento-88a3482.jpg); background-position: 85% 50%; animation-delay: -5.4s"></div><div style="background-image: url(assets/img/evento-88a3342.jpg); background-position: 50% 40%; animation-delay: -9.4s"></div><div style="background-image: url(assets/img/evento-img-7709.jpg); background-position: 72% 50%; animation-delay: -13.4s"></div></div><div class="strip"><div style="background-image: url(assets/img/evento-img-7771.jpg); background-position: 50% 50%; animation-delay: -6.3s"></div><div style="background-image: url(assets/img/evento-88a3191.jpg); background-position: 50% 50%; animation-delay: -10.3s"></div><div style="background-image: url(assets/img/evento-88a3147.jpg); background-position: 50% 50%; animation-delay: -14.3s"></div></div><div class="strip"><div style="background-image: url(assets/img/evento-88a3136.jpg); background-position: 70% 50%; animation-delay: -7.2s"></div><div style="background-image: url(assets/img/evento-img-7677.jpg); background-position: 30% 50%; animation-delay: -11.2s"></div><div style="background-image: url(assets/img/evento-88a2513.jpg); background-position: 70% 50%; animation-delay: -15.2s"></div></div></div>
+<div style="padding: 24px 28px 30px; display: flex; flex-direction: column; gap: 14px; flex: 1">
+<h3 style="margin: 0 auto 4px; font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 30px; line-height: 1.05; text-transform: uppercase; text-align: center; color: #0A1040; padding-bottom: 10px; border-bottom: 2px solid #F7153B">Talleres prácticos</h3>
+<div style="display: flex; gap: 10px; align-items: flex-start; font-size: 18px; font-weight: 600; color: #0A1040"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F7153B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M5 6l6 6-6 6"></path><path d="M12 6l6 6-6 6"></path></svg><span>Presión negativa · Curación en crisis y desastres · Pie diabético y quemaduras</span></div>
+<div style="display: flex; gap: 10px; align-items: flex-start; font-size: 15px; line-height: 1.45; color: #4A5280"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F7153B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M12 21s-6.5-5.7-6.5-11A6.5 6.5 0 0 1 18.5 10c0 5.3-6.5 11-6.5 11z"></path><circle cx="12" cy="10" r="2.4"></circle></svg><span>Centro Comercial Líder, Caracas</span></div>
+<div style="display: flex; gap: 10px; align-items: center; font-size: 15px; color: #4A5280"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F7153B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><rect x="3.5" y="5" width="17" height="15" rx="2.5"></rect><path d="M3.5 10h17M8 3v4M16 3v4"></path></svg><span>[Fechas y horarios por confirmar]</span></div>
+<a href="#inscripcion" data-destino="registro" style="margin-top: auto; align-self: center; color: #FFFFFF; background: #0A1040; text-decoration: none; padding: 13px 26px; border-radius: 999px; font-weight: 600; font-size: 15px">Inscribirme a un taller</a>
+</div>
+</article></div>
+</div>
+</section>
+
 <section class="mq-band" aria-label="Organizadores y aval" style="position: relative; background: #FFFFFF">
 <div style="text-align: center; padding-top: 34px; font-size: 14px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #8A6F2A">Organizan y avalan</div>
 <div class="mq-wrap" style="overflow: hidden; padding: 22px 0 40px"><div class="mq-track"><div class="mq-set"><img class="mq-logo" src="assets/img/org-medical-shields.png" alt="Medical Shields" style="height: 84px; width: auto; display: block; flex: none; mix-blend-mode: multiply"><img class="mq-logo" src="assets/img/org-cuidamos-tu-herida.png" alt="Cuidamos tu Herida" style="height: 84px; width: auto; display: block; flex: none; mix-blend-mode: multiply"><img class="mq-logo" src="assets/img/org-lider.png" alt="Centro Comercial Líder" style="height: 84px; width: auto; display: block; flex: none; mix-blend-mode: multiply"><img class="mq-logo" src="assets/img/org-producciones-24.png" alt="Producciones 24" style="height: 84px; width: auto; display: block; flex: none; mix-blend-mode: multiply"><img class="mq-logo" src="assets/img/org-espacio.png" alt="Espacio" style="height: 84px; width: auto; display: block; flex: none; mix-blend-mode: multiply"><img class="mq-logo" src="assets/img/aval-sociedad-venezolana-cirugia.png" alt="Sociedad Venezolana de Cirugía" style="height: 104px; width: 104px; display: block; flex: none; mix-blend-mode: multiply"></div><div class="mq-set" aria-hidden="true"><img class="mq-logo" src="assets/img/org-medical-shields.png" alt="" aria-hidden="true" style="height: 84px; width: auto; display: block; flex: none; mix-blend-mode: multiply"><img class="mq-logo" src="assets/img/org-cuidamos-tu-herida.png" alt="" aria-hidden="true" style="height: 84px; width: auto; display: block; flex: none; mix-blend-mode: multiply"><img class="mq-logo" src="assets/img/org-lider.png" alt="" aria-hidden="true" style="height: 84px; width: auto; display: block; flex: none; mix-blend-mode: multiply"><img class="mq-logo" src="assets/img/org-producciones-24.png" alt="" aria-hidden="true" style="height: 84px; width: auto; display: block; flex: none; mix-blend-mode: multiply"><img class="mq-logo" src="assets/img/org-espacio.png" alt="" aria-hidden="true" style="height: 84px; width: auto; display: block; flex: none; mix-blend-mode: multiply"><img class="mq-logo" src="assets/img/aval-sociedad-venezolana-cirugia.png" alt="" aria-hidden="true" style="height: 104px; width: 104px; display: block; flex: none; mix-blend-mode: multiply"></div></div></div>
@@ -338,11 +278,11 @@ html{scroll-behavior:smooth}
 <footer style="background: #0A1040; color: #C8CEEA">
 <div style="max-width: 1280px; margin: 0 auto; padding: 44px 32px 28px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 28px">
 <img src="assets/img/logo-cumbre-blanco.png" alt="Cumbre Internacional para el Cuidado Avanzado de Heridas y Piel" style="height: 54px; width: auto; display: block">
-<nav aria-label="Pie de página" style="display: flex; flex-wrap: wrap; gap: 24px; font-size: 14px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase"><a href="#programa" style="color: #FFFFFF; text-decoration: none">Programa</a><a href="#ponentes" style="color: #FFFFFF; text-decoration: none">Ponentes</a><a href="#plano" style="color: #FFFFFF; text-decoration: none">La sede</a><a href="#patrocinio" style="color: #FFFFFF; text-decoration: none">Expón tu marca</a><a href="#inscripcion" style="color: #F3E3A6; text-decoration: none">Regístrate</a></nav>
+<nav aria-label="Pie de página" style="display: flex; flex-wrap: wrap; gap: 24px; font-size: 14px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase"><a href="#inscripcion" style="color: #FFFFFF; text-decoration: none">Programa 2027</a><a href="ponencias.html" style="color: #FFFFFF; text-decoration: none">Ponencias 2026</a><a href="#plano" style="color: #FFFFFF; text-decoration: none">La sede</a><a href="#patrocinio" style="color: #F3E3A6; text-decoration: none">Patrocinios</a><a href="#inscripcion" style="color: #FFFFFF; text-decoration: none">Regístrate</a></nav>
 </div>
 <div style="max-width: 1280px; margin: 0 auto; padding: 18px 32px 30px; border-top: 1px solid rgba(255,255,255,0.12); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 13px">
 <span>© 2027 Cumbre Internacional para el Cuidado Avanzado de Heridas y Piel · Medical Shields · Cuidamos tu Herida</span>
-<span>[Contacto, redes y política de privacidad por confirmar]</span>
+<span><a href="https://www.youtube.com/@ComunidadCumbreHeridasyPiel" target="_blank" rel="noopener" style="color: #FFFFFF">YouTube: Comunidad Cumbre Heridas y Piel</a> · [Contacto, redes y política de privacidad por confirmar]</span>
 </div>
 </footer>
 <a class="wa-float" href="https://wa.me/584142577408?text=Hola%2C%20deseo%20informaci%C3%B3n%20sobre%20los%20stands%20para%20la%20Cumbre" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp para información de stands" style="position: fixed; right: 24px; bottom: 24px; z-index: 70; display: flex; align-items: center; gap: 10px; text-decoration: none">
@@ -353,31 +293,7 @@ html{scroll-behavior:smooth}
 
 <div class="draft-badge">Propuesta de diseño · borrador para revisión</div>
 
-<script>
-(function(){
-var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-// fotos del encabezado: una a la vez, 6 s cada una
-var sl=[].slice.call(document.querySelectorAll('.hero-slide')),i=0;
-if(sl.length>1){setInterval(function(){sl[i].classList.remove('on');i=(i+1)%sl.length;sl[i].classList.add('on');},6000);}
-// cuenta regresiva
-var target=Date.parse('2027-05-12T08:00:00-04:00');
-function pad(n){return String(n).padStart(2,'0');}
-function tick(){var s=Math.max(0,Math.floor((target-Date.now())/1000));var d=Math.floor(s/86400);s-=d*86400;var h=Math.floor(s/3600);s-=h*3600;var m=Math.floor(s/60);s-=m*60;
-var v={d:String(d),h:pad(h),m:pad(m),s:pad(s)};for(var k in v){var el=document.querySelector('[data-cd="'+k+'"]');if(el)el.textContent=v[k];}}
-tick();setInterval(tick,1000);
-// formulario de patrocinio (envio simulado: aun no hay base de datos)
-var form=document.getElementById('pf-form');if(!form)return;
-var btn=document.getElementById('pf-btn'),wrap=document.getElementById('pf-wrap'),ok=document.getElementById('pf-ok'),serr=document.getElementById('pf-senderr');
-var REQ='Completa este campo para continuar.',BAD='Escribe un correo electrónico válido.';
-function setErr(id,msg){var f=document.getElementById(id),e=document.getElementById(id+'-err');if(!f||!e)return;if(msg){e.textContent=msg;e.hidden=false;f.setAttribute('aria-invalid','true');}else{e.textContent='';e.hidden=true;f.setAttribute('aria-invalid','false');}}
-['pf-nombre','pf-empresa','pf-correo','pf-opcion'].forEach(function(id){var f=document.getElementById(id);f.addEventListener('input',function(){setErr(id,'');});f.addEventListener('change',function(){setErr(id,'');});});
-var pre=document.getElementById('pre-stand');if(pre)pre.addEventListener('click',function(){document.getElementById('pf-opcion').value='Stand o espacio de exposición';setErr('pf-opcion','');if(ok.hidden===false){ok.hidden=true;wrap.hidden=false;}});
-form.addEventListener('submit',function(ev){ev.preventDefault();serr.hidden=true;var first=null;
-['pf-nombre','pf-empresa','pf-correo','pf-opcion'].forEach(function(id){var v=String(document.getElementById(id).value||'').trim();var msg=v?'':REQ;if(!msg&&id==='pf-correo'&&!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v))msg=BAD;setErr(id,msg);if(msg&&!first)first=id;});
-if(first){document.getElementById(first).focus();return;}
-btn.disabled=true;btn.textContent='Enviando solicitud…';
-setTimeout(function(){wrap.hidden=true;ok.hidden=false;btn.disabled=false;btn.textContent='Solicitar propuesta de patrocinio';},1200);});
-})();
-</script>
+<script src="assets/js/ponencias.js"></script>
+<script src="assets/js/sitio.js"></script>
 </body>
 </html>

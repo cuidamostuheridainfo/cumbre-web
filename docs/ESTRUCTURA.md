@@ -9,11 +9,23 @@ Base para la construcción en Astro. Los campos y páginas son la propuesta vige
 | Inicio | La portada actual (ver ESTADO), con todas sus secciones. |
 | Programa | Agenda completa con filtros por día, sala y público (enfermería, médicos, talleres). Cada sesión enlaza a su ponente y tiene un botón para agregarla al calendario. Mientras no esté listo, muestra "Programa en preparación" y no aparece en el menú. |
 | Ponentes | Ficha de cada ponente: foto, nombre, especialidad, país y sus sesiones. |
+| Ponencias 2026 | Galería de las ponencias de la 1ra edición publicadas en YouTube (hoy `ponencias.html`). Filtros por disciplina cuando se tengan las especialidades. |
 | Inscríbete | Formulario de asistentes. |
 | Expón tu marca | Hoy es una sección de Inicio (presentación, beneficios, opciones, fotos de stands, plano y formulario de solicitud de patrocinio). En el sitio definitivo puede quedarse en Inicio o pasar a página propia. |
 | Política de privacidad | Texto legal, actualizado para cubrir los formularios. |
 
 Contacto y redes van en el pie de todas las páginas.
+
+## Destino de cada botón (definido el 28 oct)
+
+| Botón | Hoy lleva a | Cuando existan los formularios |
+| --- | --- | --- |
+| Conocer oportunidades / Conocer opciones de patrocinio / Patrocinios | Sección de patrocinio | Igual |
+| Solicitar propuesta de patrocinio | Formulario de patrocinio | Igual, con envío real |
+| Consultar disponibilidad de stands | Formulario con "Stand o espacio de exposición" elegido | Igual |
+| Inscribirme al Día 1 / a los Días 2 y 3 / a un taller | Sección de modalidades | Registro de asistentes con esa modalidad ya elegida |
+| Regístrate / Regístrate como asistente | Sección de modalidades | Registro de asistentes |
+| Explorar ponencias 2026 / Ponencias 2026 | `ponencias.html` | Igual |
 
 ## Formulario de asistentes
 

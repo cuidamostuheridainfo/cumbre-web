@@ -35,10 +35,12 @@ Después de leer, decir en dos o tres líneas en qué punto estamos y cuál es e
 
 | Ruta | Qué es |
 | --- | --- |
-| `index.html` | Propuesta provisional de la portada (v2, "Claro B · Patrocinio"), publicada en GitHub Pages. HTML, CSS y JS en un solo archivo, generado desde el lienzo. |
+| `index.html` | Portada de la propuesta (v3), publicada en GitHub Pages. Se edita directamente. |
 | `assets/img/` | Imágenes: fotos 2026 (`hero-*`, `evento-*`), plano, logos, cintas del anillo, fondos. |
 | `assets/video/` | Video del dron en bucle para "Nuestro enfoque". |
+| `ponencias.html` | Página interna "Ponencias 2026". |
+| `assets/css/sitio.css`, `assets/js/` | Estilos y comportamiento compartidos; `assets/js/ponencias.js` es la lista de videos. |
 | `docs/` | Documentación del proyecto (ritual de inicio). |
-| `herramientas/build_index.py` | Script que convierte el artboard del lienzo en `index.html`. |
+| `herramientas/build_index.py` | Script de la v2 (lienzo → `index.html`). Ya no se usa desde la v3. |
 
 Cuando empiece la construcción definitiva en Astro, la propuesta se reemplaza en este mismo repositorio.

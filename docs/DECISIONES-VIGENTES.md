@@ -65,3 +65,19 @@ Basada en el informe de cambios de Marketing del 27 oct. Reemplaza lo que contra
 - **Formulario de patrocinio:** nombre, empresa, correo, opción de interés (obligatorios), WhatsApp y objetivo (opcionales). Aclara que enviar la solicitud no reserva un espacio. Confirmación solo cuando el envío se completa.
 - **WhatsApp flotante:** +58 414-2577408 con el mensaje "Hola, deseo información sobre los stands para la Cumbre".
 
+## Tercera versión (28 oct 2026)
+
+Basada en los comentarios de Social media y la revisión de Codex. Reemplaza lo que contradiga las secciones anteriores.
+
+- **Prioridad de esta etapa: patrocinadores.** El botón principal del encabezado es "Conocer opciones de patrocinio"; la inscripción de asistentes queda como acción secundaria. Reemplaza "primero lo del asistente, luego lo del expositor".
+- **Orden:** portada → cifras por edición → enfoque y visión multidisciplinaria → patrocinio (con su formulario al cierre) → vista previa de Ponencias 2026 → modalidades de participación → organizadores y pie.
+- **Cifras separadas por edición:** resultados de 2026 (+4.000 asistentes, +30 ponencias, confirmado por Jenny) y previsiones de 2027. No mezclar 2026 con 2027 en ninguna parte.
+- **Nuestro enfoque se mantiene** con sus tres cuadros y un cuarto, "Visión multidisciplinaria" (dorado); debajo, las 11 disciplinas.
+- **Videos:** solo del canal oficial "Comunidad Cumbre Heridas y Piel", solo videos ya publicados (no estrenos). El reproductor de YouTube carga solo al pulsar la miniatura; cada video tiene "Ver en YouTube" y la etiqueta "Edición 2026". Se usa youtube-nocookie.com.
+- **Dos niveles de video:** video resumen dentro de la sección de patrocinio ("Así se vivió la Cumbre 2026"), y vista previa de 3 ponencias en la portada con la galería completa en `ponencias.html`.
+- **Datos de ponencias:** títulos del canal, ponente según el canal; donde falta, no se inventa. La especialidad no se muestra hasta tenerla. La lista vive en `assets/js/ponencias.js`.
+- **Invitar a suscribirse al canal** en la vista previa, en la página de ponencias y en el pie.
+- **Menú:** "Programa 2027" (lleva por ahora a las modalidades) distinto de "Ponencias 2026". En teléfono hay menú desplegable y el botón "Patrocinios" siempre visible.
+- **Teléfono más corto:** opciones comerciales plegables, selección de fotos con "Ver más fotos", menos espacio entre secciones, títulos largos sin mayúsculas sostenidas.
+- **Fuente del diseño:** desde la v3 se edita el código del repositorio; el lienzo queda como referencia.
+
