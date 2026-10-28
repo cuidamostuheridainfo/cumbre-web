@@ -9,6 +9,7 @@
 | Comentarios sobre la v3 (Marketing, Social media) | Marketing MS → Jenny | Cierre del diseño |
 | Ponente de 6 videos sin nombre en el título (ver `docs/VIDEOS-2026.md`) | Organización / Social media | Tarjetas de ponencias |
 | Especialidad de cada ponente | Organización | Tarjetas de ponencias y filtros por disciplina |
+| Restricción de edad en 4 videos (hoy fuera de la página): solo si el canal la quita se vuelven a incluir | Social media | Opcional |
 | Verificar título de Valentina Kube: el canal dice "Dra." y la miniatura dice "Lic." | Organización | Tarjeta destacada 2 |
 | Revisión de títulos de ponencias por el comité o la Dra. Milagros (contenido médico) | Comité científico | Publicación |
 | ¿Activaciones va en "Espacios de exposición" o en "Activaciones y presencia de marca"? (hoy en la segunda) | Comité de la Cumbre | Opciones de patrocinio |

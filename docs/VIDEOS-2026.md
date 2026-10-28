@@ -1,7 +1,11 @@
 # Videos del canal "Comunidad Cumbre Heridas y Piel"
 
 Canal: https://www.youtube.com/@ComunidadCumbreHeridasyPiel
-Revisado el 28 de octubre de 2026: 20 videos publicados y 2 estrenos programados. Los 20 publicados permiten verse incrustados en otra página (comprobación de YouTube, que responde bien para cada uno). Hay que confirmarlo otra vez en la página publicada antes de lanzar.
+Revisado el 28 de octubre de 2026: 20 videos publicados y 2 estrenos programados.
+
+**Prueba en la página publicada (28 oct):** 15 ponencias y el video resumen se reproducen dentro del sitio. **4 tienen restricción de edad de YouTube** y solo se pueden ver en YouTube: yCdJuRYn5PU (Dariela Ruiz, destacada), bKN_Z36ZIQQ (Pie diabético), hT6wjvxZtdA (Hueso expuesto) y _kbogo8xRog (Heridas agudas vs. crónicas). **Decisión de Jenny (28 oct): esos 4 no se incluyen en la página;** quien quiera verlos va al canal. Quedan comentados al final de `assets/js/ponencias.js` por si el canal quita la restricción. La página muestra 14 ponencias.
+
+Destacadas en la portada (desde el 28 oct): 1 Dra. Valentina Kube, 2 Dr. Carlos Durán, 3 Dra. Irene Camacho.
 
 Las ponencias son de la 1ra edición (2026). Ponente y especialidad se deben verificar con la organización. Los que no traen ponente en el título están marcados [ponente por confirmar].
 

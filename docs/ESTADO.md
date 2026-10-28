@@ -38,7 +38,7 @@ La construcción del sitio definitivo (Astro, formularios reales, base de datos,
 8. **Modalidades de participación (2027):** Día 1, Días 2 y 3, Talleres, con "Inscribirme al…".
 9. **Organizan y avalan**, pie (con enlace al canal de YouTube), WhatsApp flotante y etiqueta de borrador.
 
-**ponencias.html:** las 18 ponencias publicadas (9 y "Cargar más"), cada una con miniatura, título, ponente, duración, etiqueta "Edición 2026", "Ver ponencia" (se reproduce en la misma tarjeta) y "Ver en YouTube". Cierra con la invitación a suscribirse y dos pasos: "Conocer opciones de patrocinio" (destacado) y "Ver modalidades de participación".
+**ponencias.html:** las 14 ponencias publicadas que se pueden ver dentro del sitio (9 y "Cargar más"; las 4 con restricción de edad de YouTube no se incluyen), cada una con miniatura, título, ponente, duración, etiqueta "Edición 2026", "Ver ponencia" (se reproduce en la misma tarjeta) y "Ver en YouTube". Cierra con la invitación a suscribirse y dos pasos: "Conocer opciones de patrocinio" (destacado) y "Ver modalidades de participación".
 
 ## Cómo se publica un cambio
 

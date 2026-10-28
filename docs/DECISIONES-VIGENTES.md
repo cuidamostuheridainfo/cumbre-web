@@ -80,4 +80,4 @@ Basada en los comentarios de Social media y la revisión de Codex. Reemplaza lo 
 - **Menú:** "Programa 2027" (lleva por ahora a las modalidades) distinto de "Ponencias 2026". En teléfono hay menú desplegable y el botón "Patrocinios" siempre visible.
 - **Teléfono más corto:** opciones comerciales plegables, selección de fotos con "Ver más fotos", menos espacio entre secciones, títulos largos sin mayúsculas sostenidas.
 - **Fuente del diseño:** desde la v3 se edita el código del repositorio; el lienzo queda como referencia.
-
+- **Videos con restricción de edad de YouTube no se incluyen en la página** (no se pueden ver incrustados); quien quiera verlos va al canal. Hoy son 4, entre ellos la ponencia de Dariela Ruiz. Destacadas: Valentina Kube, Carlos Durán e Irene Camacho.

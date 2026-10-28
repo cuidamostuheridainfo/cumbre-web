@@ -49,6 +49,17 @@
   // Videos de YouTube: el reproductor solo se carga al pulsar la miniatura
   var tarjetaVideo = function (p, extra) {
     var quien = p.ponente ? '<span class="pv-ponente">' + esc(p.ponente) + (p.especialidad ? ' · ' + esc(p.especialidad) : '') + '</span>' : '';
+    var yt = 'https://www.youtube.com/watch?v=' + encodeURIComponent(p.id);
+    if (p.restringido) {
+      return '<article class="pv-card' + (extra || '') + '">' +
+        '<div class="yt-frame"><a class="yt-play" href="' + yt + '" target="_blank" rel="noopener" aria-label="Ver en YouTube: ' + esc(p.titulo) + '">' +
+        '<img src="https://i.ytimg.com/vi/' + esc(p.id) + '/hqdefault.jpg" alt="" loading="lazy">' +
+        '<span class="yt-ico" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M8 5.5v13l11-6.5z"></path></svg></span>' +
+        '<span class="pv-tag">Edición 2026</span><span class="pv-dur">' + esc(p.duracion) + '</span></a></div>' +
+        '<div class="pv-body"><h3 class="pv-titulo">' + esc(p.titulo) + '</h3>' + quien +
+        '<span class="pv-aviso">Por su contenido médico, YouTube solo permite verla en su sitio.</span>' +
+        '<div class="pv-acciones"><a class="pv-ver" href="' + yt + '" target="_blank" rel="noopener">Ver en YouTube ↗</a></div></div></article>';
+    }
     return '<article class="pv-card' + (extra || '') + '">' +
       '<div class="yt-frame"><button type="button" class="yt-play" data-yt="' + esc(p.id) + '" data-titulo="' + esc(p.titulo) + '" aria-label="Ver ponencia: ' + esc(p.titulo) + '">' +
       '<img src="https://i.ytimg.com/vi/' + esc(p.id) + '/hqdefault.jpg" alt="" loading="lazy">' +
