@@ -198,17 +198,35 @@ a.pv-ver{text-decoration:none;display:inline-block}a.pv-ver:hover{color:#FFFFFF;
 @media (max-width: 760px){.aud-grid{grid-template-columns:1fr}.aud-box{padding:22px 20px}.aud-tit{font-size:24px}}
 /* Tarifas y modalidades de inscripción (4 nov) */
 .tarifa-tag{align-self:flex-start;font-size:13px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#FFFFFF;background:#F7153B;padding:6px 14px;border-radius:999px}
-.mod-box{display:flex;flex-direction:column;gap:20px}
-.mod-tit{margin:0;text-align:center;font-family:'Barlow Semi Condensed',sans-serif;font-style:italic;font-weight:700;font-size:32px;line-height:1.1;color:#0A1040}
-.mod-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:20px}
-.mod-card{background:#FFFFFF;border:2px solid #E3E7F2;border-radius:20px;padding:26px 28px;display:flex;flex-direction:column;gap:10px}
-.mod-kit{border-color:#CDB066;box-shadow:0 16px 36px rgba(10,16,64,0.10)}
-.mod-lab{font-size:14px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#8A6F2A}
-.mod-precio{font-family:'Barlow Semi Condensed',sans-serif;font-style:italic;font-weight:800;font-size:44px;line-height:1;color:#0A1040}
-.mod-card p{margin:0;font-size:16px;line-height:1.5;color:#4A5280}
-.mod-card ul{margin:0;padding:0 0 0 20px;columns:2;column-gap:28px;font-size:15px;line-height:1.7;color:#0A1040}
-.mod-nota{font-size:14px!important;color:#8A6F2A!important}
-@media (max-width: 760px){.mod-grid{grid-template-columns:1fr}.mod-card ul{columns:1}.mod-tit{font-size:24px}.mod-precio{font-size:36px}}
+/* Selector de participación (4 nov) */
+.dlg-insc{border:0;padding:0;border-radius:24px;max-width:860px;width:calc(100% - 32px);box-shadow:0 40px 90px rgba(10,16,64,0.35);color:#0A1040;font-family:'Barlow',system-ui,sans-serif}
+.dlg-insc::backdrop{background:rgba(10,16,64,0.55)}
+.dlg-in{position:relative;padding:34px 34px 26px;display:flex;flex-direction:column;gap:14px}
+.dlg-cerrar{position:absolute;right:14px;top:12px;width:44px;height:44px;border:0;border-radius:50%;background:#F2F5FC;color:#0A1040;font-size:28px;line-height:1;cursor:pointer}
+.dlg-eyebrow{display:block;padding-right:52px;font-size:14px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#8A6F2A}
+.dlg-tit{margin:0;font-family:'Barlow Semi Condensed',sans-serif;font-style:italic;font-weight:700;font-size:36px;line-height:1.05;text-transform:uppercase}
+.dlg-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:18px;padding-top:6px}
+.dlg-op{position:relative;display:flex;flex-direction:column;gap:10px;border:2px solid #E3E7F2;border-radius:20px;padding:24px}
+.dlg-kit{border-color:#CDB066;background:linear-gradient(180deg,#FFFBEE 0%,#FFFFFF 60%);box-shadow:0 16px 36px rgba(205,176,102,0.25)}
+.dlg-tag{position:absolute;top:-13px;left:22px;font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#0A1040;background:linear-gradient(135deg,#F3E3A6,#CDB066);padding:5px 12px;border-radius:999px}
+.dlg-lab{font-size:14px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#8A6F2A}
+.dlg-precio{font-family:'Barlow Semi Condensed',sans-serif;font-style:italic;font-weight:800;font-size:44px;line-height:1}
+.dlg-op ul{margin:0;padding:0 0 0 20px;columns:2;column-gap:22px;font-size:15px;line-height:1.7}
+.dlg-op p{margin:0;font-size:16px;line-height:1.5;color:#4A5280;flex:1}
+.dlg-btn{margin-top:auto;text-align:center;text-decoration:none;font-weight:700;font-size:16px;padding:15px 22px;border-radius:999px}
+.dlg-btn-kit{color:#0A1040;background:linear-gradient(135deg,#F3E3A6,#CDB066)}
+.dlg-btn-gratis{color:#FFFFFF;background:#0A1040}
+.dlg-btn-gratis:hover{color:#FFFFFF;background:#1A2370}
+.dlg-nota{font-size:13px;color:#8A6F2A}
+.dlg-pronto{margin:0;text-align:center;font-size:14px;color:#5A6290}
+@media (max-width: 760px){
+.dlg-insc{width:100%;max-width:none;max-height:92vh;margin:auto 0 0;border-radius:24px 24px 0 0}
+.dlg-in{padding:28px 18px 22px}
+.dlg-tit{font-size:26px;text-transform:none}
+.dlg-grid{grid-template-columns:1fr;gap:22px}
+.dlg-op ul{columns:1;font-size:14px;line-height:1.6}
+.dlg-precio{font-size:36px}
+}
 /* Página de ponencias */
 .pg-cab{background:#FFFFFF;border-bottom:1px solid #E3E7F2;position:relative;z-index:5}
 .pg-hero{background:linear-gradient(135deg,#0A1040 0%,#121A5A 60%,#0A1040 100%);color:#FFFFFF}

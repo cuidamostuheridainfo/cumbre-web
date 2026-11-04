@@ -41,6 +41,23 @@
     });
   });
 
+  // Selector de participación: cada botón de día abre el diálogo con ese día
+  var dlg = $('#dlg-inscripcion');
+  if (dlg && dlg.showModal) {
+    $$('.btn-inscribir').forEach(function (b) {
+      b.addEventListener('click', function () {
+        $('#dlg-dia').textContent = b.getAttribute('data-dia-label');
+        dlg.setAttribute('data-dia', b.getAttribute('data-dia'));
+        $$('[data-modalidad]', dlg).forEach(function (a) { a.setAttribute('data-dia', b.getAttribute('data-dia')); });
+        dlg.showModal();
+      });
+    });
+    $$('[data-cerrar]', dlg).forEach(function (b) { b.addEventListener('click', function () { dlg.close(); }); });
+    dlg.addEventListener('click', function (e) { if (e.target === dlg) dlg.close(); });
+    // Destino previsto: formulario de inscripción con día y modalidad elegidos (aún no construido)
+    $$('[data-modalidad]', dlg).forEach(function (a) { a.addEventListener('click', function (e) { e.preventDefault(); var n = $('.dlg-pronto', dlg); n.style.fontWeight = '700'; n.style.color = '#0A1040'; }); });
+  }
+
   // Opciones comerciales: abiertas en PC, plegadas en teléfono
   var opts = $$('details.opt');
   var ajustarOpts = function () { opts.forEach(function (d) { d.open = !movil.matches; }); };

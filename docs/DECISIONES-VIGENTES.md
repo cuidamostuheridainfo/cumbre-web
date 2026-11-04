@@ -103,4 +103,4 @@ Basada en los comentarios de Social media y la revisión de Codex. Reemplaza lo 
 - **Inscripción + kit: $40.** Kit: bolso, lanyard y credencial, cooler, gorro de quirófano, bolígrafo con lámpara, cartuchera, certificado impreso e hidratación (un agua o un café).
 - **Cédula:** se pide en la inscripción.
 - **QR del kit:** se entrega solo cuando el pago está confirmado. Mientras tanto, "pago en verificación" en pantalla y por correo. Propuesta: verificar en 24–48 h y cerrar la venta de kits unos días antes del evento.
-
+- **Elección de modalidad dentro de cada día (4 nov):** se quita el bloque aparte "Elige tu modalidad". Los botones "Inscribirme al Día 1" y "Inscribirme a los Días 2 y 3" abren una ventana "Elige tu participación" con el día ya indicado: Inscripción + kit ($40, destacada con etiqueta "Incluye kit") e Inscripción gratuita. La tarjeta de Talleres no usa esta ventana hasta saber si tienen costo.

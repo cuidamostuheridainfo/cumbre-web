@@ -23,7 +23,8 @@ Contacto y redes van en el pie de todas las páginas.
 | Conocer oportunidades / Conocer opciones de patrocinio / Patrocinios | Sección de patrocinio | Igual |
 | Solicitar propuesta de patrocinio | Formulario de patrocinio | Igual, con envío real |
 | Consultar disponibilidad de stands | Formulario con "Stand o espacio de exposición" elegido | Igual |
-| Inscribirme al Día 1 / a los Días 2 y 3 / a un taller | Sección de modalidades | Registro de asistentes con esa modalidad ya elegida |
+| Inscribirme al Día 1 / a los Días 2 y 3 | Ventana "Elige tu participación" (kit o gratuita) con el día ya indicado | Formulario de inscripción con día y modalidad ya elegidos |
+| Inscribirme a un taller | Sección de modalidades | Por definir (costo y cupos de talleres pendientes) |
 | Regístrate / Regístrate como asistente | Sección de modalidades | Registro de asistentes |
 | Explorar ponencias 2026 / Ponencias 2026 | `ponencias.html` | Igual |
 

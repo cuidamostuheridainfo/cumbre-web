@@ -257,7 +257,7 @@
 <div style="display: flex; gap: 10px; align-items: flex-start; font-size: 18px; font-weight: 600; color: #0A1040"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F7153B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M5 6l6 6-6 6"></path><path d="M12 6l6 6-6 6"></path></svg><span>Enfermería, paramédicos y rescatistas</span></div>
 <div style="display: flex; gap: 10px; align-items: flex-start; font-size: 15px; line-height: 1.45; color: #4A5280"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F7153B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M12 21s-6.5-5.7-6.5-11A6.5 6.5 0 0 1 18.5 10c0 5.3-6.5 11-6.5 11z"></path><circle cx="12" cy="10" r="2.4"></circle></svg><span>Centro Comercial Líder, Caracas</span></div>
 <div style="display: flex; gap: 10px; align-items: center; font-size: 15px; color: #4A5280"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F7153B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><rect x="3.5" y="5" width="17" height="15" rx="2.5"></rect><path d="M3.5 10h17M8 3v4M16 3v4"></path></svg><span>Miércoles 12 de mayo de 2027</span></div>
-<a href="#inscripcion" data-destino="registro" style="margin-top: auto; align-self: center; color: #FFFFFF; background: #0A1040; text-decoration: none; padding: 13px 26px; border-radius: 999px; font-weight: 600; font-size: 15px">Inscribirme al Día 1</a>
+<button type="button" class="btn-inscribir" data-dia="dia-1" data-dia-label="Día 1 · Miércoles 12 de mayo" aria-haspopup="dialog" style="margin-top: auto; align-self: center; color: #FFFFFF; background: #0A1040; text-decoration: none; padding: 13px 26px; border-radius: 999px; font-weight: 600; font-size: 15px; border: 0; font-family: inherit; cursor: pointer">Inscribirme al Día 1</button>
 </div>
 </article><article class="day-card" style="background: #FFFFFF; border-radius: 22px; overflow: hidden; display: flex; flex-direction: column">
 <div style="padding: 22px 24px 16px; text-align: center"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 26px; text-transform: uppercase; color: #0A1040">Días 2 y 3</span></div>
@@ -268,7 +268,7 @@
 <div style="display: flex; gap: 10px; align-items: flex-start; font-size: 18px; font-weight: 600; color: #0A1040"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F7153B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M5 6l6 6-6 6"></path><path d="M12 6l6 6-6 6"></path></svg><span>Cirujanos, dermatólogos, fisiatras, internistas, traumatólogos y médicos generales</span></div>
 <div style="display: flex; gap: 10px; align-items: flex-start; font-size: 15px; line-height: 1.45; color: #4A5280"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F7153B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M12 21s-6.5-5.7-6.5-11A6.5 6.5 0 0 1 18.5 10c0 5.3-6.5 11-6.5 11z"></path><circle cx="12" cy="10" r="2.4"></circle></svg><span>Centro Comercial Líder, Caracas</span></div>
 <div style="display: flex; gap: 10px; align-items: center; font-size: 15px; color: #4A5280"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F7153B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><rect x="3.5" y="5" width="17" height="15" rx="2.5"></rect><path d="M3.5 10h17M8 3v4M16 3v4"></path></svg><span>Jueves 13 y viernes 14 de mayo de 2027</span></div>
-<a href="#inscripcion" data-destino="registro" style="margin-top: auto; align-self: center; color: #FFFFFF; background: #0A1040; text-decoration: none; padding: 13px 26px; border-radius: 999px; font-weight: 600; font-size: 15px">Inscribirme a los Días 2 y 3</a>
+<button type="button" class="btn-inscribir" data-dia="dias-2-3" data-dia-label="Días 2 y 3 · Jueves 13 y viernes 14 de mayo" aria-haspopup="dialog" style="margin-top: auto; align-self: center; color: #FFFFFF; background: #0A1040; text-decoration: none; padding: 13px 26px; border-radius: 999px; font-weight: 600; font-size: 15px; border: 0; font-family: inherit; cursor: pointer">Inscribirme a los Días 2 y 3</button>
 </div>
 </article><article class="day-card" style="background: #FFFFFF; border-radius: 22px; overflow: hidden; display: flex; flex-direction: column">
 <div style="padding: 22px 24px 16px; text-align: center"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 26px; text-transform: uppercase; color: #0A1040">Talleres precumbre</span></div>
@@ -282,16 +282,33 @@
 <a href="#inscripcion" data-destino="registro" style="margin-top: auto; align-self: center; color: #FFFFFF; background: #0A1040; text-decoration: none; padding: 13px 26px; border-radius: 999px; font-weight: 600; font-size: 15px">Inscribirme a un taller</a>
 </div>
 </article></div>
-<div class="mod-box">
-<h3 class="mod-tit">Elige tu modalidad de inscripción</h3>
-<div class="mod-grid">
-<div class="mod-card"><span class="mod-lab">Inscripción gratuita</span><span class="mod-precio">Sin costo</span><p>Acceso a las conferencias de tu día con tu código QR.</p></div>
-<div class="mod-card mod-kit"><span class="mod-lab">Inscripción + kit</span><span class="mod-precio">$40</span><ul><li>Bolso</li><li>Lanyard y credencial</li><li>Cooler de la Cumbre</li><li>Gorro de quirófano</li><li>Bolígrafo con lámpara</li><li>Cartuchera</li><li>Certificado impreso</li><li>Hidratación: un agua o un café</li></ul><p class="mod-nota">Tu código QR se envía cuando se confirma el pago.</p></div>
-</div>
-</div>
 </div>
 </section>
 
+<dialog id="dlg-inscripcion" class="dlg-insc" aria-labelledby="dlg-tit">
+<div class="dlg-in">
+<button type="button" class="dlg-cerrar" data-cerrar aria-label="Cerrar">×</button>
+<span class="dlg-eyebrow" id="dlg-dia">Día 1 · Miércoles 12 de mayo</span>
+<h2 id="dlg-tit" class="dlg-tit">Elige tu participación</h2>
+<div class="dlg-grid">
+<div class="dlg-op dlg-kit">
+<span class="dlg-tag">Incluye kit</span>
+<span class="dlg-lab">Inscripción + kit</span>
+<span class="dlg-precio">$40</span>
+<ul><li>Bolso</li><li>Lanyard y credencial</li><li>Cooler de la Cumbre</li><li>Gorro de quirófano</li><li>Bolígrafo con lámpara</li><li>Cartuchera</li><li>Certificado impreso</li><li>Hidratación: un agua o un café</li></ul>
+<a class="dlg-btn dlg-btn-kit" href="#inscripcion" data-modalidad="kit">Inscribirme con kit</a>
+<span class="dlg-nota">Tu código QR se envía cuando se confirma el pago.</span>
+</div>
+<div class="dlg-op">
+<span class="dlg-lab">Inscripción gratuita</span>
+<span class="dlg-precio">Sin costo</span>
+<p>Acceso a las conferencias de tu día con tu código QR.</p>
+<a class="dlg-btn dlg-btn-gratis" href="#inscripcion" data-modalidad="gratuita">Inscribirme gratis</a>
+</div>
+</div>
+<p class="dlg-pronto">El formulario de inscripción estará disponible próximamente.</p>
+</div>
+</dialog>
 <section class="mq-band" aria-label="Organizadores y aval" style="position: relative; background: #FFFFFF">
 <div style="text-align: center; padding-top: 34px; font-size: 14px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #8A6F2A">Organizan y avalan</div>
 <div class="mq-wrap" style="overflow: hidden; padding: 22px 0 40px"><div class="mq-track"><div class="mq-set"><img class="mq-logo" src="assets/img/org-medical-shields.png" alt="Medical Shields" style="height: 84px; width: auto; display: block; flex: none; mix-blend-mode: multiply"><img class="mq-logo" src="assets/img/org-cuidamos-tu-herida.png" alt="Cuidamos tu Herida" style="height: 84px; width: auto; display: block; flex: none; mix-blend-mode: multiply"><img class="mq-logo" src="assets/img/org-lider.png" alt="Centro Comercial Líder" style="height: 84px; width: auto; display: block; flex: none; mix-blend-mode: multiply"><img class="mq-logo" src="assets/img/org-producciones-24.png" alt="Producciones 24" style="height: 84px; width: auto; display: block; flex: none; mix-blend-mode: multiply"><img class="mq-logo" src="assets/img/org-espacio.png" alt="Espacio" style="height: 84px; width: auto; display: block; flex: none; mix-blend-mode: multiply"><img class="mq-logo" src="assets/img/aval-sociedad-venezolana-cirugia.png" alt="Sociedad Venezolana de Cirugía" style="height: 104px; width: 104px; display: block; flex: none; mix-blend-mode: multiply"></div><div class="mq-set" aria-hidden="true"><img class="mq-logo" src="assets/img/org-medical-shields.png" alt="" aria-hidden="true" style="height: 84px; width: auto; display: block; flex: none; mix-blend-mode: multiply"><img class="mq-logo" src="assets/img/org-cuidamos-tu-herida.png" alt="" aria-hidden="true" style="height: 84px; width: auto; display: block; flex: none; mix-blend-mode: multiply"><img class="mq-logo" src="assets/img/org-lider.png" alt="" aria-hidden="true" style="height: 84px; width: auto; display: block; flex: none; mix-blend-mode: multiply"><img class="mq-logo" src="assets/img/org-producciones-24.png" alt="" aria-hidden="true" style="height: 84px; width: auto; display: block; flex: none; mix-blend-mode: multiply"><img class="mq-logo" src="assets/img/org-espacio.png" alt="" aria-hidden="true" style="height: 84px; width: auto; display: block; flex: none; mix-blend-mode: multiply"><img class="mq-logo" src="assets/img/aval-sociedad-venezolana-cirugia.png" alt="" aria-hidden="true" style="height: 104px; width: 104px; display: block; flex: none; mix-blend-mode: multiply"></div></div></div>
