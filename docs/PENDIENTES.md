@@ -1,6 +1,6 @@
 # Pendientes
 
-Última actualización: 28 de octubre de 2026.
+Última actualización: 4 de noviembre de 2026.
 
 ## Esperando de otros
 
@@ -12,12 +12,21 @@
 | Restricción de edad en 4 videos (hoy fuera de la página): solo si el canal la quita se vuelven a incluir | Social media | Opcional |
 | Verificar título de Valentina Kube: el canal dice "Dra." y la miniatura dice "Lic." | Organización | Tarjeta destacada 2 |
 | Revisión de títulos de ponencias por el comité o la Dra. Milagros (contenido médico) | Comité científico | Publicación |
-| ¿Activaciones va en "Espacios de exposición" o en "Activaciones y presencia de marca"? (hoy en la segunda) | Comité de la Cumbre | Opciones de patrocinio |
-| ¿Se publican las cantidades disponibles (3 coffee breaks, 10 microcápsulas, 20 publicidades)? | Comercial | Opciones de patrocinio (hoy no se muestran) |
-| ¿Se publican precios de stands y patrocinio? (la tabla del brochure los tiene) | Comercial / Daniel | Opciones de patrocinio (hoy sin precios) |
-| Fecha de cierre de la venta anticipada, si existe | Comercial | Mensaje de urgencia |
+| Preguntas enviadas a Social media el 4 nov: | | |
+| · ¿Sale también la publicidad entre conferencias? (salió el coffee break) | Organización | Presencia de marca |
+| · Talleres precumbre: fecha, hora y lugar | Organización | Tarjeta de talleres e inscripción |
+| · Talleres: ¿costo aparte o incluidos? ¿Cupos por taller? | Organización | Inscripción a talleres |
+| · Inscripción gratuita: ¿certificado digital o ninguno? | Organización | Inscripción y certificados |
+| · Inscripción gratuita: ¿entra solo con QR en el teléfono? | Organización | Acreditación |
+| · Hidratación del kit: ¿una por día o una en total? | Organización | Entrega del kit |
+| · Estudiantes: ¿Día 1 o Días 2 y 3? | Organización | Inscripción |
+| · ¿Hay acceso a los tres días (invitados, ponentes, VIP)? | Organización | Inscripción y acreditación |
+| · Cupos (gratuita, kits) y fecha de cierre de la venta de kits | Organización | Inscripción |
+| · Pagos: empresa que recibe, banco, factura, dólares | Organización / Comercial | Pago del kit |
+| · Contacto comercial (vacío en el brochure) | Comercial | Pie y patrocinio |
+| Correcciones del brochure (no de la web): espacio libre a $750/m², "vigentes hasta" el 31/12/2026, "Día 1" = 12 de mayo, nombre con "Avanzado" | Social media | Brochure |
+| Objetivos y contenidos de cada taller | Organización | Tarjeta de Talleres |
 | Hora de inicio del 12 de mayo (la cuenta regresiva asume 8:00 a. m.) | Organización del evento | Cuenta regresiva |
-| Fechas y horarios de los talleres | Comité científico | Tarjeta de Talleres |
 | Fotos de talleres prácticos de 2026 (hoy la tarjeta usa fotos de ponencias) | Jenny | Tarjeta de Talleres |
 | Logo de la Cumbre para fondo claro (hoy es una versión recoloreada provisional) | Diseño / Marketing | Encabezado |
 | Logos de organizadores y aval en buena calidad (PNG transparente o SVG) | Jenny | Cinta "Organizan y avalan" |

@@ -81,3 +81,26 @@ Basada en los comentarios de Social media y la revisión de Codex. Reemplaza lo 
 - **Teléfono más corto:** opciones comerciales plegables, selección de fotos con "Ver más fotos", menos espacio entre secciones, títulos largos sin mayúsculas sostenidas.
 - **Fuente del diseño:** desde la v3 se edita el código del repositorio; el lienzo queda como referencia.
 - **Videos con restricción de edad de YouTube no se incluyen en la página** (no se pueden ver incrustados); quien quiera verlos va al canal. Hoy son 4, entre ellos la ponencia de Dariela Ruiz. Destacadas: Valentina Kube, Carlos Durán e Irene Camacho.
+
+## Brochure comercial 2da edición (2 nov 2026)
+
+- **Talleres:** pasan a ser los del brochure: control de hemorragias masivas, manejo del síndrome por aplastamiento y atención en refugios ("Talleres prácticos de campo"). La organización enviará objetivos y contenidos. La cifra dice "3 talleres prácticos de campo".
+- **Oferta comercial:** se adopta la estructura del brochure. Niveles: Diamante, Platino, Oro. Espacios: espacio libre, mesa de contacto, stand básico 2 × 2 m. Complementos: Premium Branding y Cursos Precumbre. Activaciones, coffee breaks, microcápsulas, conferencia destacada y publicidad entre conferencias se mantienen por ahora como "Otras opciones de presencia de marca", hasta que la organización confirme si siguen (el brochure no las menciona).
+- **Sin precios en la página** hasta que Comercial confirme el precio por m² del espacio libre y las fechas de preventa.
+- **No se publica "bases de datos segmentadas"** como beneficio hasta definir el consentimiento de los asistentes (formulario y aviso de privacidad).
+- **Perfil de la audiencia** del brochure en la sección de patrocinio ("¿Quién asiste a la Cumbre?") y tema de cada día en las tarjetas de modalidades.
+- **El nombre de la página no cambia:** el brochure omite "Avanzado"; el nombre oficial lo lleva.
+
+## Respuestas de la organización (4 nov 2026)
+
+- **Cifra oficial de 2027:** +5.000 asistentes previstos (3.000 especialistas médicos y 2.000 de enfermería). Reemplaza "+2.000 por día". En la web se dice "asistentes", no "prescriptores".
+- **Días:** Día 1 miércoles 12, Día 2 jueves 13, Día 3 viernes 14 de mayo de 2027.
+- **Talleres = cursos precumbre:** se dictan antes de la Cumbre, con los temas del brochure. Fecha, lugar, costo y cupos por confirmar. El complemento comercial pasa a "Patrocinio de talleres precumbre".
+- **Autorización para compartir datos con patrocinantes:** casilla **opcional** y separada en la inscripción (la organización la pidió obligatoria; se acordó opcional).
+- **Hospedaje, traslados y gastronomía:** solo en el brochure, no en la web.
+- **Presencia de marca:** salen coffee breaks y activaciones; se mantienen las cápsulas (publicidad en pantalla) y la conferencia destacada. Publicidad entre conferencias, por confirmar.
+- **Precios solo en el brochure.** Espacio libre $750/m² (2 × 2 m = $3.000); stand básico armado 2 × 2 m $4.600. Tarifas vigentes **hasta** el 31 de diciembre de 2026; la web lo anuncia sin precios.
+- **Inscripción + kit: $40.** Kit: bolso, lanyard y credencial, cooler, gorro de quirófano, bolígrafo con lámpara, cartuchera, certificado impreso e hidratación (un agua o un café).
+- **Cédula:** se pide en la inscripción.
+- **QR del kit:** se entrega solo cuando el pago está confirmado. Mientras tanto, "pago en verificación" en pantalla y por correo. Propuesta: verificar en 24–48 h y cerrar la venta de kits unos días antes del evento.
+

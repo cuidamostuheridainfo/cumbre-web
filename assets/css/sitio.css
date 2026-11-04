@@ -187,6 +187,28 @@ a.pv-ver{text-decoration:none;display:inline-block}a.pv-ver:hover{color:#FFFFFF;
 @media (prefers-reduced-motion: reduce){.yt-play img,.pv-card{transition:none}.pv-card:hover{transform:none}}
 @media (max-width: 1100px){.enf-tiles{grid-template-columns:repeat(2,minmax(0,1fr))}.st-27{padding-left:0;border-left:0}}
 @media (max-width: 900px){.pv-grid{grid-template-columns:1fr 1fr}}
+/* Perfil de audiencia y temas de cada día (2 nov) */
+.aud-box{display:flex;flex-direction:column;gap:20px;background:#F7F9FD;border:2px solid #E3E7F2;border-radius:20px;padding:30px 32px}
+.aud-tit{margin:0;text-align:center;font-family:'Barlow Semi Condensed',sans-serif;font-style:italic;font-weight:700;font-size:32px;line-height:1.1;color:#0A1040}
+.aud-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.aud-col{display:flex;flex-direction:column;gap:8px;padding-left:16px;border-left:3px solid #F7153B}
+.aud-lab{font-size:14px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#8A6F2A}
+.aud-col p{margin:0;font-size:16px;line-height:1.55;color:#0A1040}
+.dia-tema{margin:-6px 0 2px;text-align:center;font-size:15px;line-height:1.45;font-weight:600;color:#2A3470}
+@media (max-width: 760px){.aud-grid{grid-template-columns:1fr}.aud-box{padding:22px 20px}.aud-tit{font-size:24px}}
+/* Tarifas y modalidades de inscripción (4 nov) */
+.tarifa-tag{align-self:flex-start;font-size:13px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#FFFFFF;background:#F7153B;padding:6px 14px;border-radius:999px}
+.mod-box{display:flex;flex-direction:column;gap:20px}
+.mod-tit{margin:0;text-align:center;font-family:'Barlow Semi Condensed',sans-serif;font-style:italic;font-weight:700;font-size:32px;line-height:1.1;color:#0A1040}
+.mod-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:20px}
+.mod-card{background:#FFFFFF;border:2px solid #E3E7F2;border-radius:20px;padding:26px 28px;display:flex;flex-direction:column;gap:10px}
+.mod-kit{border-color:#CDB066;box-shadow:0 16px 36px rgba(10,16,64,0.10)}
+.mod-lab{font-size:14px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#8A6F2A}
+.mod-precio{font-family:'Barlow Semi Condensed',sans-serif;font-style:italic;font-weight:800;font-size:44px;line-height:1;color:#0A1040}
+.mod-card p{margin:0;font-size:16px;line-height:1.5;color:#4A5280}
+.mod-card ul{margin:0;padding:0 0 0 20px;columns:2;column-gap:28px;font-size:15px;line-height:1.7;color:#0A1040}
+.mod-nota{font-size:14px!important;color:#8A6F2A!important}
+@media (max-width: 760px){.mod-grid{grid-template-columns:1fr}.mod-card ul{columns:1}.mod-tit{font-size:24px}.mod-precio{font-size:36px}}
 /* Página de ponencias */
 .pg-cab{background:#FFFFFF;border-bottom:1px solid #E3E7F2;position:relative;z-index:5}
 .pg-hero{background:linear-gradient(135deg,#0A1040 0%,#121A5A 60%,#0A1040 100%);color:#FFFFFF}

@@ -29,22 +29,29 @@ Contacto y redes van en el pie de todas las páginas.
 
 ## Formulario de asistentes
 
-Por confirmar (ver PENDIENTES). Propuesta vigente desde el 27 oct:
+Propuesta vigente desde el 4 nov. Pendiente de las respuestas del 4 nov (ver PENDIENTES).
 
 | Campo | Tipo | Obligatorio |
 | --- | --- | --- |
-| Perfil | Lista: Estudiante · Especialista médico · Enfermería, paramédicos y rescatistas | Sí |
-| Modalidad | Lista: Gratuita · Con kit ($25) — el kit se puede activar o desactivar desde el panel | Sí |
-| Día o días | Según el perfil: Día 1 (enfermería y rescate), Días 2 y 3 (especialistas), Talleres | Sí |
+| Perfil | Lista: Especialista médico · Enfermería, paramédicos y rescatistas · Otras áreas (farmacia, investigación, nutrición, psicología) · Estudiante | Sí |
+| Día o días | Se asigna según el perfil: Día 1 (miércoles 12) o Días 2 y 3 (jueves 13 y viernes 14). Estudiantes: por confirmar | Automático |
+| Modalidad | Gratuita · Inscripción + kit ($40) | Sí |
 | Nombre y apellido | Texto | Sí |
+| Cédula | Texto con formato validado | Sí |
 | Correo | Correo | Sí |
 | WhatsApp | Teléfono con código de país | Sí |
+| Especialidad o área | Texto o lista | Sí |
 | Institución o universidad | Texto | Sí |
 | Ciudad | Texto | Sí |
-| ¿Cómo te enteraste de la Cumbre? | Lista: Instagram · TikTok · Universidad · Recomendación · Otro | No |
-| Aceptación del aviso de privacidad | Casilla | Sí |
+| ¿Cómo te enteraste de la Cumbre? | Lista | No |
+| Aviso de privacidad | Casilla | Sí |
+| Autorizo compartir mi nombre, correo, teléfono y especialidad con los patrocinantes | Casilla separada | **No** (opcional) |
 
-Por confirmar: cédula (si hay certificados). Si la modalidad es con kit, el pago sigue el modelo de verificación manual: Pago Móvil o transferencia, monto en Bs a tasa BCV, referencia y foto del comprobante, estado "pendiente de verificación".
+**Modalidad con kit ($40):** pago por Pago Móvil o transferencia (monto en Bs a tasa BCV), referencia y comprobante; estado "pago en verificación"; el **QR se entrega solo cuando el pago se confirma**. Verificación manual al inicio; automática por API del banco después.
+
+**Kit:** bolso, lanyard y credencial, cooler, gorro de quirófano, bolígrafo con lámpara, cartuchera, certificado impreso, hidratación.
+
+**Conexión con la acreditación:** la app del staff de 2027 reutiliza la de 2026 (repo `infocumbrechp-beep/Acreditacion-CHP`), pero lee y escribe en la misma base de Supabase. El QR lleva solo un código firmado (no los datos a la vista, como en 2026); el staff descarga la lista de inscritos antes de cada día y funciona sin internet. Al escanear muestra: válido, día equivocado, ya entró o entregar kit.
 
 ## Formulario de patrocinio (solicitud de propuesta)
 
@@ -55,7 +62,7 @@ Es el formulario de la sección "Expositores y patrocinadores" (propuesta de Cod
 | Nombre y apellido | Texto | Sí |
 | Empresa o marca | Texto | Sí |
 | Correo electrónico | Correo | Sí |
-| ¿Qué opción te interesa? | Lista: Stand o espacio de exposición · Patrocinio y publicidad · Activación de marca · Varias opciones · Necesito orientación | Sí |
+| ¿Qué opción te interesa? | Lista: Patrocinio Diamante, Platino u Oro · Stand o espacio de exposición · Mesa de contacto · Premium Branding o patrocinio de talleres precumbre · Cápsulas, conferencia destacada u otra opción de presencia de marca · Varias opciones · Necesito orientación (desde el 2 nov) | Sí |
 | WhatsApp | Teléfono con código de país | No |
 | ¿Qué te gustaría lograr con tu participación? | Texto largo | No |
 

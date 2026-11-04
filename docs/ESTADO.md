@@ -1,6 +1,6 @@
 # Estado del proyecto
 
-Última actualización: 28 de octubre de 2026.
+Última actualización: 4 de noviembre de 2026.
 
 ## Fase actual
 
@@ -30,12 +30,12 @@ La construcción del sitio definitivo (Astro, formularios reales, base de datos,
 
 1. **Cinta superior fija:** "Tu marca en la Cumbre 2027: conoce las oportunidades de exposición y patrocinio" · "Conocer oportunidades →" (a la sección de patrocinio). Grande en PC; en teléfono, una línea con botón.
 2. **Encabezado:** 6 fotos de 2026 rotando; menú Programa 2027 · Ponencias 2026 · La sede · **Patrocinios** (rojo) · Regístrate (borde). En teléfono: logo, botón Patrocinios y menú desplegable. Botón principal rojo "Conocer opciones de patrocinio"; secundario "Regístrate como asistente". Cuenta regresiva.
-3. **Cifras por edición:** 1ra edición · 2026: +4.000 asistentes, +30 ponencias de médicos especialistas. 2da edición · 2027: +2.000 asistentes por día previstos, 3 días, 3 talleres.
+3. **Cifras por edición:** 1ra edición · 2026: +4.000 asistentes, +30 ponencias de médicos especialistas. 2da edición · 2027: +5.000 asistentes previstos (3.000 médicos y 2.000 de enfermería), 3 días, 3 talleres precumbre.
 4. **Nuestro enfoque:** video del dron, texto, cuatro cuadros (Manejo integral de heridas, Cuidado de la piel, Emergencias y desastres, Visión multidisciplinaria) y bloque "Una primera edición con visión multidisciplinaria" con 11 disciplinas (en teléfono, 5 y "Ver todas las disciplinas").
-5. **Patrocinio:** presentación, beneficios, opciones (plegables en teléfono), "Así se vivió la Cumbre 2026" con el video resumen y fotos de stands (en teléfono, "Ver más fotos"), plano del área de exhibición.
+5. **Patrocinio:** presentación, beneficios, "¿Quién asiste a la Cumbre?", opciones del brochure del 2 nov (niveles Diamante/Platino/Oro, espacios, complementos y "otras opciones" por confirmar, sin precios; plegables en teléfono), "Así se vivió la Cumbre 2026" con el video resumen y fotos de stands (en teléfono, "Ver más fotos"), plano del área de exhibición.
 6. **Formulario de patrocinio** (envío simulado).
 7. **Ponencias 2026 (vista previa):** "Más de 30 ponencias de médicos especialistas en nuestra primera edición", 3 tarjetas en PC y 1 en teléfono, "Explorar ponencias 2026" y "Suscríbete al canal".
-8. **Modalidades de participación (2027):** Día 1, Días 2 y 3, Talleres, con "Inscribirme al…".
+8. **Modalidades de participación (2027):** Día 1 (miércoles 12), Días 2 y 3 (jueves 13 y viernes 14), Talleres precumbre, con "Inscribirme al…", y "Elige tu modalidad de inscripción": gratuita o inscripción + kit $40 con su contenido.
 9. **Organizan y avalan**, pie (con enlace al canal de YouTube), WhatsApp flotante y etiqueta de borrador.
 
 **ponencias.html:** las 14 ponencias publicadas que se pueden ver dentro del sitio (9 y "Cargar más"; las 4 con restricción de edad de YouTube no se incluyen), cada una con miniatura, título, ponente, duración, etiqueta "Edición 2026", "Ver ponencia" (se reproduce en la misma tarjeta) y "Ver en YouTube". Cierra con la invitación a suscribirse y dos pasos: "Conocer opciones de patrocinio" (destacado) y "Ver modalidades de participación".
