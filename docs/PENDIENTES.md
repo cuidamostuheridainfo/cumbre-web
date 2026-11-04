@@ -35,9 +35,12 @@
 | Contenido del brochure y del kit del participante (en evaluación) | Marketing | Contenido |
 | Contacto, redes y aviso de privacidad para el pie y el formulario | Jenny / Marketing | Pie y formulario |
 
+| Otras áreas de la salud: ¿Día 1 o Días 2 y 3? (hoy eligen en el formulario) | Organización | Inscripción |
+| Contenido de la app del asistente: video de bienvenida, programa, plano con ubicaciones | Organización / Comité | App del asistente |
+
 ## Decisiones por confirmar
 
-- **Inscripción de asistentes:** tres perfiles (Estudiantes · Especialistas médicos · Enfermería, paramédicos y rescatistas) y dos modalidades (gratuita y con kit de $25).
+- **Inscripción de asistentes:** tres perfiles (Estudiantes · Especialistas médicos · Enfermería, paramédicos y rescatistas) y dos modalidades (gratuita y con kit de $40). Página construida el 4 nov con envío simulado.
 - **Pagos (kit y sponsors):** entidad que recibe, métodos (Pago Móvil, transferencia), moneda y tasa BCV, quién verifica, factura del kit, cupos, política de reembolso. Los sponsors pagan fuera de la web con propuesta comercial.
 - ¿Se entregan certificados de asistencia? Si es así, el formulario de asistentes necesita la cédula.
 - ¿Se envía correo de confirmación además del mensaje en pantalla? Requiere definir remitente.
@@ -50,7 +53,7 @@
 1. Aplicar los comentarios de Marketing a la segunda propuesta.
 2. Secciones que faltan en el diseño: ponentes, programa, talleres y contenido del brochure.
 3. Construir el sitio definitivo en Astro + Tailwind en este repo, con el contenido en archivos de datos.
-4. Crear el proyecto de Supabase "cumbre" y la función en Vercel para los formularios (patrocinio y asistentes).
+4. Crear con Jenny el proyecto de Supabase "cumbre" (fase 2 de la inscripción: tablas, función con QR firmado, comprobantes) y la app del asistente (bienvenida, programa, plano, conferencias, mi QR), reutilizando la de 2026. Incluye la función en Vercel para los formularios (patrocinio y asistentes).
 5. Panel de registros con descarga CSV.
 6. Pulido de interacción con las skills de Emil Kowalski.
 7. Migración: exportar registros de WordPress, píxeles de Facebook, redirecciones, revisar correo del dominio, cambio de DNS en GoDaddy.

@@ -23,14 +23,15 @@ Contacto y redes van en el pie de todas las páginas.
 | Conocer oportunidades / Conocer opciones de patrocinio / Patrocinios | Sección de patrocinio | Igual |
 | Solicitar propuesta de patrocinio | Formulario de patrocinio | Igual, con envío real |
 | Consultar disponibilidad de stands | Formulario con "Stand o espacio de exposición" elegido | Igual |
-| Inscribirme al Día 1 / a los Días 2 y 3 | Ventana "Elige tu participación" (kit o gratuita) con el día ya indicado | Formulario de inscripción con día y modalidad ya elegidos |
+| Inscribirme al Día 1 / a los Días 2 y 3 | Ventana "Elige tu participación" (kit o gratuita) → `inscripcion.html?dia=…&modalidad=…` | Igual, con envío real |
+| Enlace directo para redes y WhatsApp | `inscripcion.html` (sin parámetros: la persona elige todo en la página) | Igual |
 | Inscribirme a un taller | Sección de modalidades | Por definir (costo y cupos de talleres pendientes) |
 | Regístrate / Regístrate como asistente | Sección de modalidades | Registro de asistentes |
 | Explorar ponencias 2026 / Ponencias 2026 | `ponencias.html` | Igual |
 
 ## Formulario de asistentes
 
-Propuesta vigente desde el 4 nov. Pendiente de las respuestas del 4 nov (ver PENDIENTES).
+Construido el 4 nov en `inscripcion.html` (fase 1, **envío simulado**). Funciona igual que el registro de 2026: es una página propia con su enlace, a la que llegan los botones de la portada y que Social media puede compartir sola. Tres pasos: 1) Tus datos (el día sale del perfil; si el perfil aún no tiene día confirmado, la persona lo elige), 2) Modalidad (y datos del pago si elige kit), 3) Confirmación (gratuita: QR de muestra; kit: "pago en verificación"). Los datos pendientes (pago, cupos, cierre de venta, día de estudiantes y otras áreas) se cambian solo en `assets/js/inscripcion-config.js`.
 
 | Campo | Tipo | Obligatorio |
 | --- | --- | --- |

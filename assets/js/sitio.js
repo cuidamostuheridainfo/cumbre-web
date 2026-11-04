@@ -41,21 +41,19 @@
     });
   });
 
-  // Selector de participación: cada botón de día abre el diálogo con ese día
+  // Selector de participación: cada botón de día abre el diálogo; cada opción lleva a inscripcion.html con día y modalidad
   var dlg = $('#dlg-inscripcion');
   if (dlg && dlg.showModal) {
     $$('.btn-inscribir').forEach(function (b) {
       b.addEventListener('click', function () {
         $('#dlg-dia').textContent = b.getAttribute('data-dia-label');
         dlg.setAttribute('data-dia', b.getAttribute('data-dia'));
-        $$('[data-modalidad]', dlg).forEach(function (a) { a.setAttribute('data-dia', b.getAttribute('data-dia')); });
+        $$('[data-modalidad]', dlg).forEach(function (a) { a.setAttribute('data-dia', b.getAttribute('data-dia')); a.setAttribute('href', 'inscripcion.html?dia=' + b.getAttribute('data-dia') + '&modalidad=' + a.getAttribute('data-modalidad')); });
         dlg.showModal();
       });
     });
     $$('[data-cerrar]', dlg).forEach(function (b) { b.addEventListener('click', function () { dlg.close(); }); });
     dlg.addEventListener('click', function (e) { if (e.target === dlg) dlg.close(); });
-    // Destino previsto: formulario de inscripción con día y modalidad elegidos (aún no construido)
-    $$('[data-modalidad]', dlg).forEach(function (a) { a.addEventListener('click', function (e) { e.preventDefault(); var n = $('.dlg-pronto', dlg); n.style.fontWeight = '700'; n.style.color = '#0A1040'; }); });
   }
 
   // Opciones comerciales: abiertas en PC, plegadas en teléfono

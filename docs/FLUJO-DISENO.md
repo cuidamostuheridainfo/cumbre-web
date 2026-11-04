@@ -14,11 +14,15 @@ Leer solo si la sesión va a cambiar el diseño de la propuesta.
 | `ponencias.html` | Página interna con la galería de ponencias. Comparte cinta, cabecera, pie y estilos con la portada. |
 | `assets/css/sitio.css` | Todos los estilos compartidos, incluidas las reglas de teléfono (hasta 760 px). |
 | `assets/js/sitio.js` | Menú del teléfono, fotos del encabezado, cuenta regresiva, botones "ver más", opciones plegables, reproductor de YouTube y formulario. |
+| `inscripcion.html` | Página de inscripción de asistentes. Comparte cinta, cabecera, pie y estilos con la portada; se edita directamente. |
+| `assets/js/inscripcion.js` | Pasos, validación y envío (simulado) de la inscripción. |
+| `assets/js/inscripcion-config.js` | **Datos de la inscripción por confirmar** (pago, día por perfil, cupos, cierre de venta). Se edita solo este archivo. |
+| `assets/js/vendor/qrcode.min.js` | Generador de QR (qrcodejs, licencia MIT), el mismo de la app de 2026. |
 | `assets/js/ponencias.js` | Lista de videos. **Para agregar una ponencia, se edita solo este archivo** (instrucciones dentro). |
 
 El lienzo de Claude (https://claude.ai/artifact/Y3fY9ZsVsxjCkVx7hy3QpX) y `herramientas/build_index.py` corresponden a la v2. Ya no se usan para publicar; si se cambia el lienzo, hay que llevar el cambio al código a mano.
 
-Si se cambia la cinta, la cabecera o el pie de `index.html`, hay que repetir el cambio en `ponencias.html`.
+Si se cambia la cinta, la cabecera o el pie de `index.html`, hay que repetir el cambio en `ponencias.html` e `inscripcion.html`.
 
 ## Cómo se publica un cambio de diseño
 
