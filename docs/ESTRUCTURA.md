@@ -35,8 +35,8 @@ Construido el 4 nov en `inscripcion.html` (fase 1, **envío simulado**). Funcion
 
 | Campo | Tipo | Obligatorio |
 | --- | --- | --- |
-| Perfil | Lista: Especialista médico · Enfermería, paramédicos y rescatistas · Otras áreas (farmacia, investigación, nutrición, psicología) · Estudiante | Sí |
-| Día o días | Se asigna según el perfil: Día 1 (miércoles 12) o Días 2 y 3 (jueves 13 y viernes 14). Estudiantes: por confirmar | Automático |
+| Perfil | Lista: Especialista médico · Enfermería, paramédicos y rescatistas · Otras áreas (farmacia, investigación, nutrición, psicología) · Estudiante de medicina | Sí |
+| Día o días | Se asigna según el perfil: Día 1 (miércoles 12) o Días 2 y 3 (jueves 13 y viernes 14). Estudiantes de medicina: Días 2 y 3. Otras áreas: eligen mientras se confirma | Automático |
 | Modalidad | Gratuita · Inscripción + kit ($40) | Sí |
 | Nombre y apellido | Texto | Sí |
 | Cédula | Texto con formato validado | Sí |
@@ -51,7 +51,7 @@ Construido el 4 nov en `inscripcion.html` (fase 1, **envío simulado**). Funcion
 
 **Modalidad con kit ($40):** pago por Pago Móvil o transferencia (monto en Bs a tasa BCV), referencia y comprobante; estado "pago en verificación"; el **QR se entrega solo cuando el pago se confirma**. Verificación manual al inicio; automática por API del banco después.
 
-**Kit:** bolso, lanyard y credencial, cooler, gorro de quirófano, bolígrafo con lámpara, cartuchera, certificado impreso, hidratación.
+**Kit:** bolso, lanyard y credencial física, cooler, gorro de quirófano, bolígrafo con lámpara, cartuchera, certificado impreso (además del digital), hidratación (un agua o un café por día), obsequios exclusivos de los patrocinantes. **Gratuita:** QR en el teléfono y certificado digital.
 
 **Conexión con la acreditación:** la app del staff de 2027 reutiliza la de 2026 (repo `infocumbrechp-beep/Acreditacion-CHP`), pero lee y escribe en la misma base de Supabase. El QR lleva solo un código firmado (no los datos a la vista, como en 2026); el staff descarga la lista de inscritos antes de cada día y funciona sin internet. Al escanear muestra: válido, día equivocado, ya entró o entregar kit.
 

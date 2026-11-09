@@ -1,6 +1,6 @@
 # Pendientes
 
-Última actualización: 4 de noviembre de 2026.
+Última actualización: 9 de noviembre de 2026.
 
 ## Esperando de otros
 
@@ -12,17 +12,10 @@
 | Restricción de edad en 4 videos (hoy fuera de la página): solo si el canal la quita se vuelven a incluir | Social media | Opcional |
 | Verificar título de Valentina Kube: el canal dice "Dra." y la miniatura dice "Lic." | Organización | Tarjeta destacada 2 |
 | Revisión de títulos de ponencias por el comité o la Dra. Milagros (contenido médico) | Comité científico | Publicación |
-| Preguntas enviadas a Social media el 4 nov: | | |
-| · ¿Sale también la publicidad entre conferencias? (salió el coffee break) | Organización | Presencia de marca |
-| · Talleres precumbre: fecha, hora y lugar | Organización | Tarjeta de talleres e inscripción |
-| · Talleres: ¿costo aparte o incluidos? ¿Cupos por taller? | Organización | Inscripción a talleres |
-| · Inscripción gratuita: ¿certificado digital o ninguno? | Organización | Inscripción y certificados |
-| · Inscripción gratuita: ¿entra solo con QR en el teléfono? | Organización | Acreditación |
-| · Hidratación del kit: ¿una por día o una en total? | Organización | Entrega del kit |
-| · Estudiantes: ¿Día 1 o Días 2 y 3? | Organización | Inscripción |
-| · ¿Hay acceso a los tres días (invitados, ponentes, VIP)? | Organización | Inscripción y acreditación |
-| · Cupos (gratuita, kits) y fecha de cierre de la venta de kits | Organización | Inscripción |
-| · Pagos: empresa que recibe, banco, factura, dólares | Organización / Comercial | Pago del kit |
+| Datos de pago del kit: empresa, banco, cuentas, factura, dólares | Administración (vía Social media) | Pago del kit |
+| Límite de kits y fecha de cierre de la venta (probable: unas semanas antes) | Organización | Inscripción |
+| Talleres precumbre: fecha, hora, lugar, costo y cupos (se anunciarán más adelante) | Organización | Tarjeta e inscripción de talleres |
+| Estudiantes de enfermería: ¿perfil Enfermería (Día 1)? Desde el 9 nov "Estudiante" es solo de medicina | Organización | Inscripción |
 | · Contacto comercial (vacío en el brochure) | Comercial | Pie y patrocinio |
 | Correcciones del brochure (no de la web): espacio libre a $750/m², "vigentes hasta" el 31/12/2026, "Día 1" = 12 de mayo, nombre con "Avanzado" | Social media | Brochure |
 | Objetivos y contenidos de cada taller | Organización | Tarjeta de Talleres |
@@ -35,7 +28,7 @@
 | Contenido del brochure y del kit del participante (en evaluación) | Marketing | Contenido |
 | Contacto, redes y aviso de privacidad para el pie y el formulario | Jenny / Marketing | Pie y formulario |
 
-| Otras áreas de la salud: ¿Día 1 o Días 2 y 3? (hoy eligen en el formulario) | Organización | Inscripción |
+| Otras áreas de la salud (farmacia, nutrición, psicología, investigación): ¿Día 1 o Días 2 y 3? Hoy eligen en el formulario | Organización | Inscripción |
 | Contenido de la app del asistente: video de bienvenida, programa, plano con ubicaciones | Organización / Comité | App del asistente |
 
 ## Decisiones por confirmar

@@ -8,17 +8,19 @@ window.INSCRIPCION_CONFIG = {
   // Precio de la inscripción con kit, en dólares. Se paga en bolívares a la tasa BCV del día del pago.
   precioKitUSD: 40,
 
-  // Contenido del kit (confirmado el 4 nov 2026).
-  kit: ['Bolso', 'Lanyard y credencial', 'Cooler de la Cumbre', 'Gorro de quirófano', 'Bolígrafo con lámpara',
-        'Cartuchera', 'Certificado impreso', 'Hidratación: un agua o un café'],
+  // Contenido del kit (confirmado el 4 nov 2026; credencial física, certificado impreso e hidratación por día y obsequios exclusivos de los patrocinantes, 9 nov).
+  kit: ['Bolso', 'Lanyard y credencial física', 'Cooler de la Cumbre', 'Gorro de quirófano', 'Bolígrafo con lámpara',
+        'Cartuchera', 'Certificado impreso, además del digital', 'Hidratación: un agua o un café por día',
+        'Obsequios exclusivos de nuestros patrocinantes'],
 
   // Día que corresponde a cada perfil (decisión del 4 nov: el día lo define la especialidad).
+  // Estudiantes = solo estudiantes de medicina, Días 2 y 3 (confirmado el 9 nov).
   // null = todavía sin confirmar: mientras tanto, la persona elige su día en el formulario.
   diasPorPerfil: {
     especialista: 'dias-2-3',
     enfermeria: 'dia-1',
     otras: null,
-    estudiante: null
+    estudiante: 'dias-2-3'
   },
 
   dias: {

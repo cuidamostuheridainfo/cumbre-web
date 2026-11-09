@@ -106,3 +106,17 @@ Basada en los comentarios de Social media y la revisión de Codex. Reemplaza lo 
 - **Elección de modalidad dentro de cada día (4 nov):** se quita el bloque aparte "Elige tu modalidad". Los botones "Inscribirme al Día 1" y "Inscribirme a los Días 2 y 3" abren una ventana "Elige tu participación" con el día ya indicado: Inscripción + kit ($40, destacada con etiqueta "Incluye kit") e Inscripción gratuita. La tarjeta de Talleres no usa esta ventana hasta saber si tienen costo.
 - **Página de inscripción propia (4 nov):** `inscripcion.html`, como el registro de 2026: se llega desde la ventana de la portada (con día y modalidad ya elegidos) o por el enlace directo que Social media comparte en redes. El día lo define el perfil (especialista → Días 2 y 3; enfermería, paramédicos y rescatistas → Día 1); para otras áreas y estudiantes la persona elige mientras la organización confirma. Fase 1 con envío simulado; fase 2 con Supabase.
 - **Después de inscribirse, acceso a la app del asistente (4 nov, pedido de Jenny):** como en 2026, al terminar la inscripción la persona entra a la app de la Cumbre con su QR, video de bienvenida, ubicación (plano), programa y conferencias. Por construir; depende del programa y del video de bienvenida.
+
+## Respuestas de Social media y nuevo título (9 nov 2026)
+
+- **Título oficial:** "II Cumbre Internacional para el Cuidado Avanzado de Heridas y Piel" · "Edición Especial: Protocolos de actuación y medicina de emergencia en desastres". Reemplaza al antetítulo con "2da edición" y al subtítulo "Heridas y protocolos de actuación en desastres". El logo (imagen) no cambia.
+- **Publicidad entre conferencias:** se mantiene (mención del moderador y logo en pantallas LED, incluida en los paquetes). Solo sale el coffee break.
+- **Talleres precumbre:** fecha, hora, lugar, costo y cupos se anunciarán más adelante. La web lo dice así ("se anunciarán próximamente"), sin corchetes.
+- **Certificado:** digital para todos los asistentes; los del kit lo reciben además impreso.
+- **Acceso:** todos entran con su código QR en el teléfono; los del kit reciben además lanyard y credencial física.
+- **Hidratación del kit:** un agua o un café por cada día del evento.
+- **Estudiantes:** solo estudiantes de medicina, Días 2 y 3.
+- **Acceso a los tres días (VIP, ponentes, invitados):** existe, pero se gestiona internamente y no se publica. En la fase 2 se carga desde el panel, no desde el formulario público.
+- **Venta de kits:** probablemente cierra unas semanas antes del evento para verificar pagos. Límite de kits y fecha exacta por definir (`cierreVentaKits` y `cupos` en `inscripcion-config.js`).
+- **Datos de pago:** Administración los enviará.
+- **Obsequios exclusivos de los patrocinantes:** se agregan al kit como noveno beneficio (9 nov). La organización evalúa otras ideas para darle más valor al pase pago (almuerzo, aval, kit patrocinado); la web cambia solo cuando lo decidan.
