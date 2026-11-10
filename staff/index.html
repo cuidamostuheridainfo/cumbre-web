@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0B1E4A">
+<title>Acreditación · Staff · Cumbre 2027</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira:wdth,wght@75..100,500..800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/staff.css">
+</head>
+<body>
+
+<!-- Preparación del puesto -->
+<section id="v-prep" class="prep">
+  <h1>Acreditación de la Cumbre</h1>
+  <p class="prep-txt">Prepara este teléfono antes de abrir la puerta.</p>
+  <div id="prep-prueba" class="banda-prueba" hidden>Modo prueba: la lista tiene personas ficticias y nada se envía al servidor.</div>
+  <form id="f-prep" novalidate>
+    <label for="sel-puesto">Puesto</label>
+    <select id="sel-puesto">
+      <option value="Puerta 1">Puerta 1</option>
+      <option value="Puerta 2">Puerta 2</option>
+      <option value="Puerta 3">Puerta 3</option>
+      <option value="Mesa de kits">Mesa de kits</option>
+      <option value="Mesa de soluciones">Mesa de soluciones</option>
+    </select>
+    <label for="sel-dia">Día</label>
+    <select id="sel-dia">
+      <option value="1">Día 1 · Miércoles 12 de mayo</option>
+      <option value="2">Día 2 · Jueves 13 de mayo</option>
+      <option value="3">Día 3 · Viernes 14 de mayo</option>
+    </select>
+    <div class="lista-estado">
+      <span id="lista-txt">Lista de inscritos sin descargar.</span>
+      <button type="button" class="btn-sec" id="btn-lista">Descargar lista</button>
+    </div>
+    <button type="submit" class="btn-pri">Comenzar</button>
+    <p id="prep-err" class="err" role="alert" hidden></p>
+  </form>
+</section>
+
+<!-- Puesto en funcionamiento -->
+<div id="v-puesto" hidden>
+  <header class="barra">
+    <div><strong id="lbl-puesto"></strong><span id="lbl-dia"></span></div>
+    <button type="button" class="btn-barra" id="btn-cambiar">Cambiar</button>
+  </header>
+  <div class="modo" role="radiogroup" aria-label="Qué estás registrando">
+    <label><input type="radio" name="modo" value="entrada" checked><span>Entrada</span></label>
+    <label><input type="radio" name="modo" value="kit"><span>Entrega de kit</span></label>
+  </div>
+  <div class="contadores">
+    <div><b id="c-entradas">0</b><span>entradas hoy</span></div>
+    <div><b id="c-kits">0</b><span>kits entregados</span></div>
+    <div><b id="c-cola">0</b><span>por subir</span></div>
+  </div>
+
+  <main class="puesto">
+    <button type="button" class="btn-escanear" id="btn-esc">Escanear QR</button>
+
+    <!-- Resultado -->
+    <section id="res" class="res" hidden aria-live="assertive">
+      <p class="res-veredicto" id="res-ver"></p>
+      <p class="res-nom" id="res-nom"></p>
+      <p class="res-det" id="res-det"></p>
+      <p class="res-extra" id="res-extra" hidden></p>
+      <div class="res-acc" id="res-acc"></div>
+    </section>
+
+    <form id="f-buscar" class="buscar" novalidate role="search">
+      <label for="inp-buscar">Buscar por cédula, apellido o código</label>
+      <div class="buscar-fila"><input id="inp-buscar" type="search" autocomplete="off" placeholder="Ej.: 12345678 o Rivas"><button type="submit" class="btn-sec">Buscar</button></div>
+    </form>
+    <ul id="resultados" class="resultados"></ul>
+
+    <section class="historial">
+      <h2>Últimos registros de este puesto</h2>
+      <ol id="hist"></ol>
+      <button type="button" class="btn-sec" id="btn-csv">Descargar registros (CSV)</button>
+    </section>
+  </main>
+</div>
+
+<dialog id="dlg-esc" class="dlg" aria-labelledby="esc-tit">
+  <h2 id="esc-tit">Apunta al QR del participante</h2>
+  <div id="lector" class="lector"></div>
+  <p id="esc-estado" class="esc-estado">Abriendo la cámara…</p>
+  <button type="button" class="btn-sec" id="esc-cerrar">Cerrar</button>
+</dialog>
+
+<dialog id="dlg-der" class="dlg" aria-labelledby="der-tit">
+  <h2 id="der-tit">Enviar a la mesa de soluciones</h2>
+  <p id="der-quien"></p>
+  <label for="der-motivo">Motivo</label>
+  <select id="der-motivo">
+    <option>Día equivocado</option>
+    <option>No aparece en la lista</option>
+    <option>Pago del kit sin confirmar</option>
+    <option>Datos incorrectos</option>
+    <option>QR no se lee</option>
+    <option>Otro</option>
+  </select>
+  <div class="dlg-acc"><button type="button" class="btn-sec" id="der-cancelar">Cancelar</button><button type="button" class="btn-pri" id="der-ok">Registrar y enviar</button></div>
+</dialog>
+
+<script src="../assets/js/vendor/html5-qrcode.min.js"></script>
+<script src="../assets/js/inscripcion-config.js"></script>
+<script src="../assets/js/acred-comun.js"></script>
+<script src="../assets/js/acred-prueba.js"></script>
+<script src="../assets/js/staff.js"></script>
+</body>
+</html>

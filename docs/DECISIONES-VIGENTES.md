@@ -120,3 +120,21 @@ Basada en los comentarios de Social media y la revisión de Codex. Reemplaza lo 
 - **Venta de kits:** probablemente cierra unas semanas antes del evento para verificar pagos. Límite de kits y fecha exacta por definir (`cierreVentaKits` y `cupos` en `inscripcion-config.js`).
 - **Datos de pago:** Administración los enviará.
 - **Obsequios exclusivos de los patrocinantes:** se agregan al kit como noveno beneficio (9 nov). La organización evalúa otras ideas para darle más valor al pase pago (almuerzo, aval, kit patrocinado); la web cambia solo cuando lo decidan.
+
+## Acreditación 2027 (9 nov 2026)
+
+- Se empieza por la app del staff y el pase del participante, con una lista de prueba. Supabase se conecta en la fase 2.
+- Vive dentro de `cumbre-web`: `/app/` para participantes y `/staff/` para el staff.
+- La experiencia del participante tiene identidad propia, distinta de la web (pedido de Jenny): una credencial con franja de color por día que gira para mostrar el QR.
+- El QR lleva un código aleatorio imposible de adivinar, validado contra la lista del día descargada en el teléfono. Reemplaza al "código firmado" porque la lista se necesita igual.
+- Se reutilizan la lógica y la librería de escaneo de 2026, pero no el archivo de 2026.
+- Detalle en `docs/ACREDITACION-2027.md`.
+- **Paleta de la experiencia del participante (9 nov):** fondo claro arena; azul, verde y dorado, un color por sección. Reemplaza al fondo azul tinta de la primera versión. Credencial física solo para el kit; su diseño impreso queda en espera.
+
+## Videos y entrevistas de la Cumbre 2027 (10 nov 2026)
+
+- Pedido de la organización: después de las modalidades de inscripción va una sección con todos los videos de promoción de la Cumbre 2027 y las entrevistas de radio, que también se publican en video en YouTube.
+- Se reproducen dentro de la página, igual que las ponencias 2026. Los videos con restricción de edad no se incluyen.
+- Se cargan en `assets/js/videos-2027.js`, del más reciente al más antiguo y de seis en seis ("Cargar más videos").
+- Mientras no hay videos, la sección muestra un aviso de "muy pronto" y la invitación a suscribirse al canal.
+- **"Videos" en el menú (10 nov):** entre Ponencias 2026 y La sede, en las tres páginas y en el menú del teléfono. Como el menú completo ya no cabe en pantallas medianas, por debajo de 1020 px se usa el menú desplegable (antes era por debajo de 760 px).

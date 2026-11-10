@@ -127,7 +127,10 @@
     setTimeout(function () {
       btn.disabled = false; btn.textContent = 'Completar inscripción';
       var mod = val('modalidad'), d = C.dias[diaFinal()];
-      var codigo = 'CUMBRE27-' + (diaFinal() === 'dia-1' ? 'D1' : 'D23') + '-' + String(Math.floor(Math.random() * 90000) + 10000);
+      // FASE 2: el código lo genera y guarda el servidor; aquí se simula con el mismo formato.
+      var codigo = window.ACRED ? ACRED.generarCodigo() : 'SIN-CODIGO';
+      if (window.ACRED) ACRED.guardar(ACRED.CLAVE_ASISTENTE, { codigo: codigo, nombre: $('#ins-nombre').value.trim(), apellido: $('#ins-apellido').value.trim(),
+        perfil: val('perfil'), pase: diaFinal(), modalidad: mod, pago: mod === 'kit' ? 'en_verificacion' : null });
       $$('.ok-nombre').forEach(function (x) { x.textContent = $('#ins-nombre').value.trim(); });
       $$('.ok-dia').forEach(function (x) { x.textContent = d.nombre + ' (' + d.fecha + ')'; });
       $$('.ins-qr-cod').forEach(function (x) { x.textContent = codigo; });

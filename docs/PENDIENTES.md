@@ -31,6 +31,11 @@
 | Otras áreas de la salud (farmacia, nutrición, psicología, investigación): ¿Día 1 o Días 2 y 3? Hoy eligen en el formulario | Organización | Inscripción |
 | Contenido de la app del asistente: video de bienvenida, programa, plano con ubicaciones | Organización / Comité | App del asistente |
 
+| Credencial física del kit: ¿la diseñamos nosotras? | Organización (consulta de Jenny) | Credenciales impresas |
+| Acreditación: conferencias necesarias para el certificado, entrada de personas con pago del kit sin confirmar, cantidad de puertas y mesas | Organización | Acreditación |
+
+| Enlaces de YouTube de los videos de promoción y las entrevistas de radio 2027, a medida que se publiquen (título, invitado, emisora y programa, fecha) | Social media | Sección Videos y entrevistas |
+
 ## Decisiones por confirmar
 
 - **Inscripción de asistentes:** tres perfiles (Estudiantes · Especialistas médicos · Enfermería, paramédicos y rescatistas) y dos modalidades (gratuita y con kit de $40). Página construida el 4 nov con envío simulado.

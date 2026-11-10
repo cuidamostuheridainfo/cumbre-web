@@ -18,6 +18,9 @@ Leer solo si la sesión va a cambiar el diseño de la propuesta.
 | `assets/js/inscripcion.js` | Pasos, validación y envío (simulado) de la inscripción. |
 | `assets/js/inscripcion-config.js` | **Datos de la inscripción por confirmar** (pago, día por perfil, cupos, cierre de venta). Se edita solo este archivo. |
 | `assets/js/vendor/qrcode.min.js` | Generador de QR (qrcodejs, licencia MIT), el mismo de la app de 2026. |
+| `app/`, `staff/` | Acreditación 2027: pase del participante y app del staff. Ver `docs/ACREDITACION-2027.md`. |
+| `assets/js/acred-comun.js`, `acred-prueba.js` | Reglas de acreditación y lista de prueba (se elimina en la fase 2). |
+| `assets/js/videos-2027.js` | Videos de promoción y entrevistas de radio de la Cumbre 2027 (sección de la portada). Cómo agregar uno: ver el comentario al inicio del archivo. |
 | `assets/js/ponencias.js` | Lista de videos. **Para agregar una ponencia, se edita solo este archivo** (instrucciones dentro). |
 
 El lienzo de Claude (https://claude.ai/artifact/Y3fY9ZsVsxjCkVx7hy3QpX) y `herramientas/build_index.py` corresponden a la v2. Ya no se usan para publicar; si se cambia el lienzo, hay que llevar el cambio al código a mano.

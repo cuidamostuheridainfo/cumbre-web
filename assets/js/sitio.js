@@ -102,6 +102,49 @@
     };
     pintar(); if (mas) mas.addEventListener('click', pintar);
   }
+  // Videos y entrevistas de la Cumbre 2027 (portada). Lista en assets/js/videos-2027.js.
+  var v27 = (window.VIDEOS_2027 || []).filter(function (v) { return v && v.id; })
+    .sort(function (a, b) { return String(b.fecha || '').localeCompare(String(a.fecha || '')); });
+  var v27grid = $('#v27-grid');
+  if (v27grid) {
+    var MESES = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'];
+    var fechaCorta = function (f) { var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(f || ''); return m ? (+m[3]) + ' ' + MESES[+m[2] - 1] + ' ' + m[1] : ''; };
+    var tarjeta27 = function (v) {
+      var ent = v.tipo === 'entrevista';
+      var linea = [ent ? v.medio : '', v.invitado].filter(Boolean).map(esc).join(' · ');
+      return '<article class="pv-card">' +
+        '<div class="yt-frame"><button type="button" class="yt-play" data-yt="' + esc(v.id) + '" aria-label="Ver: ' + esc(v.titulo) + '">' +
+        '<img src="https://i.ytimg.com/vi/' + esc(v.id) + '/hqdefault.jpg" alt="" loading="lazy">' +
+        '<span class="yt-ico" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M8 5.5v13l11-6.5z"></path></svg></span>' +
+        '<span class="pv-tag' + (ent ? ' v27-tag-ent' : '') + '">' + (ent ? 'Entrevista de radio' : 'Cumbre 2027') + '</span>' +
+        (v.duracion ? '<span class="pv-dur">' + esc(v.duracion) + '</span>' : '') + '</button></div>' +
+        '<div class="pv-body"><h3 class="pv-titulo">' + esc(v.titulo) + '</h3>' +
+        (linea ? '<span class="pv-ponente">' + linea + '</span>' : '') +
+        (v.fecha ? '<span class="v27-fecha">' + fechaCorta(v.fecha) + '</span>' : '') +
+        '<div class="pv-acciones"><button type="button" class="pv-ver" data-yt-btn="' + esc(v.id) + '">Ver video</button>' +
+        '<a class="pv-yt" href="https://www.youtube.com/watch?v=' + esc(v.id) + '" target="_blank" rel="noopener">Ver en YouTube ↗</a></div></div></article>';
+    };
+    var V_PAGINA = 6, vFiltro = 'todos', vMostradas = 0, vMas = $('#v27-mas');
+    var vLista = function () { return v27.filter(function (v) { return vFiltro === 'todos' || v.tipo === vFiltro; }); };
+    var vPintar = function (reiniciar) {
+      if (reiniciar) { v27grid.innerHTML = ''; vMostradas = 0; }
+      var l = vLista(), lote = l.slice(vMostradas, vMostradas + V_PAGINA);
+      v27grid.insertAdjacentHTML('beforeend', lote.map(tarjeta27).join(''));
+      vMostradas += lote.length; vMas.hidden = vMostradas >= l.length;
+    };
+    $('#v27-vacio').hidden = v27.length > 0;
+    var hayDos = v27.some(function (v) { return v.tipo === 'entrevista'; }) && v27.some(function (v) { return v.tipo !== 'entrevista'; });
+    $('#v27-filtros').hidden = !hayDos;
+    $$('#v27-filtros [data-filtro]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        vFiltro = b.getAttribute('data-filtro');
+        $$('#v27-filtros [data-filtro]').forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+        vPintar(true);
+      });
+    });
+    vMas.addEventListener('click', function () { vPintar(false); });
+    vPintar(true);
+  }
   var reproducir = function (frame, id, titulo) {
     frame.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + encodeURIComponent(id) + '?autoplay=1&rel=0" title="' + esc(titulo) + '" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>';
   };
@@ -109,7 +152,7 @@
     var b = e.target.closest('[data-yt], [data-yt-btn]'); if (!b) return;
     var id = b.getAttribute('data-yt') || b.getAttribute('data-yt-btn');
     var card = b.closest('.pv-card, .yt-tile'); var frame = card && $('.yt-frame', card); if (!frame || $('iframe', frame)) return;
-    var p = lista.filter(function (x) { return x.id === id; })[0] || window.VIDEO_RESUMEN || {};
+    var p = lista.concat(window.VIDEOS_2027 || []).filter(function (x) { return x && x.id === id; })[0] || window.VIDEO_RESUMEN || {};
     reproducir(frame, id, p.titulo || 'Video de la Cumbre 2026');
   });
 
