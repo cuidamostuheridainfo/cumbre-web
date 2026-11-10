@@ -1,4 +1,4 @@
-# Cumbre Internacional para el Cuidado Avanzado de Heridas y Piel · Sitio web
+# II Cumbre Internacional para el Cuidado Avanzado de Heridas, Piel y Longevidad · Sitio web
 
 Repositorio del sitio web de la Cumbre, organizada por Medical Shields y Cuidamos tu Herida (CTH). Reemplazará al sitio actual en WordPress (cumbrechp.org).
 
@@ -27,7 +27,7 @@ Después de leer, decir en dos o tres líneas en qué punto estamos y cuál es e
 
 ## Datos que no cambian
 
-- **Nombre oficial:** Cumbre Internacional para el Cuidado Avanzado de Heridas y Piel (con "Avanzado", igual que el logo).
+- **Nombre oficial (desde el 10 nov 2026):** II Cumbre Internacional para el Cuidado Avanzado de Heridas, Piel y Longevidad. Edición Especial: Protocolos de actuación y medicina de emergencia en desastres. Logo nuevo: `assets/img/logo-cumbre-27-oscuro.png` y `logo-cumbre-27-blanco.png`.
 - **Cifras confirmadas de la edición 2026:** más de 4.000 asistentes, 3 días, ponentes de 4 países (Venezuela, Argentina, España y Canadá). Mayo de 2026, Caracas.
 - **2da edición (según informe de Marketing del 27 oct):** 12 al 14 de mayo de 2027, Centro Comercial Líder, Caracas. Previsión: más de 2.000 asistentes por día.
 

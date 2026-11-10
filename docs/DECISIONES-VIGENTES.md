@@ -49,7 +49,7 @@ Lo que está aquí ya se decidió. No se reabre salvo que Jenny lo pida o aparez
 
 Basada en el informe de cambios de Marketing del 27 oct. Reemplaza lo que contradiga las secciones anteriores.
 
-- **Nombre oficial:** Cumbre Internacional para el Cuidado Avanzado de Heridas y Piel (2da edición). "2da edición" va como etiqueta al lado de "HERIDAS Y PIEL".
+- **Nombre oficial (reemplazado el 9 y el 10 nov, ver abajo):** Cumbre Internacional para el Cuidado Avanzado de Heridas y Piel (2da edición). "2da edición" va como etiqueta al lado de "HERIDAS Y PIEL".
 - **Fondo claro** (dirección "Claro B · Alta luz"). Descartadas: Claro A (ventana) y Claro C (corte de cinta). La versión oscura queda en el historial.
 - **Encabezado:** "Cumbre Internacional para el Cuidado Avanzado de" más grande y "HERIDAS Y PIEL" más pequeño que en la v1, para que no se distorsione. Debajo, "Heridas y protocolos de actuación en desastres" y luego fecha y sede.
 - **Fotos del encabezado:** 6 fotos elegidas por Jenny (carpeta `head`), una a la vez cada 6 s con fundido. La rotación la maneja un solo reloj en JavaScript; se descartó la animación CSS con retrasos porque dejaba huecos en blanco y desigualaba los tiempos.
@@ -138,3 +138,39 @@ Basada en los comentarios de Social media y la revisión de Codex. Reemplaza lo 
 - Se cargan en `assets/js/videos-2027.js`, del más reciente al más antiguo y de seis en seis ("Cargar más videos").
 - Mientras no hay videos, la sección muestra un aviso de "muy pronto" y la invitación a suscribirse al canal.
 - **"Videos" en el menú (10 nov):** entre Ponencias 2026 y La sede, en las tres páginas y en el menú del teléfono. Como el menú completo ya no cabe en pantallas medianas, por debajo de 1020 px se usa el menú desplegable (antes era por debajo de 760 px).
+
+## Nuevo nombre y logo (10 nov 2026)
+
+- **Nombre oficial, elegido por el cliente:** "II Cumbre Internacional para el Cuidado Avanzado de Heridas, Piel y Longevidad". La línea "Edición Especial: Protocolos de actuación y medicina de emergencia en desastres" queda igual.
+- **Dónde se cambió:** encabezado de la portada, títulos de las pestañas, textos alternativos de los logos, pie de las tres páginas, textos de patrocinio que nombran la Cumbre, y la app del participante.
+- **Dónde no se cambió:**
+  - el nombre del canal de YouTube ("Comunidad Cumbre Heridas y Piel"), porque es el nombre real del canal;
+  - los textos que describen el tema ("el cuidado avanzado de heridas y piel"), porque no son el nombre.
+- **Logo nuevo hecho por nosotras, a pedido del cliente:**
+  - "II CUMBRE INTERNACIONAL / PARA EL CUIDADO AVANZADO DE / HERIDAS, PIEL / Y LONGEVIDAD", con el mismo símbolo.
+  - Tipografía IBM Plex Sans Condensed Italic, la que más se parece a la del logo original.
+  - Archivos: `assets/img/logo-cumbre-27-oscuro.png` y `logo-cumbre-27-blanco.png`. Son imágenes, sirven para la web pero no para imprenta; para impresos hace falta la versión vectorial de Diseño.
+  - Los logos anteriores quedan en la carpeta, sin uso.
+- **También hay que actualizar fuera de la web:** brochure, certificados, credenciales y redes.
+
+## Grupo Medical Shields: un solo ecosistema web (10 nov 2026)
+
+- **Objetivo del cliente:** que las webs de Medical Shields, Cuidamos tu Herida, la Cumbre y Ethical Shields se vean como un solo grupo que trabaja unido. Cada sitio mantiene su página y su dominio; las marcas se incluyen unas en otras.
+- **Plan de trabajo y registro compartido:** documento "Grupo Medical Shields: un solo ecosistema web" (https://claude.ai/artifact/C9587Udj2jDw2fovZcsVv1). Es la referencia común de los chats de trabajo de cada marca (Cumbre, CTH, Medical Shields y Ethical Shields). Se lee al empezar y se anota en su "Registro de cambios" todo lo que afecte a las otras marcas.
+- **Decisiones:**
+  - nombre visible "Grupo Medical Shields";
+  - cuatro marcas: Medical Shields, Cuidamos tu Herida, Cumbre y Ethical Shields (Ethical Shields entra el 10 nov, como en la presentación de Social media a Daniel; su web propia también se reestructura);
+  - lema del grupo: "Ecosistema de Salud y Bienestar Integral";
+  - barra de arriba y pie iguales en las cuatro webs;
+  - prioridad del mensaje: la fuerza del grupo ante empresas y aseguradoras.
+- **Componentes comunes previstos:** barra del grupo arriba, pie del grupo, sección "Un solo ecosistema", puentes en contexto (por ejemplo, desde Medical Shields "Nuestra unidad de cuidados" hacia CTH) y el sello del grupo.
+- **Sello del grupo (diseño nuestro):**
+  - cuatro apósitos en forma de anillo, encadenados en rombo, uno por marca: azul Medical Shields, verde Cuidamos tu Herida, dorado Cumbre y turquesa a azul marino Ethical Shields;
+  - con degradado y brillo como los logos;
+  - luce mejor en fondo oscuro o arena; la versión clara lleva un borde fino;
+  - la versión de tres anillos entrelazados queda como alternativa, por si el grupo vuelve a tres marcas.
+- **Archivos del sello** en `assets/img/grupo/`, todos vectoriales:
+  - `grupo-ms-icono`, `grupo-ms-firma` y `grupo-ms-sello`, cada uno con su versión `-claro` y `-oscuro` (cuatro anillos; la firma lleva el lema en la segunda línea);
+  - los mismos con terminación `-3marcas`: la alternativa de tres anillos.
+- **Nada de esto está aplicado todavía en la web de la Cumbre.** Primero se presenta al cliente en un video, con una maqueta (fase 0); después se aplica en la Cumbre (fase 1), en CTH (fase 2) y en Medical Shields y Ethical Shields (fase 3).
+- **Datos confirmados (10 nov):** teléfono de Medical Shields +58 412-2853958. El término "herida" o "lesión" en los textos clínicos lo deciden la Dra. Milagros y Social media, con criterio médico.

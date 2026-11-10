@@ -1,6 +1,6 @@
 # Estado del proyecto
 
-Última actualización: 9 de noviembre de 2026.
+Última actualización: 10 de noviembre de 2026.
 
 ## Fase actual
 
@@ -29,7 +29,7 @@ La construcción del sitio definitivo (Astro, formularios reales, base de datos,
 ## Qué tiene hoy la portada (en orden, v3)
 
 1. **Cinta superior fija:** "Tu marca en la Cumbre 2027: conoce las oportunidades de exposición y patrocinio" · "Conocer oportunidades →" (a la sección de patrocinio). Grande en PC; en teléfono, una línea con botón.
-2. **Encabezado:** título "II Cumbre Internacional para el Cuidado Avanzado de Heridas y Piel" con la línea "Edición Especial: Protocolos de actuación y medicina de emergencia en desastres" (9 nov); 6 fotos de 2026 rotando; menú Programa 2027 · Ponencias 2026 · La sede · **Patrocinios** (rojo) · Regístrate (borde). En teléfono: logo, botón Patrocinios y menú desplegable. Botón principal rojo "Conocer opciones de patrocinio"; secundario "Regístrate como asistente". Cuenta regresiva.
+2. **Encabezado:** título "II Cumbre Internacional para el Cuidado Avanzado de Heridas, Piel y Longevidad" (10 nov) con la línea "Edición Especial: Protocolos de actuación y medicina de emergencia en desastres" (9 nov); 6 fotos de 2026 rotando; menú Programa 2027 · Ponencias 2026 · La sede · **Patrocinios** (rojo) · Regístrate (borde). En teléfono: logo, botón Patrocinios y menú desplegable. Botón principal rojo "Conocer opciones de patrocinio"; secundario "Regístrate como asistente". Cuenta regresiva.
 3. **Cifras por edición:** 1ra edición · 2026: +4.000 asistentes, +30 ponencias de médicos especialistas. 2da edición · 2027: +5.000 asistentes previstos (3.000 médicos y 2.000 de enfermería), 3 días, 3 talleres precumbre.
 4. **Nuestro enfoque:** video del dron, texto, cuatro cuadros (Manejo integral de heridas, Cuidado de la piel, Emergencias y desastres, Visión multidisciplinaria) y bloque "Una primera edición con visión multidisciplinaria" con 11 disciplinas (en teléfono, 5 y "Ver todas las disciplinas").
 5. **Patrocinio:** presentación, beneficios, "¿Quién asiste a la Cumbre?", opciones del brochure del 2 nov (niveles Diamante/Platino/Oro, espacios, complementos y "otras opciones" por confirmar, sin precios; plegables en teléfono), "Así se vivió la Cumbre 2026" con el video resumen y fotos de stands (en teléfono, "Ver más fotos"), plano del área de exhibición.
@@ -52,6 +52,8 @@ La construcción del sitio definitivo (Astro, formularios reales, base de datos,
 3. GitHub Pages actualiza en uno o dos minutos. Si alguien ve la versión anterior, recargar la página.
 
 ## Relación con otros proyectos
+
+- **Ecosistema del Grupo Medical Shields (desde el 10 nov):** Medical Shields, CTH, la Cumbre y Ethical Shields se mostrarán como un solo grupo ("Ecosistema de Salud y Bienestar Integral"), con barra y pie iguales en las cuatro webs, sello de cuatro anillos en rombo y puentes comunes. El plan y el registro de cambios compartido están en el documento "Grupo Medical Shields: un solo ecosistema web" (https://claude.ai/artifact/C9587Udj2jDw2fovZcsVv1). Los archivos del sello están en `assets/img/grupo/`. En la web todavía no se aplica nada: falta la presentación al cliente.
 
 - **Supabase:** los formularios irán a un proyecto nuevo dentro de la misma organización donde vive el CRM de Medical Shields (GMS Comercial), separado del proyecto del CRM.
 - **Web de Medical Shields:** proyecto aparte, todavía no iniciado.

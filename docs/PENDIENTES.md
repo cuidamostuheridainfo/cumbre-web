@@ -1,6 +1,6 @@
 # Pendientes
 
-Última actualización: 9 de noviembre de 2026.
+Última actualización: 10 de noviembre de 2026.
 
 ## Esperando de otros
 
@@ -35,6 +35,11 @@
 | Acreditación: conferencias necesarias para el certificado, entrada de personas con pago del kit sin confirmar, cantidad de puertas y mesas | Organización | Acreditación |
 
 | Enlaces de YouTube de los videos de promoción y las entrevistas de radio 2027, a medida que se publiquen (título, invitado, emisora y programa, fecha) | Social media | Sección Videos y entrevistas |
+
+| Ecosistema del grupo: maqueta de barra, pie y sección del ecosistema sobre la web de la Cumbre, para el video de presentación al cliente | Claude con Jenny | Fase 0 del plan del grupo |
+| Ecosistema del grupo: aprobación del cliente (textos de barra y pie, sello, puentes) y logos de las cuatro marcas en buena calidad | Daniel / Marketing | Fase 1 (aplicar en la Cumbre) |
+| Correcciones a la presentación del ecosistema: "Medical Shields" (no "Medical Shield"), nombre y logo nuevos de la Cumbre, teléfono de MS +58 412-2853958 | Social media | Antes de volver a presentarla |
+| "Herida" o "lesión" en los textos clínicos, con criterio médico | Dra. Milagros y Social media | Antes de escribir los textos del ecosistema |
 
 ## Decisiones por confirmar
 

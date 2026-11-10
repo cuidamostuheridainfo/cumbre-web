@@ -53,7 +53,7 @@ a{color:#0A1040}a:hover{color:#0A6CFF}
 .kt-letter{position:relative;display:inline-block;opacity:0;animation:ktType 220ms cubic-bezier(0.23,1,0.32,1) var(--d) forwards}
 .kt-letter::after{content:"";position:absolute;right:-0.06em;top:0.08em;bottom:0.08em;width:0.07em;background:#CDB066;opacity:0;animation:ktCaret 110ms linear var(--d) 1 forwards}
 .kt-last::after{display:none}
-.kt-sweep{display:block;height:3px;width:100%;max-width:560px;border-radius:3px;background:linear-gradient(90deg, #CDB066 0%, #0A6CFF 55%, rgba(0,189,255,0) 100%);animation:ktLine 800ms cubic-bezier(0.23,1,0.32,1) 2.3s both}
+.kt-sweep{display:block;height:3px;width:100%;max-width:560px;border-radius:3px;background:linear-gradient(90deg, #CDB066 0%, #0A6CFF 55%, rgba(0,189,255,0) 100%);animation:ktLine 800ms cubic-bezier(0.23,1,0.32,1) 2.95s both}
 @keyframes ktType{0%{opacity:0;transform:scale(1.18);color:#CDB066}40%{opacity:1}100%{opacity:1;transform:none;color:#0A1040}}
 @keyframes ktCaret{0%{opacity:1}99%{opacity:1}100%{opacity:0}}
 @keyframes ktLine{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
