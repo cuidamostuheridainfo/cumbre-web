@@ -1,6 +1,6 @@
 # Pendientes
 
-Última actualización: 10 de noviembre de 2026.
+Última actualización: 11 de noviembre de 2026.
 
 ## Esperando de otros
 
@@ -36,12 +36,14 @@
 
 | Enlaces de YouTube de los videos de promoción y las entrevistas de radio 2027, a medida que se publiquen (título, invitado, emisora y programa, fecha) | Social media | Sección Videos y entrevistas |
 
-| Ecosistema del grupo: maqueta de barra, pie y sección del ecosistema sobre la web de la Cumbre, para el video de presentación al cliente | Claude con Jenny | Fase 0 del plan del grupo |
+| Ecosistema del grupo: resultado de la encuesta del comité sobre el logo del grupo (propuestas 1 a 4, enviada el 11 nov). Si gana la 2, la 3 o la 4, encuesta corta de la franja del pie (clara o azul marino) | Comité | Video y fase 1 |
+| Ecosistema del grupo: video de presentación al cliente, grabado sobre la maqueta `propuesta-ecosistema.html` | Claude con Jenny | Fase 0 del plan del grupo |
+| Ecosistema del grupo: si gana una propuesta de Codex, sus archivos originales o vectoriales (en la maqueta son recortes de imágenes) | Jenny | Fase 1 |
+| Ecosistema del grupo: dirección web de Ethical Shields AI, enlace de la propuesta corporativa y página "Conoce el grupo" (hoy sin destino en la maqueta) | Jenny / Marketing | Fase 1 |
 | Ecosistema del grupo: aprobación del cliente (textos de barra y pie, sello, puentes) y logos de las cuatro marcas en buena calidad | Daniel / Marketing | Fase 1 (aplicar en la Cumbre) |
 | Correcciones a la presentación del ecosistema: "Medical Shields" (no "Medical Shield"), nombre y logo nuevos de la Cumbre, teléfono de MS +58 412-2853958 | Social media | Antes de volver a presentarla |
 | "Herida" o "lesión" en los textos clínicos, con criterio médico | Dra. Milagros y Social media | Antes de escribir los textos del ecosistema |
-| Decisión del sello del grupo (propuesta: cuatro anillos en rombo; alternativa: tres anillos) | Comité | Antes de aplicar cualquier pieza del grupo |
-| Línea de Ethical Shields en el pie y en la sección del ecosistema, como área de IA para empresas (IRIS y demás productos) | Jenny | Antes de la maqueta |
+| Ethical Shields AI: confirmar el texto de su tarjeta (en la maqueta, "IA financiera para empresas"; alternativa: "Finanzas y operación con IA") | Jenny | Fase 1 |
 
 ## Decisiones por confirmar
 

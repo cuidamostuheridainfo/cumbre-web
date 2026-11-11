@@ -160,12 +160,12 @@ Basada en los comentarios de Social media y la revisión de Codex. Reemplaza lo 
 - **Decisiones:**
   - nombre visible "Grupo Medical Shields";
   - cuatro marcas: Medical Shields, Cuidamos tu Herida, Cumbre y Ethical Shields (Ethical Shields entra el 10 nov, como en la presentación de Social media a Daniel; su web propia también se reestructura);
-  - Ethical Shields es el área de implementación de inteligencia artificial en empresas, con IRIS y los demás productos de servicios, IA y apps (11 nov). Su línea en el pie y en la sección "Un solo ecosistema" está por ajustar;
+  - Ethical Shields es el área de implementación de inteligencia artificial en empresas, con IRIS y los demás productos de servicios, IA y apps (11 nov). En el ecosistema se llama **Ethical Shields AI** y su línea destaca GesPro (ver "Maqueta del ecosistema", abajo);
   - lema del grupo: "Ecosistema de Salud y Bienestar Integral";
   - barra de arriba y pie iguales en las cuatro webs;
   - prioridad del mensaje: la fuerza del grupo ante empresas y aseguradoras.
 - **Componentes comunes previstos:** barra del grupo arriba, pie del grupo, sección "Un solo ecosistema", puentes en contexto (por ejemplo, desde Medical Shields "Nuestra unidad de cuidados" hacia CTH) y el sello del grupo.
-- **Sello del grupo (diseño nuestro, propuesta):** el comité todavía lo está decidiendo (11 nov). Hasta su decisión, las piezas del grupo no se aplican en ningún sitio.
+- **Sello del grupo (diseño nuestro, propuesta):** el comité no quedó convencido; desde el 11 nov es una de las cuatro propuestas del logo del grupo (ver "Maqueta del ecosistema", abajo). Hasta la decisión, las piezas del grupo no se aplican en ningún sitio.
   - cuatro apósitos en forma de anillo, encadenados en rombo, uno por marca: azul Medical Shields, verde Cuidamos tu Herida, dorado Cumbre y turquesa a azul marino Ethical Shields;
   - con degradado y brillo como los logos;
   - luce mejor en fondo oscuro o arena; la versión clara lleva un borde fino;
@@ -175,3 +175,20 @@ Basada en los comentarios de Social media y la revisión de Codex. Reemplaza lo 
   - los mismos con terminación `-3marcas`: la alternativa de tres anillos.
 - **Nada de esto está aplicado todavía en la web de la Cumbre.** Primero se presenta al cliente en un video, con una maqueta (fase 0); después se aplica en la Cumbre (fase 1), en CTH (fase 2) y en Medical Shields y Ethical Shields (fase 3).
 - **Datos confirmados (10 nov):** teléfono de Medical Shields +58 412-2853958. El término "herida" o "lesión" en los textos clínicos lo deciden la Dra. Milagros y Social media, con criterio médico.
+
+## Maqueta del ecosistema (11 nov 2026)
+
+- **Logo del grupo sin definir.** El comité no quedó convencido con los anillos. Jenny preparó con Codex otras opciones (carpeta "Prueba de logos para Grupo"). El comité vota entre cuatro propuestas por encuesta de WhatsApp (enviada el 11 nov):
+  1. Anillos encadenados (nuestra, `assets/img/grupo/`);
+  2. Firma tipográfica (solo el nombre, con raya azul);
+  3. Conexión esencial (dos piezas que forman un cuadrado);
+  4. Evolución de origen (a partir de la cruz de Medical Shields).
+- **Maqueta aparte**, para no alterar lo construido: `propuesta-ecosistema.html`, con `noindex` y sin enlace en el menú. La portada (`index.html`) no cambia.
+- **Panel para el comité y el video:** abajo a la izquierda. Cambia la propuesta y, en la 2 a la 4, la franja del pie (clara o azul marino). Teclas 1 a 4, F y H. Se puede abrir directo con `?p=3&franja=azul&panel=no`.
+- **Cada propuesta lleva su barra y su pie:**
+  - la 1: barra con las cuatro marcas por nombre; pie con la firma del grupo y una línea por marca;
+  - la 2 a la 4 (diseño de Codex): barra "Parte de Grupo Medical Shields"; pie en dos franjas (la de la Cumbre y la común del grupo).
+- **Comunes a las cuatro:** desplegable "Conoce el grupo" con las cuatro marcas y "Estás aquí", y sección "Un solo ecosistema" con cuatro tarjetas del mismo peso y una franja para empresas y aseguradoras. Título de la sección en la Cumbre: "Conocimiento que conecta con la práctica".
+- **Logos reales de las cuatro marcas** (pedido de Jenny), en `assets/img/ecosistema/`: Medical Shields de medicalshields.com, Cuidamos tu Herida del repositorio cth-web-propuesta, la Cumbre de este repositorio y Ethical Shields AI de su web (marca y nombre). Las marcas de las propuestas 3 y 4 son recortes de las imágenes de Codex: sirven para la web, no para imprenta.
+- **Ethical Shields AI:** se incorpora al ecosistema con ese nombre y con el mismo peso que las otras marcas. Su línea destaca **GesPro** (panel de control financiero con IA), porque IRIS y el CRM todavía no están listos para comercializar. Tarjeta: "IA financiera para empresas" (por confirmar). Pie: "Consultoría de negocio y finanzas con inteligencia artificial. GesPro, su panel de control financiero."
+- **Cuidamos tu Herida:** su línea incluye la fisiatría avanzada: "Atención médica de heridas y piel y fisiatría avanzada, en sede, a domicilio y por telemedicina."

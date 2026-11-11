@@ -1,6 +1,6 @@
 # Estado del proyecto
 
-Última actualización: 10 de noviembre de 2026.
+Última actualización: 11 de noviembre de 2026.
 
 ## Fase actual
 
@@ -24,6 +24,7 @@ La construcción del sitio definitivo (Astro, formularios reales, base de datos,
 | Plano del área de exhibición | `assets/img/plano-sede-v2.jpg` (27 oct, numeración corregida, stands 1 a 142). Original en PDF vectorial de Producciones 24 ("cumbrefinal copia"). | Reemplaza al plano de WhatsApp del 22 oct. |
 | Informe de cambios de Marketing | `Documents\Cumbre-fotos-web\Informe de Cambios Pagina Web - Cumbre Internacional 2027 (1).pdf` | Fuente de los cambios del 27 oct. |
 | Sitio actual | https://cumbrechp.org | WordPress. Activo hasta el cambio de DNS. |
+| Maqueta del ecosistema del grupo (11 nov) | https://cuidamostuheridainfo.github.io/cumbre-web/propuesta-ecosistema.html | Página aparte (`propuesta-ecosistema.html`, `assets/css/ecosistema-propuesta.css`, `assets/js/ecosistema-propuesta.js`, `assets/img/ecosistema/`). Sin enlace en el menú, con `noindex`. La portada no cambia. |
 | Repositorio | github.com/cuidamostuheridainfo/cumbre-web | Clonado en `C:\Users\Jenny Lopez\Documents\GitHub\cumbre-web\cumbre-web`. |
 
 ## Qué tiene hoy la portada (en orden, v3)
@@ -53,7 +54,10 @@ La construcción del sitio definitivo (Astro, formularios reales, base de datos,
 
 ## Relación con otros proyectos
 
-- **Ecosistema del Grupo Medical Shields (desde el 10 nov):** Medical Shields, CTH, la Cumbre y Ethical Shields se mostrarán como un solo grupo ("Ecosistema de Salud y Bienestar Integral"), con barra y pie iguales en las cuatro webs, sello del grupo (propuesta de cuatro anillos en rombo, que el comité todavía está decidiendo) y puentes comunes. El plan y el registro de cambios compartido están en el documento "Grupo Medical Shields: un solo ecosistema web" (https://claude.ai/artifact/C9587Udj2jDw2fovZcsVv1). Los archivos del sello están en `assets/img/grupo/`. En la web todavía no se aplica nada: falta la presentación al cliente.
+- **Ecosistema del Grupo Medical Shields (desde el 10 nov):** Medical Shields, CTH, la Cumbre y Ethical Shields AI se mostrarán como un solo grupo ("Ecosistema de Salud y Bienestar Integral"), con barra y pie iguales en las cuatro webs, logo del grupo y puentes comunes. El plan y el registro de cambios compartido están en el documento "Grupo Medical Shields: un solo ecosistema web" (https://claude.ai/artifact/C9587Udj2jDw2fovZcsVv1).
+  - **Maqueta publicada (11 nov):** `propuesta-ecosistema.html`, con las cuatro propuestas del logo del grupo y sus pies, para el comité y el video. Ver "Maqueta del ecosistema" en `docs/DECISIONES-VIGENTES.md`.
+  - **Logo del grupo:** sin definir. El 11 nov se envió al comité la maqueta con una encuesta de WhatsApp para votar entre las cuatro propuestas.
+  - En la web real todavía no se aplica nada.
 
 - **Supabase:** los formularios irán a un proyecto nuevo dentro de la misma organización donde vive el CRM de Medical Shields (GMS Comercial), separado del proyecto del CRM.
 - **Web de Medical Shields:** proyecto aparte, todavía no iniciado.
