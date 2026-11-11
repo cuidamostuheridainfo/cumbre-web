@@ -40,6 +40,8 @@
 | Ecosistema del grupo: aprobación del cliente (textos de barra y pie, sello, puentes) y logos de las cuatro marcas en buena calidad | Daniel / Marketing | Fase 1 (aplicar en la Cumbre) |
 | Correcciones a la presentación del ecosistema: "Medical Shields" (no "Medical Shield"), nombre y logo nuevos de la Cumbre, teléfono de MS +58 412-2853958 | Social media | Antes de volver a presentarla |
 | "Herida" o "lesión" en los textos clínicos, con criterio médico | Dra. Milagros y Social media | Antes de escribir los textos del ecosistema |
+| Decisión del sello del grupo (propuesta: cuatro anillos en rombo; alternativa: tres anillos) | Comité | Antes de aplicar cualquier pieza del grupo |
+| Línea de Ethical Shields en el pie y en la sección del ecosistema, como área de IA para empresas (IRIS y demás productos) | Jenny | Antes de la maqueta |
 
 ## Decisiones por confirmar
 

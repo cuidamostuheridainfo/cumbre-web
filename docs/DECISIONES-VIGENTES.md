@@ -160,11 +160,12 @@ Basada en los comentarios de Social media y la revisión de Codex. Reemplaza lo 
 - **Decisiones:**
   - nombre visible "Grupo Medical Shields";
   - cuatro marcas: Medical Shields, Cuidamos tu Herida, Cumbre y Ethical Shields (Ethical Shields entra el 10 nov, como en la presentación de Social media a Daniel; su web propia también se reestructura);
+  - Ethical Shields es el área de implementación de inteligencia artificial en empresas, con IRIS y los demás productos de servicios, IA y apps (11 nov). Su línea en el pie y en la sección "Un solo ecosistema" está por ajustar;
   - lema del grupo: "Ecosistema de Salud y Bienestar Integral";
   - barra de arriba y pie iguales en las cuatro webs;
   - prioridad del mensaje: la fuerza del grupo ante empresas y aseguradoras.
 - **Componentes comunes previstos:** barra del grupo arriba, pie del grupo, sección "Un solo ecosistema", puentes en contexto (por ejemplo, desde Medical Shields "Nuestra unidad de cuidados" hacia CTH) y el sello del grupo.
-- **Sello del grupo (diseño nuestro):**
+- **Sello del grupo (diseño nuestro, propuesta):** el comité todavía lo está decidiendo (11 nov). Hasta su decisión, las piezas del grupo no se aplican en ningún sitio.
   - cuatro apósitos en forma de anillo, encadenados en rombo, uno por marca: azul Medical Shields, verde Cuidamos tu Herida, dorado Cumbre y turquesa a azul marino Ethical Shields;
   - con degradado y brillo como los logos;
   - luce mejor en fondo oscuro o arena; la versión clara lleva un borde fino;

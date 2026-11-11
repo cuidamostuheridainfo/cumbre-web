@@ -53,7 +53,7 @@ La construcción del sitio definitivo (Astro, formularios reales, base de datos,
 
 ## Relación con otros proyectos
 
-- **Ecosistema del Grupo Medical Shields (desde el 10 nov):** Medical Shields, CTH, la Cumbre y Ethical Shields se mostrarán como un solo grupo ("Ecosistema de Salud y Bienestar Integral"), con barra y pie iguales en las cuatro webs, sello de cuatro anillos en rombo y puentes comunes. El plan y el registro de cambios compartido están en el documento "Grupo Medical Shields: un solo ecosistema web" (https://claude.ai/artifact/C9587Udj2jDw2fovZcsVv1). Los archivos del sello están en `assets/img/grupo/`. En la web todavía no se aplica nada: falta la presentación al cliente.
+- **Ecosistema del Grupo Medical Shields (desde el 10 nov):** Medical Shields, CTH, la Cumbre y Ethical Shields se mostrarán como un solo grupo ("Ecosistema de Salud y Bienestar Integral"), con barra y pie iguales en las cuatro webs, sello del grupo (propuesta de cuatro anillos en rombo, que el comité todavía está decidiendo) y puentes comunes. El plan y el registro de cambios compartido están en el documento "Grupo Medical Shields: un solo ecosistema web" (https://claude.ai/artifact/C9587Udj2jDw2fovZcsVv1). Los archivos del sello están en `assets/img/grupo/`. En la web todavía no se aplica nada: falta la presentación al cliente.
 
 - **Supabase:** los formularios irán a un proyecto nuevo dentro de la misma organización donde vive el CRM de Medical Shields (GMS Comercial), separado del proyecto del CRM.
 - **Web de Medical Shields:** proyecto aparte, todavía no iniciado.
