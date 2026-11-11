@@ -1,0 +1,203 @@
+/* Maqueta "Un solo ecosistema" · Grupo Medical Shields
+   Solo la usa propuesta-ecosistema.html. No afecta a la portada publicada. */
+
+:root{
+  --eco-navy:#0A1040;
+  --eco-navy-2:#070B2E;
+  --eco-ink:#141B4D;
+  --eco-gold:#CDB066;
+  --eco-gold-claro:#F3E3A6;
+  --eco-oro-txt:#8A6F2A;
+  --eco-crema:#FBF6EA;
+  --eco-borde:#E3E7F2;
+  --eco-gris:#5A6290;
+  --eco-azul-codex:#1AA3E8;
+}
+
+/* La etiqueta de borrador de la portada se reemplaza por el panel de propuestas */
+.draft-badge{display:none!important}
+
+/* ---------- Logo del grupo (lo arma ecosistema-propuesta.js) ---------- */
+.glogo{display:inline-flex;align-items:center;gap:10px;line-height:1;text-decoration:none;color:var(--eco-ink)}
+.glogo[data-tema="oscuro"]{color:#FFFFFF}
+.glogo img{display:block;height:var(--gl-h,32px);width:auto;flex:none}
+.glogo .gl-txt{display:flex;flex-direction:column;gap:3px;font-family:'Plus Jakarta Sans','Barlow',system-ui,sans-serif}
+.glogo .gl-grupo{font-size:calc(var(--gl-h,32px) * 0.27);font-weight:700;letter-spacing:0.34em;text-transform:uppercase}
+.glogo .gl-nombre{font-size:calc(var(--gl-h,32px) * 0.56);font-weight:800;letter-spacing:-0.01em;white-space:nowrap}
+.glogo .gl-raya{display:block;width:42%;height:calc(var(--gl-h,32px) * 0.09);min-height:2px;background:var(--eco-azul-codex);border-radius:2px;margin-top:2px}
+.glogo .gl-lema{font-family:'Plus Jakarta Sans','Barlow',system-ui,sans-serif;font-size:13px;font-weight:500;letter-spacing:0;text-transform:none;opacity:0.85;margin-top:4px;white-space:nowrap}
+.glogo.gl-firma img{height:var(--gl-h,32px)}
+
+/* ---------- Barra del grupo ---------- */
+.gbar{position:relative;z-index:65;background:#FFFFFF;border-bottom:1px solid var(--eco-borde);font-family:'Plus Jakarta Sans','Barlow',system-ui,sans-serif}
+.gbar-in{max-width:1280px;margin:0 auto;padding:8px 32px;min-height:52px;box-sizing:border-box;display:flex;align-items:center;gap:18px}
+.gbar-sep{width:1px;height:26px;background:var(--eco-borde);flex:none}
+.gbar-parte{font-size:14px;font-weight:500;color:var(--eco-gris);white-space:nowrap}
+.gbar-marcas{display:flex;align-items:center;gap:6px;font-size:14px;font-weight:600;flex-wrap:nowrap}
+.gbar-marcas a{color:var(--eco-gris);text-decoration:none;padding:6px 10px;border-radius:999px;white-space:nowrap}
+.gbar-marcas a:hover{color:var(--eco-navy);background:#F1F3F9}
+.gbar-marcas a[aria-current="page"]{color:var(--eco-navy);background:var(--eco-gold-claro)}
+.gbar-dot{color:#C3C8DC}
+.gbar-esp{flex:1}
+.gbar-btn{font:inherit;font-size:14px;font-weight:700;color:var(--eco-navy);background:transparent;border:0;padding:8px 4px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.gbar-btn:hover{text-decoration:underline}
+.gbar-btn svg{transition:transform 200ms ease}
+.gbar-btn[aria-expanded="true"] svg.flecha-abajo{transform:rotate(180deg)}
+
+/* Variante por propuesta: la 1 nombra las cuatro marcas; 2 a 4 llevan "Parte de" y "Conoce el grupo" */
+.eco-op-1 .gbar-codex{display:none!important}
+.eco-op-2 .gbar-anillos,.eco-op-3 .gbar-anillos,.eco-op-4 .gbar-anillos{display:none!important}
+
+/* Selector de marcas (desplegable) */
+.gsel{position:absolute;right:max(32px,calc((100% - 1280px) / 2 + 32px));top:calc(100% + 8px);width:min(420px,calc(100vw - 32px));background:#FFFFFF;border:1px solid var(--eco-borde);border-radius:18px;box-shadow:0 24px 60px rgba(10,16,64,0.22);padding:10px;z-index:90}
+.gsel[hidden]{display:none}
+.gsel-tit{display:flex;align-items:center;justify-content:space-between;padding:8px 10px 12px;border-bottom:1px solid var(--eco-borde);margin-bottom:6px}
+.gsel a{display:grid;grid-template-columns:120px 1fr auto;align-items:center;gap:14px;padding:12px 10px;border-radius:12px;text-decoration:none;color:var(--eco-navy)}
+.gsel a:hover{background:#F5F7FC}
+.gsel a[aria-current="page"]{background:var(--eco-crema)}
+.gsel-logo{height:34px;display:flex;align-items:center}
+.gsel-logo img{max-height:34px;max-width:120px;width:auto;display:block}
+.gsel-logo .es-logo{height:30px;font-size:11px;gap:6px}
+.gsel-logo .es-logo img{height:30px}
+.gsel-txt{display:flex;flex-direction:column;gap:2px;font-size:13px;color:var(--eco-gris)}
+.gsel-txt strong{font-size:15px;color:var(--eco-navy)}
+.gsel-aqui{font-size:12px;font-weight:700;color:var(--eco-navy);background:var(--eco-gold-claro);padding:4px 10px;border-radius:999px;white-space:nowrap}
+.gsel-ir{color:var(--eco-gris)}
+
+/* ---------- Logo real de Ethical Shields AI (marca + nombre, como en su web) ---------- */
+.es-logo{display:inline-flex;align-items:center;gap:10px;font-family:'Bricolage Grotesque','Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-0.02em;color:#10294D;white-space:nowrap;line-height:1}
+.es-logo img{height:100%;width:auto;display:block}
+.es-logo.es-oscuro{color:#F6F0E2}
+
+/* ---------- Sección "Un solo ecosistema" ---------- */
+.eco-sec{background:var(--eco-crema);padding:100px 32px 96px;position:relative}
+.eco-in{max-width:1280px;margin:0 auto;display:flex;flex-direction:column;gap:44px}
+.eco-head{display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center}
+.eco-head .glogo{margin-bottom:6px}
+.eco-head .sec-txt{max-width:760px;margin:0;font-size:19px;line-height:1.55;color:#3A4270}
+.eco-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.eco-card{position:relative;background:#FFFFFF;border:1px solid #EADFC2;border-radius:20px;padding:26px 24px 24px;display:flex;flex-direction:column;gap:12px;transition:transform 200ms ease,border-color 200ms ease,box-shadow 200ms ease}
+.eco-card::before{content:"";position:absolute;left:24px;top:0;width:44px;height:4px;border-radius:0 0 4px 4px;background:var(--eco-gold)}
+.eco-card:hover{transform:translateY(-4px);border-color:var(--eco-gold);box-shadow:0 16px 36px rgba(10,16,64,0.10)}
+.eco-card.actual{background:#FFF8E2;border-color:var(--eco-gold)}
+.eco-card-logo{height:58px;display:flex;align-items:center}
+.eco-card-logo img{max-height:58px;max-width:100%;width:auto;display:block}
+.eco-card-logo .es-logo{height:50px;font-size:19px}
+.eco-card h3{margin:6px 0 0;font-family:'Barlow',system-ui,sans-serif;font-size:22px;font-weight:700;color:var(--eco-navy)}
+.eco-card p{margin:0;font-size:16px;line-height:1.5;color:#4A527E;flex:1}
+.eco-card a.eco-ir{font-size:15px;font-weight:700;color:#C40F2E;text-decoration:none}
+.eco-card a.eco-ir:hover{text-decoration:underline}
+.eco-aqui{align-self:flex-start;font-size:14px;font-weight:700;color:var(--eco-navy);background:linear-gradient(135deg,var(--eco-gold-claro),var(--eco-gold));padding:7px 14px;border-radius:999px}
+.eco-corp{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;background:var(--eco-navy);color:#DDE3FF;border-radius:20px;padding:24px 30px}
+.eco-corp p{margin:0;font-size:18px;line-height:1.45;max-width:780px}
+.eco-corp strong{color:#FFFFFF}
+.eco-corp a{font-size:16px;font-weight:700;color:var(--eco-navy);background:linear-gradient(135deg,var(--eco-gold-claro),var(--eco-gold));padding:13px 22px;border-radius:999px;text-decoration:none;white-space:nowrap}
+
+/* ---------- Pie del grupo ---------- */
+.gpie{font-family:'Plus Jakarta Sans','Barlow',system-ui,sans-serif}
+.eco-op-1 .gpie-codex{display:none!important}
+.eco-op-2 .gpie-anillos,.eco-op-3 .gpie-anillos,.eco-op-4 .gpie-anillos{display:none!important}
+
+/* Propuesta 1 · anillos: firma del grupo + una línea por marca */
+.gpie-anillos{background:var(--eco-navy-2);color:#C8CEEA;border-top:1px solid rgba(255,255,255,0.10)}
+.gpie-anillos-in{max-width:1280px;margin:0 auto;padding:44px 32px 40px;display:grid;grid-template-columns:minmax(260px,1fr) 3fr;gap:40px;align-items:start}
+.gpie-marcas{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:26px}
+.gpie-marca{display:flex;flex-direction:column;gap:12px;text-decoration:none;color:#C8CEEA}
+.gpie-marca-logo{height:40px;display:flex;align-items:center}
+.gpie-marca-logo img{max-height:40px;max-width:100%;width:auto;display:block}
+.gpie-marca-logo .es-logo{height:36px;font-size:15px}
+.gpie-marca p{margin:0;font-size:14px;line-height:1.5}
+.gpie-marca[aria-current="page"] p{color:#FFFFFF}
+.gpie-marca[aria-current="page"] .gpie-marca-logo{position:relative}
+.gpie-marca[aria-current="page"]::after{content:"Estás aquí";align-self:flex-start;font-size:12px;font-weight:700;color:var(--eco-navy);background:var(--eco-gold-claro);padding:3px 10px;border-radius:999px}
+
+/* Propuestas 2 a 4 · franja común del grupo, clara (bicolor) o azul marino */
+.gpie-codex{border-top:3px solid var(--eco-gold)}
+.gpie-codex-in{max-width:1280px;margin:0 auto;padding:26px 32px;display:flex;align-items:center;gap:30px;flex-wrap:wrap}
+.gpie-codex .gpie-sep{width:1px;align-self:stretch;min-height:48px;background:currentColor;opacity:0.15}
+.gpie-links{display:flex;flex-direction:column;gap:12px;flex:1;min-width:300px}
+.gpie-logos{display:flex;align-items:flex-end;gap:28px;flex-wrap:nowrap}
+.gpie-logos a{display:flex;align-items:center;height:30px;padding-bottom:8px;border-bottom:3px solid transparent;text-decoration:none}
+.gpie-logos a[aria-current="page"]{border-bottom-color:var(--eco-gold)}
+.gpie-logos img{max-height:30px;width:auto;display:block}
+.gpie-logos a[data-marca="cumbre"]{height:40px}.gpie-logos a[data-marca="cumbre"] img{max-height:40px}
+.gpie-marca[data-marca="cumbre"] .gpie-marca-logo img{max-height:46px}.gpie-marca[data-marca="cumbre"] .gpie-marca-logo{height:46px;margin-top:-6px}
+.eco-card[data-marca="cumbre"] .eco-card-logo img{max-height:66px}
+.gsel a[data-marca="cumbre"] .gsel-logo img{max-height:40px}
+.gpie-logos .es-logo{height:28px;font-size:13px}
+.gpie-conoce{font-size:14px;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.gpie-legal{font-size:13px;line-height:1.6;max-width:220px}
+.gpie-legal span{opacity:0.75}
+.eco-franja-clara .gpie-codex{background:#FFFFFF;color:var(--eco-ink)}
+.eco-franja-clara .gpie-codex .gpie-conoce{color:#13725E}
+.eco-franja-azul .gpie-codex{background:var(--eco-navy-2);color:#FFFFFF}
+.eco-franja-azul .gpie-codex .gpie-conoce{color:var(--eco-gold-claro)}
+.eco-franja-clara .gpie-codex .solo-oscuro,.eco-franja-azul .gpie-codex .solo-claro{display:none!important}
+
+/* Espacio al final para que el panel y el botón de WhatsApp no tapen el pie */
+.eco-colchon{height:76px;background:var(--eco-navy-2)}
+.eco-franja-clara.eco-op-2 .eco-colchon,.eco-franja-clara.eco-op-3 .eco-colchon,.eco-franja-clara.eco-op-4 .eco-colchon{background:#FFFFFF}
+
+/* ---------- Panel de propuestas (para el video y el comité) ---------- */
+.prop-panel{position:fixed;left:16px;bottom:16px;z-index:120;width:282px;max-height:calc(100vh - 32px);overflow:auto;background:#FFFFFF;border:1px solid var(--eco-borde);border-radius:20px;box-shadow:0 20px 60px rgba(10,16,64,0.28);font-family:'Plus Jakarta Sans','Barlow',system-ui,sans-serif;color:var(--eco-navy)}
+.prop-panel[data-abierto="false"] .prop-cuerpo{display:none}
+.prop-panel[data-abierto="false"]{width:auto}
+.prop-panel[data-abierto="false"] .prop-cab small{display:none}
+.prop-cab{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 12px 10px 14px;background:var(--eco-navy);color:#FFFFFF;border-radius:19px 19px 0 0}
+.prop-panel[data-abierto="false"] .prop-cab{border-radius:19px}
+.prop-cab strong{font-size:14px;letter-spacing:0.02em}
+.prop-cab small{display:block;font-size:11px;font-weight:500;color:#C8CEEA;margin-top:2px}
+.prop-toggle{font:inherit;font-size:12px;font-weight:700;color:var(--eco-navy);background:var(--eco-gold-claro);border:0;border-radius:999px;padding:6px 12px;cursor:pointer;white-space:nowrap}
+.prop-cuerpo{padding:10px;display:flex;flex-direction:column;gap:10px}
+.prop-ops{display:flex;flex-direction:column;gap:6px}
+.prop-op{font:inherit;display:grid;grid-template-columns:44px 1fr;align-items:center;gap:10px;text-align:left;background:#FFFFFF;border:2px solid var(--eco-borde);border-radius:12px;padding:5px 8px;cursor:pointer;color:var(--eco-navy)}
+.prop-op:hover{border-color:#B9C1DC}
+.prop-op[aria-pressed="true"]{border-color:var(--eco-navy);background:#F5F7FC}
+.prop-op-img{height:36px;display:flex;align-items:center;justify-content:center;background:#FFFFFF;border-radius:10px}
+.prop-op-img img{max-height:32px;max-width:42px;width:auto;display:block}
+.prop-op-img .prop-aa{font-weight:800;font-size:9px;line-height:1.05;color:var(--eco-ink);text-align:left}
+.prop-op-img .prop-aa i{display:block;width:60%;height:3px;background:var(--eco-azul-codex);margin-top:3px;border-radius:2px}
+.prop-op-txt{display:flex;flex-direction:column;gap:2px}
+.prop-op-txt b{font-size:13px}
+.prop-op-txt span{font-size:11px;color:var(--eco-gris)}
+.prop-fila{display:flex;flex-direction:column;gap:6px}
+.prop-fila > span{font-size:11px;font-weight:700;color:var(--eco-gris);text-transform:uppercase;letter-spacing:0.08em}
+.prop-seg{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.prop-seg button,.prop-ir button{font:inherit;font-size:12px;font-weight:700;border:2px solid var(--eco-borde);background:#FFFFFF;color:var(--eco-navy);border-radius:10px;padding:6px;cursor:pointer}
+.prop-seg button[aria-pressed="true"]{border-color:var(--eco-navy);background:var(--eco-navy);color:#FFFFFF}
+.prop-seg button:disabled{opacity:0.4;cursor:not-allowed}
+.prop-ir{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.prop-ir button:hover{border-color:#B9C1DC}
+.prop-nota{margin:0;font-size:11px;line-height:1.45;color:var(--eco-gris)}
+
+/* ---------- Teléfono ---------- */
+@media (max-width: 1020px){
+  .gpie-logos{flex-wrap:wrap}
+  .gbar-marcas,.gbar-parte,.gbar .gbar-sep{display:none!important}
+  .eco-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .gpie-anillos-in{grid-template-columns:1fr}
+  .gpie-marcas{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width: 760px){
+  .gbar-in{padding:6px 16px;min-height:46px}
+  .gsel{right:8px;left:8px;width:auto}
+  .gsel a{grid-template-columns:92px 1fr auto;gap:10px}
+  .gsel-logo img{max-width:88px}
+  .gsel-logo .es-logo{font-size:9px}
+  .gbar [data-glogo] .glogo{--gl-h:30px!important}
+  .gbar-btn{font-size:13px}
+  .eco-sec{padding:56px 16px}
+  .eco-in{gap:28px}
+  .eco-head .sec-txt{font-size:17px}
+  .eco-grid{grid-template-columns:1fr;gap:12px}
+  .eco-card{padding:22px 20px}
+  .eco-corp{padding:20px}
+  .eco-corp p{font-size:16px}
+  .gpie-anillos-in{padding:32px 16px}
+  .gpie-codex-in{padding:22px 16px;flex-direction:column;align-items:flex-start;gap:18px}
+  .gpie-codex .gpie-sep{display:none}
+  .gpie-logos{gap:18px}
+  .prop-panel{left:8px;right:8px;bottom:8px;width:auto;max-height:70vh}
+}
+@media (prefers-reduced-motion: reduce){.eco-card,.gbar-btn svg{transition:none}.eco-card:hover{transform:none}}
+@media (hover: none){.eco-card:hover{transform:none}}

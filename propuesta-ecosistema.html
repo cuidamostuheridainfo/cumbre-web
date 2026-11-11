@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Maqueta · Un solo ecosistema · Grupo Medical Shields</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,500;0,600;1,600;1,700;1,800&amp;family=Barlow:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@500;700;800&amp;family=Bricolage+Grotesque:opsz,wght@12..96,800&amp;display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/sitio.css">
+<link rel="stylesheet" href="assets/css/ecosistema-propuesta.css">
+</head>
+<body>
+
+<div style="font-family: 'Barlow', system-ui, sans-serif; color: #0A1040; background: #FFFFFF; min-height: 100vh; overflow-x: clip">
+
+<!-- Maqueta: barra del grupo -->
+<div class="gbar" id="barra-grupo">
+<div class="gbar-in">
+<span data-glogo="barra" data-tema="claro" data-alto="42"></span>
+<span class="gbar-sep gbar-codex" aria-hidden="true"></span>
+<span class="gbar-parte gbar-codex">Parte de Grupo Medical Shields</span>
+<nav class="gbar-marcas gbar-anillos" id="gbar-marcas" aria-label="Marcas del Grupo Medical Shields"></nav>
+<span class="gbar-esp"></span>
+<button class="gbar-btn" type="button" data-abre-gsel aria-expanded="false" aria-controls="gsel">Conoce el grupo <svg class="flecha-abajo" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></button>
+</div>
+<div class="gsel" id="gsel" hidden>
+<div class="gsel-tit"><span data-glogo="firma" data-tema="claro" data-alto="34"></span></div>
+<div id="gsel-lista"></div>
+</div>
+</div>
+
+<div class="topbar">
+<div class="topbar-in">
+<span class="topbar-tag">Expositores y patrocinadores</span>
+<span class="topbar-msg"><span class="t-largo">Tu marca en la Cumbre 2027: conoce las oportunidades de exposición y patrocinio.</span><span class="t-corto">Tu marca en la Cumbre 2027</span></span>
+<a class="topbar-cta" href="#patrocinio">Conocer oportunidades →</a>
+</div>
+</div>
+
+<section id="inicio" class="hero-light" style="position: relative; min-height: 760px; display: flex; flex-direction: column; border-bottom: 1px solid #E3E7F2">
+<div class="hero-slides" role="img" aria-label="Asistentes de la 1ra edición de la Cumbre" style="position: absolute; inset: 0; z-index: -2"><div class="hero-slide on" style="background-image: url(assets/img/hero-88A3359.jpg); background-position: 50% 40%"></div><div class="hero-slide" style="background-image: url(assets/img/hero-88A3236.jpg); background-position: 50% 50%"></div><div class="hero-slide" style="background-image: url(assets/img/hero-88A2431.jpg); background-position: 60% 50%"></div><div class="hero-slide" style="background-image: url(assets/img/hero-88A3276.jpg); background-position: 60% 40%"></div><div class="hero-slide" style="background-image: url(assets/img/hero-88A2394.jpg); background-position: 50% 50%"></div><div class="hero-slide" style="background-image: url(assets/img/hero-88A3297.jpg); background-position: 55% 40%"></div></div>
+<div class="hero-veil" aria-hidden="true" style="position: absolute; inset: 0; z-index: -1"></div>
+<div class="glow" aria-hidden="true" style="position: absolute; right: -160px; top: 40px; width: 860px; height: 860px; pointer-events: none"></div>
+<div class="ring-box" aria-hidden="true" style="position: absolute; right: max(32px, calc((100% - 1280px) / 2)); top: 170px; width: min(420px, 29vw); aspect-ratio: 530 / 515; pointer-events: none">
+<div class="ring-spin">
+<img class="ring-layer" src="assets/img/cinta-superior.png" alt="">
+<img class="ring-layer" src="assets/img/cinta-izquierda.png" alt="">
+<img class="ring-layer" src="assets/img/cinta-derecha.png" alt="">
+</div>
+</div>
+
+<header class="cab">
+<nav class="cab-in" aria-label="Principal">
+<a href="#inicio" aria-label="Inicio"><img src="assets/img/logo-cumbre-27-oscuro.png" alt="II Cumbre Internacional para el Cuidado Avanzado de Heridas, Piel y Longevidad" class="cab-logo"></a>
+<div class="nav-links">
+<a href="#inscripcion">Programa 2027</a>
+<a href="ponencias.html">Ponencias 2026</a>
+<a href="#videos-2027">Videos</a>
+<a href="#plano">La sede</a>
+<a class="nav-patro" href="#patrocinio">Patrocinios</a>
+<a class="nav-cta" href="#inscripcion">Regístrate</a>
+</div>
+<div class="cab-movil">
+<a class="nav-patro" href="#patrocinio">Patrocinios</a>
+<button id="menu-btn" type="button" class="menu-btn" aria-expanded="false" aria-controls="menu-movil" aria-label="Abrir menú"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
+</div>
+</nav>
+<nav id="menu-movil" class="menu-movil" aria-label="Menú" hidden>
+<a href="#patrocinio" class="mm-destacado">Patrocinios</a>
+<a href="ponencias.html">Ponencias 2026</a>
+<a href="#videos-2027">Videos</a>
+<a href="#inscripcion">Programa 2027</a>
+<a href="#plano">La sede</a>
+<a href="#formulario-patrocinio">Solicitar propuesta de patrocinio</a>
+<a href="#inscripcion">Regístrate como asistente</a>
+</nav>
+</header>
+
+<div style="position: relative; flex: 1; max-width: 1280px; width: 100%; margin: 0 auto; padding: 72px 32px 64px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; gap: 22px">
+<h1 aria-label="II Cumbre Internacional para el Cuidado Avanzado de Heridas, Piel y Longevidad. Edición Especial: Protocolos de actuación y medicina de emergencia en desastres" style="margin: 0; font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; text-transform: uppercase; display: flex; flex-direction: column; gap: 4px">
+<span class="kt-line" aria-hidden="true" style="font-size: clamp(22px, 2.4vw, 34px); font-weight: 700; letter-spacing: 0.01em; color: #2A3470">II Cumbre Internacional para el Cuidado Avanzado de</span>
+<span aria-hidden="true" style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 14px">
+<span style="display: block; font-size: clamp(44px, 5.2vw, 78px); font-weight: 800; line-height: 0.95; white-space: nowrap; color: #0A1040"><span class="kt-letter" style="--d: 700ms">H</span><span class="kt-letter" style="--d: 785ms">E</span><span class="kt-letter" style="--d: 870ms">R</span><span class="kt-letter" style="--d: 955ms">I</span><span class="kt-letter" style="--d: 1040ms">D</span><span class="kt-letter" style="--d: 1125ms">A</span><span class="kt-letter" style="--d: 1210ms">S</span><span class="kt-letter" style="--d: 1295ms">,</span><span class="kt-letter" style="--d: 1380ms">&nbsp;</span><span class="kt-letter" style="--d: 1465ms">P</span><span class="kt-letter" style="--d: 1550ms">I</span><span class="kt-letter" style="--d: 1635ms">E</span><span class="kt-letter" style="--d: 1720ms">L</span></span>
+<span style="display: block; font-size: clamp(44px, 5.2vw, 78px); font-weight: 800; line-height: 0.95; white-space: nowrap; color: #0A1040"><span class="kt-letter" style="--d: 1805ms">Y</span><span class="kt-letter" style="--d: 1890ms">&nbsp;</span><span class="kt-letter" style="--d: 1975ms">L</span><span class="kt-letter" style="--d: 2060ms">O</span><span class="kt-letter" style="--d: 2145ms">N</span><span class="kt-letter" style="--d: 2230ms">G</span><span class="kt-letter" style="--d: 2315ms">E</span><span class="kt-letter" style="--d: 2400ms">V</span><span class="kt-letter" style="--d: 2485ms">I</span><span class="kt-letter" style="--d: 2570ms">D</span><span class="kt-letter" style="--d: 2655ms">A</span><span class="kt-letter kt-last" style="--d: 2740ms">D</span></span></span>
+</span>
+</h1>
+<span class="kt-sweep" aria-hidden="true"></span>
+<p style="margin: 0; font-size: 22px; font-weight: 600; color: #2A3470"><span style="color: #8A6F2A">Edición Especial:</span> Protocolos de actuación y medicina de emergencia en desastres</p>
+<div style="display: flex; align-items: center; gap: 14px">
+<span aria-hidden="true" style="width: 40px; height: 2px; background: #CDB066"></span>
+<span style="font-size: 15px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #8A6F2A">12 al 14 de mayo de 2027 · Centro Comercial Líder, Caracas</span>
+</div>
+<p style="margin: 0; max-width: 540px; font-size: 18px; line-height: 1.55; color: #4A5280">Ponencias, talleres prácticos y exhibición comercial con especialistas nacionales e internacionales.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; padding-top: 4px">
+<a class="btn-stand" href="#patrocinio" style="color: #FFFFFF; background: #F7153B; text-decoration: none; padding: 17px 30px; border-radius: 999px; font-weight: 700; font-size: 17px; box-shadow: 0 10px 24px rgba(247,21,59,0.28)">Conocer opciones de patrocinio</a>
+<a class="btn-sec" href="#inscripcion" style="color: #0A1040; background: rgba(255,255,255,0.85); border: 2px solid #0A1040; text-decoration: none; padding: 15px 26px; border-radius: 999px; font-weight: 600; font-size: 16px">Regístrate como asistente</a>
+</div>
+<div role="timer" aria-label="Tiempo para el inicio de la Cumbre" style="margin-top: 28px; align-self: flex-start; display: flex; background: rgba(255,255,255,0.8); backdrop-filter: blur(10px); border: 1px solid #E3E7F2; border-radius: 18px">
+<div style="padding: 14px 24px; display: flex; flex-direction: column; gap: 2px"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 32px; color: #0A1040; font-variant-numeric: tabular-nums"><span data-cd="d">–</span></span><span style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #8A6F2A; font-weight: 600">Días</span></div><div style="padding: 14px 24px; display: flex; flex-direction: column; gap: 2px"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 32px; color: #0A1040; font-variant-numeric: tabular-nums"><span data-cd="h">–</span></span><span style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #8A6F2A; font-weight: 600">Horas</span></div><div style="padding: 14px 24px; display: flex; flex-direction: column; gap: 2px"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 32px; color: #0A1040; font-variant-numeric: tabular-nums"><span data-cd="m">–</span></span><span style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #8A6F2A; font-weight: 600">Min</span></div><div style="padding: 14px 24px; display: flex; flex-direction: column; gap: 2px"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 32px; color: #0A1040; font-variant-numeric: tabular-nums"><span data-cd="s">–</span></span><span style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #8A6F2A; font-weight: 600">Seg</span></div>
+</div>
+</div>
+</section>
+
+<section class="stats-band">
+<div class="stats-in">
+<div class="st-grupo"><span class="st-ed">1ra edición · 2026</span><div class="st-fila"><div class="st"><span class="st-n">+4.000</span><span class="st-t">asistentes</span></div><div class="st"><span class="st-n">+30</span><span class="st-t">ponencias de médicos especialistas</span></div></div></div>
+<div class="st-grupo st-27"><span class="st-ed">2da edición · 2027</span><div class="st-fila"><div class="st"><span class="st-n">+5.000</span><span class="st-t">asistentes previstos: 3.000 especialistas médicos y 2.000 de enfermería</span></div><div class="st"><span class="st-n">3 días</span><span class="st-t">de conferencias</span></div><div class="st"><span class="st-n">3 talleres</span><span class="st-t">precumbre prácticos de campo</span></div></div></div>
+</div>
+</section>
+
+<section id="enfoque" class="sec" style="max-width: 1280px; margin: 0 auto; padding: 110px 32px 100px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
+<div class="enf-video" style="position: relative; flex: 1 1 380px; min-height: 420px; align-self: stretch; border-radius: 26px; overflow: hidden; background: #0A1040; box-shadow: 0 18px 44px rgba(10,16,64,0.12)"><video src="assets/video/dron-loop.mp4" poster="assets/img/dron-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Vista aérea del área de exhibición en la 1ra edición" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block"></video><span style="position: absolute; left: 16px; bottom: 16px; font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #0A1040; background: rgba(255,255,255,0.92); padding: 7px 12px; border-radius: 999px">Vista aérea · 1ra edición 2026</span></div>
+<div class="enf-text" style="flex: 1.4 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
+<h2 style="margin: 0; text-align: center; font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; text-transform: uppercase; font-weight: 700; font-size: 44px; line-height: 1; color: #0A1040">Nuestro enfoque</h2>
+<p style="margin: 0 auto; max-width: 620px; text-align: center; font-size: 17px; line-height: 1.55; color: #4A5280">Intercambio académico y actualización profesional en el manejo integral de heridas, el cuidado de la piel y los protocolos de actuación en emergencias y desastres.</p>
+<div class="enf-tiles"><div style="background: #0A1040; color: #FFFFFF; border: 3px solid #0A1040; border-radius: 20px; min-height: 200px; padding: 26px; display: flex; align-items: center; justify-content: center; text-align: center; box-shadow: 0 16px 36px rgba(10,16,64,0.14); box-sizing: border-box"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 30px; line-height: 1.1; text-transform: uppercase">Manejo integral de heridas</span></div><div style="background: #FFFFFF; color: #0A1040; border: 3px solid #0A1040; border-radius: 20px; min-height: 200px; padding: 26px; display: flex; align-items: center; justify-content: center; text-align: center; box-shadow: 0 16px 36px rgba(10,16,64,0.14); box-sizing: border-box"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 30px; line-height: 1.1; text-transform: uppercase">Cuidado de la piel</span></div><div style="background: #F7153B; color: #FFFFFF; border: 3px solid #F7153B; border-radius: 20px; min-height: 200px; padding: 26px; display: flex; align-items: center; justify-content: center; text-align: center; box-shadow: 0 16px 36px rgba(10,16,64,0.14); box-sizing: border-box"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 30px; line-height: 1.1; text-transform: uppercase">Emergencias y desastres</span></div><div style="background: linear-gradient(135deg, #F3E3A6, #CDB066); color: #0A1040; border: 3px solid #CDB066; border-radius: 20px; min-height: 200px; padding: 26px; display: flex; align-items: center; justify-content: center; text-align: center; box-shadow: 0 16px 36px rgba(10,16,64,0.14); box-sizing: border-box"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 30px; line-height: 1.1; text-transform: uppercase">Visión multidisciplinaria</span></div></div>
+<div class="disc-box">
+<h3 class="disc-tit">Una primera edición con visión multidisciplinaria</h3>
+<p class="disc-txt">En 2026, la Cumbre reunió conocimientos y experiencias de distintas disciplinas para abordar el cuidado avanzado de heridas y piel desde una perspectiva integral.</p>
+<span class="disc-lab">Especialidades y disciplinas participantes</span>
+<ul id="disciplinas" class="disc"><li>Enfermería</li><li>Nutrición</li><li>Cirugía plástica</li><li>Bacteriología</li><li>Inmunología</li><li class="disc-extra">Cardiovascular</li><li class="disc-extra">Traumatología</li><li class="disc-extra">Cirugía vascular</li><li class="disc-extra">Psiquiatría</li><li class="disc-extra">Dermatología</li><li class="disc-extra">Anatomía patológica</li></ul>
+<button type="button" class="ver-mas solo-movil" data-toggle="disciplinas" aria-controls="disciplinas" aria-expanded="false" data-mas="Ver todas las disciplinas" data-menos="Ver menos">Ver todas las disciplinas</button>
+</div>
+</div>
+</section>
+
+
+
+
+<section id="patrocinio" class="sec" style="background: #FFFFFF; padding: 100px 32px 0">
+<div style="max-width: 1280px; margin: 0 auto; display: flex; flex-direction: column; gap: 96px">
+
+<article class="sp-card" style="position: relative; overflow: hidden; border-radius: 26px; background: linear-gradient(135deg, #0A1040 0%, #121A5A 60%, #0A1040 100%); color: #FFFFFF; padding: 48px; display: flex; flex-wrap: wrap; gap: 40px; align-items: stretch">
+<div style="position: relative; flex: 1.2 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 18px">
+<span class="tarifa-tag">Tarifas especiales hasta el 31 de diciembre de 2026</span>
+<span style="font-size: 15px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #F3E3A6">Expositores y patrocinadores · 2027</span>
+<h2 style="margin: 0; font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 44px; line-height: 1.02; text-transform: uppercase">Conecta tu marca con quienes trabajan por el cuidado avanzado de heridas y piel</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #DDE3FF">Presenta tus soluciones, genera conversaciones con profesionales de la salud y amplía la presencia de tu marca durante los 3 días de la Cumbre del Cuidado Avanzado de Heridas, Piel y Longevidad.</p>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #DDE3FF">Encuentra una opción de exposición o patrocinio que se adapte a los objetivos de tu empresa.</p>
+<div style="display: flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #F3E3A6"><span aria-hidden="true" style="width: 28px; height: 2px; background: #CDB066"></span>12 al 14 de mayo de 2027 · Centro Comercial Líder, Caracas</div>
+<div style="display: flex; flex-direction: column; gap: 10px; padding-top: 8px; align-items: flex-start">
+<a href="#formulario-patrocinio" style="color: #0A1040; background: linear-gradient(135deg, #F3E3A6, #CDB066); text-decoration: none; padding: 16px 28px; border-radius: 999px; font-weight: 700; font-size: 16px; display: inline-block">Solicitar propuesta de patrocinio</a>
+<span style="font-size: 14px; line-height: 1.5; color: #C8CEEA">Conoce formatos, inversión y disponibilidad. Enviar tu solicitud no reserva un espacio.</span>
+<a href="#opciones" style="color: #FFFFFF; font-weight: 600; font-size: 15px; text-decoration: underline; text-underline-offset: 4px">Explorar opciones de participación ↓</a>
+</div>
+</div>
+<div class="gal-tile gal-3" role="img" aria-label="Stands de expositores en la 1ra edición de la Cumbre" style="position: relative; flex: 1 1 380px; min-height: 420px; border-radius: 20px"><div style="background-image: url(assets/img/evento-img-7831.jpg); background-position: 50% 40%; animation-delay: 0s"></div><div style="background-image: url(assets/img/evento-img-7900.jpg); background-position: 50% 45%; animation-delay: -8s"></div><div style="background-image: url(assets/img/evento-img-7882.jpg); background-position: 50% 40%; animation-delay: -4s"></div></div>
+</article>
+
+<div style="display: flex; flex-direction: column; gap: 32px">
+<h3 style="margin: 0; font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; text-transform: uppercase; font-weight: 700; line-height: 1.02; color: #0A1040; font-size: 40px; text-align: center">Una oportunidad para acercar tus soluciones a tu público</h3>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px">
+<div class="pt-card" style="background: #FFFFFF; border: 2px solid #E3E7F2; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 12px"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F7153B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"></rect><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg><h4 style="margin: 0; font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 24px; text-transform: uppercase; color: #0A1040">Presenta tus soluciones</h4><p style="margin: 0; font-size: 16px; line-height: 1.55; color: #4A5280">Da a conocer tus productos y servicios en un entorno dedicado al cuidado avanzado de heridas y piel.</p></div>
+<div class="pt-card" style="background: #FFFFFF; border: 2px solid #E3E7F2; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 12px"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F7153B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.6A8 8 0 1 1 21 12z"></path><path d="M8.5 11h7M8.5 14h4"></path></svg><h4 style="margin: 0; font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 24px; text-transform: uppercase; color: #0A1040">Genera conversaciones</h4><p style="margin: 0; font-size: 16px; line-height: 1.55; color: #4A5280">Acércate a profesionales interesados en conocer soluciones para su práctica y sus instituciones.</p></div>
+<div class="pt-card" style="background: #FFFFFF; border: 2px solid #E3E7F2; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 12px"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F7153B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"></path><circle cx="12" cy="12" r="3"></circle></svg><h4 style="margin: 0; font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 24px; text-transform: uppercase; color: #0A1040">Amplía tu visibilidad</h4><p style="margin: 0; font-size: 16px; line-height: 1.55; color: #4A5280">Elige un nivel de patrocinio, un espacio de exposición y otras opciones de presencia de marca durante la Cumbre.</p></div>
+</div>
+</div>
+
+<div class="aud-box">
+<h3 class="aud-tit">¿Quién asiste a la Cumbre?</h3>
+<div class="aud-grid">
+<div class="aud-col"><span class="aud-lab">Especialistas médicos</span><p>Cirujanos cardiovasculares, plásticos y generales, dermatólogos, fisiatras, internistas, traumatólogos y médicos generales.</p></div>
+<div class="aud-col"><span class="aud-lab">Enfermería, rescate y otras áreas</span><p>Enfermeros especializados, paramédicos, rescatistas, farmacéuticos, investigadores, nutricionistas, psicólogos y estudiantes.</p></div>
+</div>
+</div>
+
+<div id="opciones" style="display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center">
+<h3 style="margin: 0; font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; text-transform: uppercase; font-weight: 700; line-height: 1.02; color: #0A1040; font-size: 40px">Elige cómo quieres participar</h3>
+<p style="margin: 0; max-width: 640px; font-size: 17px; line-height: 1.55; color: #4A5280">Ya sea que busques exhibir tus productos o dar mayor visibilidad a tu marca, conoce los formatos disponibles.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px"><div style="font-size: 16px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #8A6F2A; padding-bottom: 8px; border-bottom: 2px solid #F7153B; align-self: flex-start">Niveles de patrocinio</div><div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px"><details class="opt pt-card" open><summary>Patrocinio Diamante</summary><p>Máxima exposición corporativa en todas las piezas, apertura de plenarias, stand preferencial de hasta 36 m² y mención en la mesa directiva y científica.</p></details><details class="opt pt-card" open><summary>Patrocinio Platino</summary><p>Ubicación preferencial de alta visibilidad, stand institucional, presencia en las pantallas LED principales, lanyards oficiales y activaciones en zonas de alto tráfico.</p></details><details class="opt pt-card" open><summary>Patrocinio Oro</summary><p>Participación estratégica con stand modular o espacio optimizado, presencia institucional en el material digital y menciones corporativas.</p></details></div></div>
+<div style="display: flex; flex-direction: column; gap: 14px"><div style="font-size: 16px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #8A6F2A; padding-bottom: 8px; border-bottom: 2px solid #F7153B; align-self: flex-start">Espacios de exposición</div><div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px"><details class="opt pt-card" open><summary>Espacio libre</summary><p>Diseña y construye tu propio stand según los metros contratados.</p></details><details class="opt pt-card" open><summary>Mesa de contacto</summary><p>Ideal para la interacción directa, la entrega de literatura técnica y la captación ágil de contactos.</p></details><details class="opt pt-card" open><summary>Stand básico (2 × 2 m)</summary><p>Incluye piso, paredes rotuladas con tu imagen corporativa, una pantalla, un counter y una silla ejecutiva.</p></details></div></div>
+<div style="display: flex; flex-direction: column; gap: 14px"><div style="font-size: 16px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #8A6F2A; padding-bottom: 8px; border-bottom: 2px solid #F7153B; align-self: flex-start">Otras opciones de presencia de marca</div><div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px"><details class="opt pt-card" open><summary>Microcápsulas de video</summary><p>Exhibe tus videos en tótems y pantallas táctiles durante los 3 días del evento.</p></details><details class="opt pt-card" open><summary>Presencia gráfica en conferencia destacada</summary><p>Consulta las opciones de presencia gráfica de marca asociadas a una conferencia destacada.</p></details><details class="opt pt-card" open><summary>Publicidad entre conferencias</summary><p>Dale visibilidad a tu marca entre conferencias, con mención del moderador y tu logo en las pantallas LED.</p></details></div></div>
+<div style="display: flex; flex-direction: column; gap: 14px"><div style="font-size: 16px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #8A6F2A; padding-bottom: 8px; border-bottom: 2px solid #F7153B; align-self: flex-start">Complementos</div><div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px"><details class="opt pt-card" open><summary>Premium Branding</summary><p>Presencia en el backing del punto fotográfico oficial, proyección en las pantallas LED principales, tu marca en los lanyards de los médicos becarios y menciones en las redes oficiales.</p></details><details class="opt pt-card" open><summary>Patrocinio de talleres precumbre</summary><p>Impulsa las competencias clínicas: tu marca en los lanyards y con exclusividad en el área del taller, entrega de material técnico a los asistentes, presencia en la promoción, refrigerio y pantallas institucionales.</p></details></div></div>
+<div style="background: #0A1040; border-radius: 20px; padding: 28px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px">
+<div style="display: flex; flex-direction: column; gap: 6px; flex: 1 1 320px"><span style="font-size: 19px; font-weight: 600; color: #FFFFFF">Te ayudamos a identificar el formato que mejor se adapte a tus objetivos.</span><span style="font-size: 13px; color: #A9B1D6">Tarifas especiales hasta el 31 de diciembre de 2026. Opciones sujetas a disponibilidad; consulta inclusiones y condiciones en la propuesta comercial.</span></div>
+<a href="#formulario-patrocinio" style="color: #0A1040; background: linear-gradient(135deg, #F3E3A6, #CDB066); text-decoration: none; padding: 16px 28px; border-radius: 999px; font-weight: 700; font-size: 16px; display: inline-block">Solicitar propuesta de patrocinio</a>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center">
+<h3 style="margin: 0; font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; text-transform: uppercase; font-weight: 700; line-height: 1.02; color: #0A1040; font-size: 40px">Así se vivió la Cumbre 2026</h3>
+<p style="margin: 0; max-width: 640px; font-size: 17px; line-height: 1.55; color: #4A5280">Conoce el encuentro del que tu marca puede formar parte en 2027.</p>
+</div>
+<div id="galeria-stands" class="gal-grid" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-auto-rows: 200px; gap: 12px"><div class="yt-tile" style="grid-column: 1 / span 2; grid-row: 1 / span 2">
+<div class="yt-frame"><button type="button" class="yt-play" data-yt="SizpFb5RWT4" aria-label="Ver video: Tres días que cambiaron el cuidado de heridas"><img src="https://i.ytimg.com/vi/SizpFb5RWT4/hqdefault.jpg" alt="" loading="lazy"><span class="yt-ico" aria-hidden="true"><svg width="30" height="30" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M8 5.5v13l11-6.5z"></path></svg></span><span class="pv-tag">Edición 2026</span><span class="yt-cap"><strong>Tres días que cambiaron el cuidado de heridas</strong><span>Video resumen · 1:44</span></span></button></div>
+<a class="yt-link" href="https://www.youtube.com/watch?v=SizpFb5RWT4" target="_blank" rel="noopener">Ver en YouTube ↗</a>
+</div><div class="gal-tile gal-2" style=""><div style="background-image: url(assets/img/evento-img-7847.jpg); background-position: 50% 30%; animation-delay: 0s;"></div><div style="background-image: url(assets/img/evento-img-7819.jpg); background-position: 40% 40%; animation-delay: -5s;"></div></div><div class="gal-tile gal-2" style=""><div style="background-image: url(assets/img/evento-img-7826.jpg); background-position: 55% 35%; animation-delay: 0s;"></div><div style="background-image: url(assets/img/evento-img-7825.jpg); background-position: 40% 30%; animation-delay: -5s;"></div></div><div class="gal-tile gal-extra" style=""><div style="background-image: url(assets/img/evento-img-7879.jpg); background-position: 50% 40%;"></div></div><div class="gal-tile gal-extra" style=""><div style="background-image: url(assets/img/evento-88a2516.jpg); background-position: 50% 50%;"></div></div><div class="gal-tile gal-extra" style=""><div style="background-image: url(assets/img/evento-img-7844.jpg); background-position: 50% 35%;"></div></div></div>
+<button type="button" class="ver-mas solo-movil" data-toggle="galeria-stands" aria-controls="galeria-stands" aria-expanded="false" data-mas="Ver más fotos" data-menos="Ver menos fotos">Ver más fotos</button>
+<div style="border: 2px solid #CDB066; background: #FBF7EA; border-radius: 20px; padding: 26px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px">
+<div style="display: flex; flex-direction: column; gap: 6px; flex: 1 1 320px"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 28px; text-transform: uppercase; color: #0A1040; line-height: 1.05">Tu marca puede ser parte de la próxima edición</span><span style="font-size: 16px; color: #4A5280">Conoce las oportunidades de exposición y patrocinio para 2027.</span></div>
+<a href="#formulario-patrocinio" style="color: #FFFFFF; background: #0A1040; text-decoration: none; padding: 16px 28px; border-radius: 999px; font-weight: 700; font-size: 16px; display: inline-block">Solicitar propuesta de patrocinio</a>
+</div>
+</div>
+
+<div id="plano" style="display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center">
+<h3 style="margin: 0; font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; text-transform: uppercase; font-weight: 700; line-height: 1.02; color: #0A1040; font-size: 40px">Explora el área de exhibición</h3>
+<p style="margin: 0; max-width: 640px; font-size: 17px; line-height: 1.55; color: #4A5280">Consulta la distribución de los espacios y conversa con nuestro equipo sobre las opciones disponibles para tu marca.</p>
+</div>
+<figure class="plan-card" style="margin: 0 auto; width: 100%; max-width: 980px; box-sizing: border-box; background: #F7F9FD; border: 2px solid #E3E7F2; border-radius: 22px; padding: 22px; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; justify-content: flex-end"><a href="assets/img/plano-sede-v2.jpg" target="_blank" rel="noopener" style="font-size: 15px; font-weight: 700; color: #0A1040; text-decoration: none">Ampliar plano ↗</a></div>
+<a href="assets/img/plano-sede-v2.jpg" target="_blank" rel="noopener" style="display: block; border-radius: 14px; overflow: hidden; background: #FFFFFF"><img src="assets/img/plano-sede-v2.jpg" alt="Plano del área de exhibición con la ubicación numerada de los stands, la sala de conferencias, las estaciones de café y el área VIP" style="display: block; width: 100%; height: auto"></a>
+<figcaption style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px 24px">
+<span style="font-size: 14px; color: #4A5280">Distribución sujeta a actualización. La disponibilidad de cada espacio se confirma con el equipo comercial.</span>
+<a href="#formulario-patrocinio" id="pre-stand" style="font-size: 16px; font-weight: 700; color: #F7153B; text-decoration: none">Consultar disponibilidad de stands →</a>
+</figcaption>
+</figure>
+</div>
+
+</div>
+</section>
+
+<section id="formulario-patrocinio" class="sec" style="background: linear-gradient(180deg, #FFFFFF 0px, #FFFFFF 80px, #0A1040 80px, #0A1040 100%); padding: 96px 32px 110px; margin-top: 16px">
+<div style="max-width: 1180px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-start">
+<div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 16px; color: #FFFFFF; padding-top: 70px">
+<span style="font-size: 15px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #F3E3A6">Expositores y patrocinadores</span>
+<h3 style="margin: 0; font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 42px; line-height: 1.02; text-transform: uppercase">Da el primer paso para participar con tu marca</h3>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #DDE3FF">Déjanos tus datos para recibir información sobre formatos, inversión y disponibilidad de exposición y patrocinio.</p>
+</div>
+<div style="flex: 1.4 1 480px; min-width: 0; background: #FFFFFF; border-radius: 24px; padding: 36px; box-shadow: 0 30px 70px rgba(10,16,64,0.30); box-sizing: border-box">
+<div id="pf-wrap">
+<form id="pf-form" action="#" method="post" novalidate="novalidate" style="display: flex; flex-direction: column; gap: 18px">
+<div class="pf-row" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px"><div style="display: flex; flex-direction: column; gap: 6px"><label for="pf-nombre" style="font-size: 14px; font-weight: 700; color: #0A1040">Nombre y apellido*</label><input id="pf-nombre" type="text" autocomplete="name" placeholder="Tu nombre completo" aria-invalid="false" aria-describedby="pf-nombre-err" style="width: 100%; box-sizing: border-box; font: inherit; font-size: 16px; color: #0A1040; background: #FFFFFF; border: 2px solid #D5DBEB; border-radius: 12px; padding: 13px 14px"><span id="pf-nombre-err" class="pf-err" hidden style="font-size: 13px; font-weight: 600; color: #C40F2E"></span></div><div style="display: flex; flex-direction: column; gap: 6px"><label for="pf-empresa" style="font-size: 14px; font-weight: 700; color: #0A1040">Empresa o marca*</label><input id="pf-empresa" type="text" autocomplete="organization" placeholder="Nombre de tu empresa" aria-invalid="false" aria-describedby="pf-empresa-err" style="width: 100%; box-sizing: border-box; font: inherit; font-size: 16px; color: #0A1040; background: #FFFFFF; border: 2px solid #D5DBEB; border-radius: 12px; padding: 13px 14px"><span id="pf-empresa-err" class="pf-err" hidden style="font-size: 13px; font-weight: 600; color: #C40F2E"></span></div></div><div class="pf-row" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px"><div style="display: flex; flex-direction: column; gap: 6px"><label for="pf-correo" style="font-size: 14px; font-weight: 700; color: #0A1040">Correo electrónico*</label><input id="pf-correo" type="email" autocomplete="email" placeholder="nombre@empresa.com" aria-invalid="false" aria-describedby="pf-correo-err" style="width: 100%; box-sizing: border-box; font: inherit; font-size: 16px; color: #0A1040; background: #FFFFFF; border: 2px solid #D5DBEB; border-radius: 12px; padding: 13px 14px"><span id="pf-correo-err" class="pf-err" hidden style="font-size: 13px; font-weight: 600; color: #C40F2E"></span></div><div style="display: flex; flex-direction: column; gap: 6px"><label for="pf-whatsapp" style="font-size: 14px; font-weight: 700; color: #0A1040">WhatsApp <span style="font-weight: 500; color: #5A6290">(opcional)</span></label><input id="pf-whatsapp" type="tel" autocomplete="tel" placeholder="Incluye el código de país" style="width: 100%; box-sizing: border-box; font: inherit; font-size: 16px; color: #0A1040; background: #FFFFFF; border: 2px solid #D5DBEB; border-radius: 12px; padding: 13px 14px"></div></div><div style="display: flex; flex-direction: column; gap: 6px"><label for="pf-opcion" style="font-size: 14px; font-weight: 700; color: #0A1040">¿Qué opción te interesa?*</label><select id="pf-opcion" aria-invalid="false" aria-describedby="pf-opcion-err" style="width: 100%; box-sizing: border-box; font: inherit; font-size: 16px; color: #0A1040; background: #FFFFFF; border: 2px solid #D5DBEB; border-radius: 12px; padding: 13px 14px; appearance: auto"><option value="" disabled="disabled" selected="selected">Selecciona una opción</option><option value="Patrocinio Diamante, Platino u Oro">Patrocinio Diamante, Platino u Oro</option><option value="Stand o espacio de exposición">Stand o espacio de exposición</option><option value="Mesa de contacto">Mesa de contacto</option><option value="Premium Branding o patrocinio de talleres precumbre">Premium Branding o patrocinio de talleres precumbre</option><option value="Cápsulas, conferencia destacada u otra opción de presencia de marca">Cápsulas, conferencia destacada u otra opción de presencia de marca</option><option value="Varias opciones">Varias opciones</option><option value="Necesito orientación">Necesito orientación</option></select><span id="pf-opcion-err" class="pf-err" hidden style="font-size: 13px; font-weight: 600; color: #C40F2E"></span></div><div style="display: flex; flex-direction: column; gap: 6px"><label for="pf-objetivo" style="font-size: 14px; font-weight: 700; color: #0A1040">¿Qué te gustaría lograr con tu participación? <span style="font-weight: 500; color: #5A6290">(opcional)</span></label><textarea id="pf-objetivo" rows="4" placeholder="Cuéntanos brevemente qué buscas para tu marca." style="width: 100%; box-sizing: border-box; font: inherit; font-size: 16px; color: #0A1040; background: #FFFFFF; border: 2px solid #D5DBEB; border-radius: 12px; padding: 13px 14px; resize: vertical"></textarea></div>
+<div id="pf-senderr" hidden role="alert" style="font-size: 14px; font-weight: 600; color: #C40F2E; background: #FFF0F2; border-radius: 10px; padding: 12px 14px">No pudimos enviar tu solicitud. Inténtalo de nuevo en unos momentos.</div>
+<button id="pf-btn" type="submit" style="font: inherit; font-size: 17px; font-weight: 700; color: #0A1040; background: linear-gradient(135deg, #F3E3A6, #CDB066); border: 0; border-radius: 999px; padding: 17px 28px; cursor: pointer">Solicitar propuesta de patrocinio</button>
+<span style="font-size: 13px; line-height: 1.5; color: #4A5280">Enviar esta solicitud no reserva un espacio ni genera un compromiso de compra.</span>
+<span style="font-size: 13px; line-height: 1.5; color: #4A5280">Consulta cómo trataremos tus datos en nuestro <a href="#privacidad" style="color: #0A1040; font-weight: 700">Aviso de privacidad</a>.</span>
+</form>
+</div>
+<div id="pf-ok" hidden>
+<div role="status" style="display: flex; flex-direction: column; gap: 14px; padding: 20px 0">
+<svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#1E8E5A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M7.5 12.5l3 3 6-6.5"></path></svg>
+<h4 style="margin: 0; font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 32px; text-transform: uppercase; color: #0A1040">¡Recibimos tu solicitud!</h4>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4A5280">Gracias por tu interés en participar en la Cumbre del Cuidado Avanzado de Heridas, Piel y Longevidad. Nuestro equipo comercial se pondrá en contacto contigo por correo para conocer tus objetivos y compartirte las opciones de participación.</p>
+<a href="https://wa.me/584142577408?text=Hola%2C%20deseo%20informaci%C3%B3n%20sobre%20los%20stands%20para%20la%20Cumbre" target="_blank" rel="noopener" style="font-size: 16px; font-weight: 700; color: #0A1040">Hablar con el equipo por WhatsApp →</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="ponencias" class="pv-sec sec">
+<div class="pv-in">
+<div class="pv-head">
+<span class="eyebrow">Ponencias · Edición 2026</span>
+<h2 class="sec-tit">Más de 30 ponencias de médicos especialistas en nuestra primera edición</h2>
+<p class="sec-txt">Explora una selección de las conferencias de 2026 y conoce las distintas perspectivas que hicieron parte de la Cumbre.</p>
+</div>
+<div id="pv-destacadas" class="pv-grid"></div>
+<div class="pv-pie">
+<a class="btn-navy" href="ponencias.html">Explorar ponencias 2026</a>
+<a class="btn-yt" href="https://www.youtube.com/@ComunidadCumbreHeridasyPiel?sub_confirmation=1" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4" fill="#FF0000"></rect><path d="M10 9v6l5-3z" fill="#FFFFFF"></path></svg>Suscríbete al canal</a>
+</div>
+<p class="pv-nota">Hay más ponencias publicadas en el canal de YouTube "Comunidad Cumbre Heridas y Piel".</p>
+</div>
+</section>
+
+<section id="inscripcion" class="days-bg bg-panal sec" style="padding: 110px 32px 120px">
+<div style="max-width: 1180px; margin: 0 auto; display: flex; flex-direction: column; gap: 44px">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center">
+<span style="font-size: 20px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #8A6F2A">Participa · 2027</span>
+<h2 style="margin: 0; font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; text-transform: uppercase; font-weight: 700; font-size: 48px; line-height: 1; color: #0A1040">Modalidades de participación</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 26px"><article class="day-card" style="background: #FFFFFF; border-radius: 22px; overflow: hidden; display: flex; flex-direction: column">
+<div style="padding: 22px 24px 16px; text-align: center"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 26px; text-transform: uppercase; color: #0A1040">Día 1</span></div>
+<div class="day-photos" aria-hidden="true" style="display: grid; grid-template-columns: 1fr 2.2fr 1fr; gap: 10px; height: 300px"><div class="strip"><div style="background-image: url(assets/img/evento-img-7671.jpg); background-position: 50% 40%; animation-delay: -0s"></div><div style="background-image: url(assets/img/evento-88a2667.jpg); background-position: 40% 50%; animation-delay: -4s"></div><div style="background-image: url(assets/img/evento-88a2456.jpg); background-position: 50% 50%; animation-delay: -8s"></div></div><div class="strip"><div style="background-image: url(assets/img/evento-img-7739.jpg); background-position: 50% 50%; animation-delay: -0.9s"></div><div style="background-image: url(assets/img/evento-88a2298.jpg); background-position: 50% 50%; animation-delay: -4.9s"></div><div style="background-image: url(assets/img/evento-88a2462.jpg); background-position: 50% 50%; animation-delay: -8.9s"></div></div><div class="strip"><div style="background-image: url(assets/img/evento-88a2394.jpg); background-position: 50% 50%; animation-delay: -1.8s"></div><div style="background-image: url(assets/img/evento-88a2749.jpg); background-position: 50% 50%; animation-delay: -5.8s"></div><div style="background-image: url(assets/img/evento-88a2774.jpg); background-position: 50% 50%; animation-delay: -9.8s"></div></div></div>
+<div style="padding: 24px 28px 30px; display: flex; flex-direction: column; gap: 14px; flex: 1">
+<h3 style="margin: 0 auto 4px; font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 30px; line-height: 1.05; text-transform: uppercase; text-align: center; color: #0A1040; padding-bottom: 10px; border-bottom: 2px solid #F7153B">Enfermería y rescate</h3>
+<p class="dia-tema">Protocolos de emergencia, rescate y cuidado crítico</p>
+<div style="display: flex; gap: 10px; align-items: flex-start; font-size: 18px; font-weight: 600; color: #0A1040"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F7153B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M5 6l6 6-6 6"></path><path d="M12 6l6 6-6 6"></path></svg><span>Enfermería, paramédicos y rescatistas</span></div>
+<div style="display: flex; gap: 10px; align-items: flex-start; font-size: 15px; line-height: 1.45; color: #4A5280"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F7153B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M12 21s-6.5-5.7-6.5-11A6.5 6.5 0 0 1 18.5 10c0 5.3-6.5 11-6.5 11z"></path><circle cx="12" cy="10" r="2.4"></circle></svg><span>Centro Comercial Líder, Caracas</span></div>
+<div style="display: flex; gap: 10px; align-items: center; font-size: 15px; color: #4A5280"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F7153B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><rect x="3.5" y="5" width="17" height="15" rx="2.5"></rect><path d="M3.5 10h17M8 3v4M16 3v4"></path></svg><span>Miércoles 12 de mayo de 2027</span></div>
+<button type="button" class="btn-inscribir" data-dia="dia-1" data-dia-label="Día 1 · Miércoles 12 de mayo" aria-haspopup="dialog" style="margin-top: auto; align-self: center; color: #FFFFFF; background: #0A1040; text-decoration: none; padding: 13px 26px; border-radius: 999px; font-weight: 600; font-size: 15px; border: 0; font-family: inherit; cursor: pointer">Inscribirme al Día 1</button>
+</div>
+</article><article class="day-card" style="background: #FFFFFF; border-radius: 22px; overflow: hidden; display: flex; flex-direction: column">
+<div style="padding: 22px 24px 16px; text-align: center"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 26px; text-transform: uppercase; color: #0A1040">Días 2 y 3</span></div>
+<div class="day-photos" aria-hidden="true" style="display: grid; grid-template-columns: 1fr 2.2fr 1fr; gap: 10px; height: 300px"><div class="strip"><div style="background-image: url(assets/img/evento-88a3261.jpg); background-position: 55% 50%; animation-delay: -2.7s"></div><div style="background-image: url(assets/img/evento-88a3494.jpg); background-position: 80% 50%; animation-delay: -6.7s"></div><div style="background-image: url(assets/img/evento-88a3692.jpg); background-position: 45% 50%; animation-delay: -10.7s"></div></div><div class="strip"><div style="background-image: url(assets/img/evento-88a3276.jpg); background-position: 50% 50%; animation-delay: -3.6s"></div><div style="background-image: url(assets/img/evento-88a3253.jpg); background-position: 50% 50%; animation-delay: -7.6s"></div><div style="background-image: url(assets/img/evento-88a3297.jpg); background-position: 50% 50%; animation-delay: -11.6s"></div></div><div class="strip"><div style="background-image: url(assets/img/evento-88a2370.jpg); background-position: 45% 50%; animation-delay: -4.5s"></div><div style="background-image: url(assets/img/evento-88a3226.jpg); background-position: 40% 50%; animation-delay: -8.5s"></div><div style="background-image: url(assets/img/evento-88a3319.jpg); background-position: 50% 50%; animation-delay: -12.5s"></div></div></div>
+<div style="padding: 24px 28px 30px; display: flex; flex-direction: column; gap: 14px; flex: 1">
+<h3 style="margin: 0 auto 4px; font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 30px; line-height: 1.05; text-transform: uppercase; text-align: center; color: #0A1040; padding-bottom: 10px; border-bottom: 2px solid #F7153B">Especialistas médicos</h3>
+<p class="dia-tema">Jueves 13: avances tecnológicos y quirúrgicos<br>Viernes 14: abordaje multidisciplinario y cicatrización</p>
+<div style="display: flex; gap: 10px; align-items: flex-start; font-size: 18px; font-weight: 600; color: #0A1040"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F7153B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M5 6l6 6-6 6"></path><path d="M12 6l6 6-6 6"></path></svg><span>Cirujanos, dermatólogos, fisiatras, internistas, traumatólogos, médicos generales y estudiantes de medicina</span></div>
+<div style="display: flex; gap: 10px; align-items: flex-start; font-size: 15px; line-height: 1.45; color: #4A5280"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F7153B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M12 21s-6.5-5.7-6.5-11A6.5 6.5 0 0 1 18.5 10c0 5.3-6.5 11-6.5 11z"></path><circle cx="12" cy="10" r="2.4"></circle></svg><span>Centro Comercial Líder, Caracas</span></div>
+<div style="display: flex; gap: 10px; align-items: center; font-size: 15px; color: #4A5280"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F7153B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><rect x="3.5" y="5" width="17" height="15" rx="2.5"></rect><path d="M3.5 10h17M8 3v4M16 3v4"></path></svg><span>Jueves 13 y viernes 14 de mayo de 2027</span></div>
+<button type="button" class="btn-inscribir" data-dia="dias-2-3" data-dia-label="Días 2 y 3 · Jueves 13 y viernes 14 de mayo" aria-haspopup="dialog" style="margin-top: auto; align-self: center; color: #FFFFFF; background: #0A1040; text-decoration: none; padding: 13px 26px; border-radius: 999px; font-weight: 600; font-size: 15px; border: 0; font-family: inherit; cursor: pointer">Inscribirme a los Días 2 y 3</button>
+</div>
+</article><article class="day-card" style="background: #FFFFFF; border-radius: 22px; overflow: hidden; display: flex; flex-direction: column">
+<div style="padding: 22px 24px 16px; text-align: center"><span style="font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 26px; text-transform: uppercase; color: #0A1040">Talleres precumbre</span></div>
+<div class="day-photos" aria-hidden="true" style="display: grid; grid-template-columns: 1fr 2.2fr 1fr; gap: 10px; height: 300px"><div class="strip"><div style="background-image: url(assets/img/evento-88a3482.jpg); background-position: 85% 50%; animation-delay: -5.4s"></div><div style="background-image: url(assets/img/evento-88a3342.jpg); background-position: 50% 40%; animation-delay: -9.4s"></div><div style="background-image: url(assets/img/evento-img-7709.jpg); background-position: 72% 50%; animation-delay: -13.4s"></div></div><div class="strip"><div style="background-image: url(assets/img/evento-img-7771.jpg); background-position: 50% 50%; animation-delay: -6.3s"></div><div style="background-image: url(assets/img/evento-88a3191.jpg); background-position: 50% 50%; animation-delay: -10.3s"></div><div style="background-image: url(assets/img/evento-88a3147.jpg); background-position: 50% 50%; animation-delay: -14.3s"></div></div><div class="strip"><div style="background-image: url(assets/img/evento-88a3136.jpg); background-position: 70% 50%; animation-delay: -7.2s"></div><div style="background-image: url(assets/img/evento-img-7677.jpg); background-position: 30% 50%; animation-delay: -11.2s"></div><div style="background-image: url(assets/img/evento-88a2513.jpg); background-position: 70% 50%; animation-delay: -15.2s"></div></div></div>
+<div style="padding: 24px 28px 30px; display: flex; flex-direction: column; gap: 14px; flex: 1">
+<h3 style="margin: 0 auto 4px; font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; font-weight: 700; font-size: 30px; line-height: 1.05; text-transform: uppercase; text-align: center; color: #0A1040; padding-bottom: 10px; border-bottom: 2px solid #F7153B">Talleres prácticos de campo</h3>
+<p class="dia-tema">Se dictan antes de la Cumbre · Lo que el personal de salud y rescate necesita dominar hoy</p>
+<div style="display: flex; gap: 10px; align-items: flex-start; font-size: 18px; font-weight: 600; color: #0A1040"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F7153B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M5 6l6 6-6 6"></path><path d="M12 6l6 6-6 6"></path></svg><span>Control de hemorragias masivas · Manejo del síndrome por aplastamiento · Atención en refugios</span></div>
+<div style="display: flex; gap: 10px; align-items: flex-start; font-size: 15px; line-height: 1.45; color: #4A5280"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F7153B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M12 21s-6.5-5.7-6.5-11A6.5 6.5 0 0 1 18.5 10c0 5.3-6.5 11-6.5 11z"></path><circle cx="12" cy="10" r="2.4"></circle></svg><span>Lugar: se anunciará próximamente</span></div>
+<div style="display: flex; gap: 10px; align-items: center; font-size: 15px; color: #4A5280"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F7153B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><rect x="3.5" y="5" width="17" height="15" rx="2.5"></rect><path d="M3.5 10h17M8 3v4M16 3v4"></path></svg><span>Antes del 12 de mayo · Fechas y horarios: se anunciarán próximamente</span></div>
+<a href="#inscripcion" data-destino="registro" style="margin-top: auto; align-self: center; color: #FFFFFF; background: #0A1040; text-decoration: none; padding: 13px 26px; border-radius: 999px; font-weight: 600; font-size: 15px">Inscribirme a un taller</a>
+</div>
+</article></div>
+</div>
+</section>
+
+<dialog id="dlg-inscripcion" class="dlg-insc" aria-labelledby="dlg-tit">
+<div class="dlg-in">
+<button type="button" class="dlg-cerrar" data-cerrar aria-label="Cerrar">×</button>
+<span class="dlg-eyebrow" id="dlg-dia">Día 1 · Miércoles 12 de mayo</span>
+<h2 id="dlg-tit" class="dlg-tit">Elige tu participación</h2>
+<div class="dlg-grid">
+<div class="dlg-op dlg-kit">
+<span class="dlg-tag">Incluye kit</span>
+<span class="dlg-lab">Inscripción + kit</span>
+<span class="dlg-precio">$40</span>
+<ul><li>Bolso</li><li>Lanyard y credencial física</li><li>Cooler de la Cumbre</li><li>Gorro de quirófano</li><li>Bolígrafo con lámpara</li><li>Cartuchera</li><li>Certificado impreso, además del digital</li><li>Hidratación: un agua o un café por día</li><li>Obsequios exclusivos de nuestros patrocinantes</li></ul>
+<a class="dlg-btn dlg-btn-kit" href="inscripcion.html?modalidad=kit" data-modalidad="kit">Inscribirme con kit</a>
+<span class="dlg-nota">Tu código QR se envía cuando se confirma el pago.</span>
+</div>
+<div class="dlg-op">
+<span class="dlg-lab">Inscripción gratuita</span>
+<span class="dlg-precio">Sin costo</span>
+<p>Acceso a las conferencias de tu día con tu código QR en el teléfono y certificado digital.</p>
+<a class="dlg-btn dlg-btn-gratis" href="inscripcion.html?modalidad=gratuita" data-modalidad="gratuita">Inscribirme gratis</a>
+</div>
+</div>
+<p class="dlg-pronto">En el siguiente paso completas tus datos y recibes tu código QR.</p>
+</div>
+</dialog>
+<section id="videos-2027" class="pv-sec v27-sec sec" aria-labelledby="v27-tit">
+<div class="pv-in">
+<div class="pv-head">
+<span class="eyebrow">Camino a la Cumbre 2027</span>
+<h2 id="v27-tit" class="sec-tit">Videos y entrevistas de la segunda edición</h2>
+<p class="sec-txt">Aquí reunimos los videos de la Cumbre 2027 y las entrevistas de radio a nuestros organizadores y ponentes.</p>
+</div>
+<div id="v27-filtros" class="v27-filtros" role="group" aria-label="Filtrar videos" hidden>
+<button type="button" data-filtro="todos" aria-pressed="true">Todos</button>
+<button type="button" data-filtro="video" aria-pressed="false">Videos</button>
+<button type="button" data-filtro="entrevista" aria-pressed="false">Entrevistas de radio</button>
+</div>
+<div id="v27-grid" class="pv-grid"></div>
+<button id="v27-mas" type="button" class="ver-mas" hidden>Cargar más videos</button>
+<div id="v27-vacio" class="v27-vacio" hidden>
+<div class="v27-vacio-ico" aria-hidden="true"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#0A1040" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"></rect><path d="M10 9.5v5l4-2.5z" fill="#0A1040"></path></svg><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#0A1040" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21M8.5 21h7"></path></svg></div>
+<p class="v27-vacio-tit">Muy pronto, los primeros videos</p>
+<p class="v27-vacio-txt">Estamos preparando los videos de la Cumbre 2027 y las entrevistas de radio. Suscríbete al canal para verlos apenas se publiquen.</p>
+</div>
+<div class="pv-pie">
+<a class="btn-yt" href="https://www.youtube.com/@ComunidadCumbreHeridasyPiel?sub_confirmation=1" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4" fill="#FF0000"></rect><path d="M10 9v6l5-3z" fill="#FFFFFF"></path></svg>Suscríbete al canal</a>
+</div>
+</div>
+</section>
+<!-- Maqueta: sección Un solo ecosistema -->
+<section id="ecosistema" class="eco-sec sec" aria-labelledby="eco-tit" style="scroll-margin-top: 70px">
+<div class="eco-in">
+<div class="eco-head">
+<span data-glogo="firma" data-tema="claro" data-alto="60"></span>
+<span class="eyebrow">Parte del Grupo Medical Shields</span>
+<h2 id="eco-tit" class="sec-tit">Conocimiento que conecta con la práctica</h2>
+<p class="sec-txt">Formación, atención especializada, productos e inteligencia artificial: cuatro empresas que trabajan como un solo grupo.</p>
+</div>
+<div class="eco-grid" id="eco-grid"></div>
+<div class="eco-corp">
+<p><strong>¿Representas a una empresa o una aseguradora?</strong> En el Grupo Medical Shields encuentras en un solo interlocutor los productos, la atención de tus pacientes y la formación de tu personal.</p>
+<a href="#" data-pendiente="1" title="Enlace por confirmar">Conoce la propuesta corporativa →</a>
+</div>
+</div>
+</section>
+<section class="mq-band" aria-label="Organizadores y aval" style="position: relative; background: #FFFFFF">
+<div style="text-align: center; padding-top: 34px; font-size: 14px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #8A6F2A">Organizan y avalan</div>
+<div class="mq-wrap" style="overflow: hidden; padding: 22px 0 40px"><div class="mq-track"><div class="mq-set"><img class="mq-logo" src="assets/img/org-medical-shields.png" alt="Medical Shields" style="height: 84px; width: auto; display: block; flex: none; mix-blend-mode: multiply"><img class="mq-logo" src="assets/img/org-cuidamos-tu-herida.png" alt="Cuidamos tu Herida" style="height: 84px; width: auto; display: block; flex: none; mix-blend-mode: multiply"><img class="mq-logo" src="assets/img/org-lider.png" alt="Centro Comercial Líder" style="height: 84px; width: auto; display: block; flex: none; mix-blend-mode: multiply"><img class="mq-logo" src="assets/img/org-producciones-24.png" alt="Producciones 24" style="height: 84px; width: auto; display: block; flex: none; mix-blend-mode: multiply"><img class="mq-logo" src="assets/img/org-espacio.png" alt="Espacio" style="height: 84px; width: auto; display: block; flex: none; mix-blend-mode: multiply"><img class="mq-logo" src="assets/img/aval-sociedad-venezolana-cirugia.png" alt="Sociedad Venezolana de Cirugía" style="height: 104px; width: 104px; display: block; flex: none; mix-blend-mode: multiply"></div><div class="mq-set" aria-hidden="true"><img class="mq-logo" src="assets/img/org-medical-shields.png" alt="" aria-hidden="true" style="height: 84px; width: auto; display: block; flex: none; mix-blend-mode: multiply"><img class="mq-logo" src="assets/img/org-cuidamos-tu-herida.png" alt="" aria-hidden="true" style="height: 84px; width: auto; display: block; flex: none; mix-blend-mode: multiply"><img class="mq-logo" src="assets/img/org-lider.png" alt="" aria-hidden="true" style="height: 84px; width: auto; display: block; flex: none; mix-blend-mode: multiply"><img class="mq-logo" src="assets/img/org-producciones-24.png" alt="" aria-hidden="true" style="height: 84px; width: auto; display: block; flex: none; mix-blend-mode: multiply"><img class="mq-logo" src="assets/img/org-espacio.png" alt="" aria-hidden="true" style="height: 84px; width: auto; display: block; flex: none; mix-blend-mode: multiply"><img class="mq-logo" src="assets/img/aval-sociedad-venezolana-cirugia.png" alt="" aria-hidden="true" style="height: 104px; width: 104px; display: block; flex: none; mix-blend-mode: multiply"></div></div></div>
+</section>
+<footer id="pie" style="background: #0A1040; color: #C8CEEA; scroll-margin-top: 70px">
+<div style="max-width: 1280px; margin: 0 auto; padding: 44px 32px 28px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 28px">
+<img src="assets/img/logo-cumbre-27-blanco.png" alt="II Cumbre Internacional para el Cuidado Avanzado de Heridas, Piel y Longevidad" style="height: 54px; width: auto; display: block">
+<nav aria-label="Pie de página" style="display: flex; flex-wrap: wrap; gap: 24px; font-size: 14px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase"><a href="#inscripcion" style="color: #FFFFFF; text-decoration: none">Programa 2027</a><a href="ponencias.html" style="color: #FFFFFF; text-decoration: none">Ponencias 2026</a><a href="#plano" style="color: #FFFFFF; text-decoration: none">La sede</a><a href="#patrocinio" style="color: #F3E3A6; text-decoration: none">Patrocinios</a><a href="#inscripcion" style="color: #FFFFFF; text-decoration: none">Regístrate</a></nav>
+</div>
+<div style="max-width: 1280px; margin: 0 auto; padding: 18px 32px 30px; border-top: 1px solid rgba(255,255,255,0.12); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 13px">
+<span>© 2027 II Cumbre Internacional para el Cuidado Avanzado de Heridas, Piel y Longevidad · Medical Shields · Cuidamos tu Herida</span>
+<span><a href="https://www.youtube.com/@ComunidadCumbreHeridasyPiel" target="_blank" rel="noopener" style="color: #FFFFFF">YouTube: Comunidad Cumbre Heridas y Piel</a> · [Contacto, redes y política de privacidad por confirmar]</span>
+</div>
+</footer>
+<!-- Maqueta: pie del grupo, propuesta 1 -->
+<div class="gpie gpie-anillos">
+<div class="gpie-anillos-in">
+<div><span data-glogo="firma" data-tema="oscuro" data-alto="64"></span></div>
+<div class="gpie-marcas" id="gpie-marcas"></div>
+</div>
+</div>
+<!-- Maqueta: pie del grupo, propuestas 2 a 4 -->
+<div class="gpie gpie-codex">
+<div class="gpie-codex-in">
+<span data-glogo="firma" data-sigue-franja data-alto="44"></span>
+<span class="gpie-sep" aria-hidden="true"></span>
+<div class="gpie-links">
+<div class="gpie-logos" id="gpie-logos"></div>
+<a class="gpie-conoce" href="#" data-pendiente="1" title="Página del grupo por definir">Conoce el grupo ↗</a>
+</div>
+<span class="gpie-sep" aria-hidden="true"></span>
+<span class="gpie-legal">Política de privacidad · Términos y condiciones <span>[por confirmar]</span></span>
+</div>
+</div>
+<div class="eco-colchon" aria-hidden="true"></div>
+<a class="wa-float" href="https://wa.me/584142577408?text=Hola%2C%20deseo%20informaci%C3%B3n%20sobre%20los%20stands%20para%20la%20Cumbre" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp para información de stands" style="position: fixed; right: 24px; bottom: 24px; z-index: 70; display: flex; align-items: center; gap: 10px; text-decoration: none">
+<span class="wa-tip" style="background: #FFFFFF; color: #0A1040; font-size: 14px; font-weight: 600; padding: 10px 14px; border-radius: 12px; box-shadow: 0 8px 24px rgba(10,16,64,0.18); white-space: nowrap">¿Información de stands? Escríbenos</span>
+<span style="width: 60px; height: 60px; border-radius: 50%; background: #25D366; display: flex; align-items: center; justify-content: center; box-shadow: 0 12px 28px rgba(10,16,64,0.25); flex: none"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 11.6a8.4 8.4 0 0 1-12.4 7.4L3.5 20.5l1.6-4.4A8.4 8.4 0 1 1 20.5 11.6z"></path><path d="M9 8.6c.2 2.9 2.5 5.4 5.6 6l1.3-1.4-1.9-1-1 .8a4.6 4.6 0 0 1-2.4-2.4l.8-1-1-1.9z"></path></svg></span>
+</a>
+</div>
+
+<!-- Maqueta: panel para elegir la propuesta (no forma parte de la web) -->
+<aside class="prop-panel" id="prop-panel" data-abierto="true" aria-label="Propuestas del logo y el pie del grupo">
+<div class="prop-cab"><div><strong>Logo y pie del grupo</strong><small>Maqueta para el comité · no es la web publicada</small></div><button id="prop-toggle" class="prop-toggle" type="button" aria-expanded="true" aria-controls="prop-cuerpo">Ocultar</button></div>
+<div class="prop-cuerpo" id="prop-cuerpo">
+<div class="prop-ops">
+<button class="prop-op" type="button" data-op="1" aria-pressed="false"><span class="prop-op-img"><img src="assets/img/grupo/grupo-ms-icono-claro.svg" alt=""></span><span class="prop-op-txt"><b>1 · Anillos encadenados</b><span>Cuatro anillos, uno por marca</span></span></button>
+<button class="prop-op" type="button" data-op="2" aria-pressed="false"><span class="prop-op-img"><span class="prop-aa">GRUPO<br>Medical Shields<i></i></span></span><span class="prop-op-txt"><b>2 · Firma tipográfica</b><span>Solo el nombre, con raya azul</span></span></button>
+<button class="prop-op" type="button" data-op="3" aria-pressed="false"><span class="prop-op-img"><img src="assets/img/ecosistema/codex-02-claro.png" alt=""></span><span class="prop-op-txt"><b>3 · Conexión esencial</b><span>Dos piezas que forman un cuadrado</span></span></button>
+<button class="prop-op" type="button" data-op="4" aria-pressed="false"><span class="prop-op-img"><img src="assets/img/ecosistema/codex-03-claro.png" alt=""></span><span class="prop-op-txt"><b>4 · Evolución de origen</b><span>A partir de la cruz de Medical Shields</span></span></button>
+</div>
+<div class="prop-fila"><span>Franja del grupo en el pie</span><div class="prop-seg"><button type="button" data-franja="clara" aria-pressed="false">Clara</button><button type="button" data-franja="azul" aria-pressed="false">Azul marino</button></div><p class="prop-nota" id="prop-franja-nota" hidden>La propuesta 1 tiene su propio pie, en azul marino.</p></div>
+<div class="prop-fila"><span>Ir a</span><div class="prop-ir"><button type="button" data-ir="barra-grupo">Barra</button><button type="button" data-ir="ecosistema">Ecosistema</button><button type="button" data-ir="pie">Pie</button></div></div>
+<p class="prop-nota">Teclas: 1 a 4 cambian la propuesta, F cambia la franja y H oculta este panel.</p>
+</div>
+</aside>
+
+<div class="draft-badge">Propuesta de diseño · borrador para revisión</div>
+
+<script src="assets/js/ponencias.js"></script>
+<script src="assets/js/videos-2027.js"></script>
+<script src="assets/js/sitio.js"></script>
+<script src="assets/js/ecosistema-propuesta.js"></script>
+</body>
+</html>
