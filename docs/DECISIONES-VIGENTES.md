@@ -192,3 +192,9 @@ Basada en los comentarios de Social media y la revisión de Codex. Reemplaza lo 
 - **Logos reales de las cuatro marcas** (pedido de Jenny), en `assets/img/ecosistema/`: Medical Shields de medicalshields.com, Cuidamos tu Herida del repositorio cth-web-propuesta, la Cumbre de este repositorio y Ethical Shields AI de su web (marca y nombre). Las marcas de las propuestas 3 y 4 son recortes de las imágenes de Codex: sirven para la web, no para imprenta.
 - **Ethical Shields AI:** se incorpora al ecosistema con ese nombre y con el mismo peso que las otras marcas. Su línea destaca **GesPro** (panel de control financiero con IA), porque IRIS y el CRM todavía no están listos para comercializar. Tarjeta: "IA financiera para empresas" (por confirmar). Pie: "Consultoría de negocio y finanzas con inteligencia artificial. GesPro, su panel de control financiero."
 - **Cuidamos tu Herida:** su línea incluye la fisiatría avanzada: "Atención médica de heridas y piel y fisiatría avanzada, en sede, a domicilio y por telemedicina."
+
+## Longevidad en los textos y más fotos de 2026 (12 nov 2026)
+
+- **Longevidad:** el cuadro de "Nuestro enfoque" pasa a "Cuidado de la piel y longevidad", y el título de patrocinio a "Conecta tu marca con quienes trabajan por el cuidado avanzado de heridas, piel y longevidad".
+- **"Así se vivió la Cumbre 2026":** 11 fotos nuevas de las carpetas `sponsor` y `variadas` (y la del equipo junto a la camioneta de CTH). Debajo del video quedan dos filas de tres cuadros que rotan: stands, visitantes, exhibición y equipo, ponentes, sala de conferencias y encuentros. En teléfono siguen detrás de "Ver más fotos".
+- **No se repiten fotos en la portada:** `_88A2667`, `_88A2749` e `IMG_7739` de la carpeta `variadas` ya están en las tarjetas de Modalidades, por eso no entran en la galería.
