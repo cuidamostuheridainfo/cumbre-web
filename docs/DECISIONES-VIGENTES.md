@@ -129,7 +129,7 @@ Basada en los comentarios de Social media y la revisión de Codex. Reemplaza lo 
 - El QR lleva un código aleatorio imposible de adivinar, validado contra la lista del día descargada en el teléfono. Reemplaza al "código firmado" porque la lista se necesita igual.
 - Se reutilizan la lógica y la librería de escaneo de 2026, pero no el archivo de 2026.
 - Detalle en `docs/ACREDITACION-2027.md`.
-- **Paleta de la experiencia del participante (9 nov):** fondo claro arena; azul, verde y dorado, un color por sección. Reemplaza al fondo azul tinta de la primera versión. Credencial física solo para el kit; su diseño impreso queda en espera.
+- **Paleta de la experiencia del participante:** ~~fondo claro arena; azul, verde y dorado (9 nov)~~. Reemplazada el 12 nov: **Cielo**, elegida por encuesta del equipo (azul pizarra en Inicio y La sede, durazno en Mi QR, azul claro en Conferencias; fondo blanco). Detalle en `docs/ACREDITACION-2027.md`. Credencial física solo para el kit; su diseño impreso queda en espera.
 
 ## Videos y entrevistas de la Cumbre 2027 (10 nov 2026)
 

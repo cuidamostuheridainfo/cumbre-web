@@ -16,14 +16,16 @@ Todo vive en el repositorio `cumbre-web` (decisión del 9 nov), con la misma dir
 
 Distinta de la web (pedido de Jenny, 9 nov).
 
-**Paletas en comparación (9 nov):** la app tiene tres paletas intercambiables. En todas, el fondo es el color más claro.
-- **Arena:** la que se describe abajo. Es la de por defecto mientras se elige.
+**Paleta elegida: Cielo (12 nov, encuesta del equipo).** Es la de la app; Arena y Tierra quedan en el código solo para comparar. En todas, el fondo es el color más claro.
+- **Arena:** la que se describe abajo. Fue la de por defecto mientras se elegía.
 - **Opción A, Tierra:** café #5A4636, caramelo #B08A5E, arena #D9CDB8, salvia #A3AD97 y fondo crema #FAF7F1. Secciones: café en Inicio y La sede, caramelo en Mi QR, salvia en Conferencias. Franja del día: salvia en el Día 1, café en los Días 2 y 3, caramelo en el pase de tres días.
-- **Opción B, Cielo:** azul pizarra #4A6A8A, azul claro #A9C1D9, azul pálido #DCE7F2, durazno #E8C9A0 y fondo blanco #FFFFFF. Secciones: azul pizarra en Inicio y La sede, durazno en Mi QR, azul claro en Conferencias. Franja del día: durazno en el Día 1, azul pizarra en los Días 2 y 3, azul claro en el pase de tres días.
+- **Opción B, Cielo (elegida):** azul pizarra #4A6A8A, azul claro #A9C1D9, azul pálido #DCE7F2, durazno #E8C9A0 y fondo blanco #FFFFFF. Secciones: azul pizarra en Inicio y La sede, durazno en Mi QR, azul claro en Conferencias. Franja del día: durazno en el Día 1, azul pizarra en los Días 2 y 3, azul claro en el pase de tres días.
 
-Para verlas se agrega `?tema=tierra`, `?tema=cielo` o `?tema=arena` al enlace de la app; el teléfono recuerda la última elegida. Cuando Jenny elija, se fija como `TEMA_INICIAL` en `app-asistente.js` y se pueden quitar las otras.
+Cielo está fijada como `TEMA_INICIAL` en `app-asistente.js` y en `data-tema` de `app/index.html`. Para ver las otras se agrega `?tema=arena` o `?tema=tierra` al enlace; vale solo para esa visita y el teléfono ya no la recuerda.
 
-Paleta arena:
+La descripción de abajo (tipografías, interacción, navegación) vale para las tres paletas; los colores son los de la paleta elegida.
+
+Paleta arena (referencia):
 
 - **Fondo:** arena (#F2EADB) con superficies claras (#FFFDF8).
 - **Un color por sección:** azul (#1F4E9C) en Inicio y La sede, dorado (#C9A24A) en Mi QR y verde (#1D7A57) en Conferencias. El color de la sección aparece en la línea superior, el título, los botones y la pestaña activa.

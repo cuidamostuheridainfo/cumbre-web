@@ -7,11 +7,11 @@
   Las conferencias registradas se guardan en el teléfono y quedan en cola para subir (fase 2).
 */
 (function () {
-  // Paleta: ?tema=arena|tierra|cielo (se recuerda en este teléfono). Mientras se elige, la de por defecto es TEMA_INICIAL.
-  var TEMA_INICIAL = 'arena';
+  // Paleta elegida: Cielo (12 nov). Para comparar, ?tema=arena|tierra cambia la paleta solo en esa visita; ya no se recuerda.
+  var TEMA_INICIAL = 'cielo';
   (function () {
     var t = new URLSearchParams(location.search).get('tema'), ok = { arena: 1, tierra: 1, cielo: 1 };
-    try { if (ok[t]) localStorage.setItem('cumbre27_tema', t); t = localStorage.getItem('cumbre27_tema'); } catch (e) {}
+    try { localStorage.removeItem('cumbre27_tema'); } catch (e) {}
     document.documentElement.setAttribute('data-tema', ok[t] ? t : TEMA_INICIAL);
   })();
   var A = window.ACRED, C = window.INSCRIPCION_CONFIG || {}, P = window.ACRED_PRUEBA || { asistentes: [], conferencias: [] };

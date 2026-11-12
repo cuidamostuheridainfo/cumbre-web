@@ -1,5 +1,5 @@
 /* App del participante — Cumbre 2027. Identidad propia, distinta de la web.
-   Tres paletas para comparar (9 nov). Se elige con data-tema en <html>; en pruebas, con ?tema=arena|tierra|cielo.
+   Paleta elegida: Cielo (12 nov), fijada con data-tema en <html>. Arena y Tierra quedan para comparar con ?tema=arena|tierra.
    En todas, el fondo es el color más claro de la paleta y cada sección tiene su color:
    s1 = Inicio y La sede · s2 = Mi QR · s3 = Conferencias. d1, d23 y d3d = franja del día en la acreditación.
    "-sobre" es el color del texto encima de ese color; "-texto" es la versión legible para títulos sobre el fondo. */
