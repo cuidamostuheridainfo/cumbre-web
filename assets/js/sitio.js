@@ -18,6 +18,21 @@
   var sl = $$('.hero-slide'), i = 0;
   if (sl.length > 1) setInterval(function () { sl[i].classList.remove('on'); i = (i + 1) % sl.length; sl[i].classList.add('on'); }, 6000);
 
+  // Fotos que rotan una a la vez (.gal-rota), 4,5 s cada una. Cada foto se descarga justo antes de mostrarse.
+  $$('.gal-rota').forEach(function (t) {
+    var c = [].slice.call(t.children), k = 0;
+    function cargar(n) { var d = c[n % c.length]; if (d && d.getAttribute('data-bg')) { d.style.backgroundImage = 'url(' + d.getAttribute('data-bg') + ')'; d.removeAttribute('data-bg'); } }
+    if (c.length < 2 || (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches)) return;
+    cargar(1);
+    // data-inicio (ms): desfase para que los cuadros de una misma galería no cambien a la vez.
+    setTimeout(function () {
+      setInterval(function () {
+        if (!t.offsetParent) return;
+        c[k].classList.remove('on'); k = (k + 1) % c.length; c[k].classList.add('on'); cargar(k + 1);
+      }, 4500);
+    }, parseInt(t.getAttribute('data-inicio'), 10) || 0);
+  });
+
   // Cuenta regresiva
   if ($('[data-cd]')) {
     var target = Date.parse('2027-05-12T08:00:00-04:00');
