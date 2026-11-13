@@ -250,3 +250,18 @@ Fuente: planilla "Cumbre-2027-datos-pendientes.xlsx" respondida, y aclaraciones 
 
 - **Longevidad en su propio cuadro (pedido de la organización vía Jenny):** "Nuestro enfoque" pasa a cinco cuadros: Manejo integral de heridas, Cuidado de la piel, **Longevidad** (azul #0A6CFF, letra blanca), Emergencias y desastres, y Visión multidisciplinaria. Reemplaza el cuadro "Cuidado de la piel y longevidad" del 12 nov. En PC van los cinco en una fila; en tablet y teléfono, de dos en dos, con Visión multidisciplinaria a lo ancho.
 - **"Elige cómo quieres participar" en pestañas (pedido de Jenny, en PC y teléfono):** cuatro pestañas, Niveles de patrocinio · Espacios de exposición · Otras opciones de marca · Complementos. Al tocar una, se ven solo las tarjetas de ese grupo, siempre abiertas (ya no son plegables). Se abre en Niveles de patrocinio. En teléfono las pestañas van en dos filas de dos. Así el teléfono no tiene un desplazamiento interminable.
+
+## Fase 2: base de datos, inscripción y acreditación (13 nov 2026)
+
+Detalle completo en `docs/FASE2-BASE-DE-DATOS.md`. Reemplaza lo que contradiga las secciones anteriores y `ESTRUCTURA.md`.
+
+- **Proyecto Supabase "cumbre"** creado el 13 nov en la organización Medical Shields, plan Free, East US (Ohio). Se pasa a Pro antes de publicar formularios o cargar datos reales. Los tres proyectos del CRM siguen pausados y no se borran.
+- **Primera migración sin pagos:** 8 tablas (configuración, staff, inscritos, charlas, asistencias, registros de puerta, certificados y solicitudes de patrocinio). Pagos, comprobantes y talleres quedan para después. Ninguna tabla se puede leer ni escribir desde la página pública; solo escriben las funciones del servidor.
+- **Una inscripción por cédula.** El correo se puede repetir, porque la gente lo escribe mal o pone uno al que no tiene acceso (experiencia de 2026). Reemplaza "el mismo correo no se registra dos veces".
+- **Cédula repetida:** "Ya estás inscrito", el correo registrado a medias y el botón "Pedir ayuda", que abre un correo a informacion@cumbrechp.org con la cédula escrita. Sin WhatsApp. Nunca se muestra el pase con solo la cédula. Administración corrige el correo desde el panel y reenvía el pase.
+- **Solo cédula, V o E.** Sin pasaporte.
+- **Staff de acreditación: una cuenta por persona, 8 cuentas** (Puesto 1 a 6 y Mesa de soluciones 1 y 2), creadas por administración, sin registro libre y sin segundo factor en la puerta. Se elige el puesto y el día al empezar, como en 2026. Reemplaza la lista Puerta 1, 2 y 3 y una Mesa de soluciones.
+- **Panel de administración con segundo factor obligatorio**, exigido en la base.
+- **Bajo el QR:** cédula en grande y código del pase en pequeño. **Entrada con la cédula escrita a mano:** la app pide confirmar que el nombre es el de la persona.
+- **Lectura del QR:** QR negro sobre blanco con borde, más corrección de errores y linterna en la app del staff. Motivo: en 2026 el QR llevaba todos los datos (unos 260 caracteres, cuadritos de 3,4 píxeles en pantalla) y muchos no se leían; en 2027 lleva solo el código (cuadritos de 10,5 píxeles).
+- **Solicitudes de patrocinio con los nombres de campo de GMS Comercial** (tabla `casos`): `contacto_nombre`, `contacto_empresa`, `contacto_correo`, `contacto_telefono`, `notas`, `origen_lead`, `origen_lead_detalle`, `consentimiento_aceptado_en`, `consentimiento_version` e `idempotency_key`. La opción de patrocinio y el estado de seguimiento son propios de la Cumbre.

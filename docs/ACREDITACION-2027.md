@@ -1,6 +1,6 @@
 # Acreditación Cumbre 2027
 
-Versión 2 · 12 de noviembre de 2026. Fase 1 construida (con lista de prueba). Fase 2 diseñada, pendiente de aprobación.
+Versión 3 · 13 de noviembre de 2026. Fase 1 construida (con lista de prueba). Fase 2: diseño aprobado por partes el 13 nov y base de datos escrita y probada en local (`docs/FASE2-BASE-DE-DATOS.md`), sin aplicar todavía.
 
 ## Piezas y direcciones
 
@@ -59,7 +59,11 @@ La app del staff usa las mismas tipografías, pero con fondo claro y alto contra
 | No está en la lista / Código no válido | Rojo | Código desconocido o QR ajeno | Envío a la mesa de soluciones |
 | Entregar kit / Kit ya entregado / Sin kit | Verde / Naranja / Gris | Modo "Entrega de kit" | Confirmar entrega una sola vez |
 
-Plan B si el QR no se lee: búsqueda por cédula, apellido o código, que reemplaza la lista impresa de 2026.
+Plan B si el QR no se lee: búsqueda por cédula, apellido o código, que reemplaza la lista impresa de 2026. Cuando la entrada se hace así, la app muestra el nombre en grande y pide "Confirmar que es esta persona" (13 nov).
+
+**Puestos (13 nov):** Puesto 1 a 6 y Mesa de soluciones 1 y 2, con una cuenta por persona (8 cuentas) creada por administración. Reemplaza Puerta 1, 2 y 3 y una Mesa de soluciones.
+
+**Lectura del QR (13 nov):** QR negro puro sobre blanco con borde blanco, más corrección de errores, linterna en la app del staff, y debajo del QR la cédula en grande y el código en pequeño. En 2026 el QR llevaba todos los datos y muchos no se leían; ver `FASE2-BASE-DE-DATOS.md`.
 
 Límite conocido: sin conexión, una puerta no se entera al instante de una entrada registrada en otra. Se cruza cuando se sincroniza (fase 2).
 
@@ -163,7 +167,7 @@ Límite conocido: si la persona no tiene internet al escanear, la app guarda el 
 
 ### Orden de construcción
 
-1. Crear con Jenny el proyecto "cumbre" en Supabase y las tablas.
+1. Crear con Jenny el proyecto "cumbre" en Supabase (hecho el 13 nov) y las tablas (migración escrita y probada en local el 13 nov; falta aplicarla).
 2. Inscripción y pase reales: funciones `inscribir` y `mi-pase`, conectadas a `inscripcion.html` y `/app/`.
 3. Panel con verificación de pagos.
 4. Staff con inicio de sesión, lista del día y subida de registros.
@@ -177,7 +181,7 @@ Límite conocido: si la persona no tiene internet al escanear, la app guarda el 
 - Programa con el horario de cada charla, para generar sus QR.
 - Diseño del certificado: modelo de 2026, firmas y logos.
 - Plan de Mailchimp de Medical Shields: confirmar que permite correos automáticos.
-- Plan Pro de la organización de Supabase y costo del proyecto adicional. [Por confirmar en la facturación de Supabase.]
+- Plan Pro de la organización de Supabase: revisado el 13 nov ($25/mes con "cumbre" como único proyecto activo). El proyecto "cumbre" se creó en Free; se pasa a Pro antes de cargar datos reales.
 - Filtro antispam: propuesta, Cloudflare Turnstile (gratuito).
 
 ## Fases

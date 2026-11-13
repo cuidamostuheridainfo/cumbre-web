@@ -1,6 +1,6 @@
 # Estado del proyecto
 
-Última actualización: 13 de noviembre de 2026.
+Última actualización: 13 de noviembre de 2026 (tarde: fase 2, base de datos).
 
 ## Fase actual
 
@@ -8,7 +8,9 @@
 
 Desde la v3, **la fuente del diseño son los archivos del repositorio** (`index.html`, `ponencias.html`, `assets/css/sitio.css`, `assets/js/`). El lienzo de Claude queda como referencia de la v2; no puede incrustar YouTube.
 
-La construcción del sitio definitivo (Astro, formularios reales, base de datos, panel) **no ha empezado**. Los formularios de patrocinio y de inscripción (`inscripcion.html`, desde el 4 nov) validan los campos y **simulan** el envío; no guardan datos. Siguiente: proyecto de Supabase "cumbre" (fase 2) y app del asistente.
+La construcción del sitio definitivo (Astro, formularios reales, panel) **no ha empezado**. Los formularios de patrocinio y de inscripción (`inscripcion.html`, desde el 4 nov) validan los campos y **simulan** el envío; no guardan datos.
+
+**Fase 2 (13 nov):** creado el proyecto de Supabase "cumbre" (plan Free, vacío). Escrita y probada en local la migración de la base de datos (8 tablas, 67 de 67 pruebas correctas), **sin aplicar todavía** en Supabase. Detalle en `docs/FASE2-BASE-DE-DATOS.md`. Siguiente: que Jenny revise la migración y autorice aplicarla; después, las funciones del servidor (inscribir y mi-pase).
 
 ## Qué existe y dónde
 
@@ -26,6 +28,8 @@ La construcción del sitio definitivo (Astro, formularios reales, base de datos,
 | Sitio actual | https://cumbrechp.org | WordPress. Activo hasta el cambio de DNS. |
 | Maqueta del ecosistema del grupo (11 nov) | https://cuidamostuheridainfo.github.io/cumbre-web/propuesta-ecosistema.html | Página aparte (`propuesta-ecosistema.html`, `assets/css/ecosistema-propuesta.css`, `assets/js/ecosistema-propuesta.js`, `assets/img/ecosistema/`). Sin enlace en el menú, con `noindex`. La portada no cambia. |
 | Repositorio | github.com/cuidamostuheridainfo/cumbre-web | Clonado en `C:\Users\Jenny Lopez\Documents\GitHub\cumbre-web\cumbre-web`. |
+| Proyecto Supabase "cumbre" (13 nov) | https://jjkerycznrxaqkbzvnjh.supabase.co · organización Medical Shields, plan Free, East US (Ohio) | Vacío. Migración en `supabase/migrations/`, sin aplicar. Ver `docs/FASE2-BASE-DE-DATOS.md`. |
+| App de acreditación 2026 | github.com/infocumbrechp-beep/Acreditacion-CHP | Referencia de 2026 (lógica de la puerta y lector de QR). |
 
 ## Qué tiene hoy la portada (en orden, v3)
 
@@ -61,5 +65,6 @@ La construcción del sitio definitivo (Astro, formularios reales, base de datos,
   - **Logo del grupo y pie:** sin definir al 13 nov. El 11 nov se envió al comité la maqueta con una encuesta de WhatsApp para votar entre las cuatro propuestas. La encuesta del 12 nov fue de la paleta de la app del participante (ganó Cielo), no del logo.
   - En la web real todavía no se aplica nada.
 
-- **Supabase:** los formularios irán a un proyecto nuevo dentro de la misma organización donde vive el CRM de Medical Shields (GMS Comercial), separado del proyecto del CRM.
+- **Supabase:** los formularios van al proyecto "cumbre" (creado el 13 nov), dentro de la organización Medical Shields donde vive el CRM (GMS Comercial), separado de sus proyectos. Los tres proyectos del CRM (GMS-Comercial, -Externo y -Pruebas) están pausados mientras se trabaja en las webs; **no se borran**. Se pueden reactivar desde el panel hasta el 29 oct, 7 dic y 3 dic de 2027 respectivamente. Recordatorio para revisarlos el 1 dic 2026.
+- **GMS Comercial:** las solicitudes de patrocinio usan los mismos nombres de campo que la tabla `casos` del CRM (ver `docs/FASE2-BASE-DE-DATOS.md`).
 - **Web de Medical Shields:** proyecto aparte, todavía no iniciado.

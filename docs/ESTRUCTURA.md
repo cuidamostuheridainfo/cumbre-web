@@ -35,11 +35,11 @@ Construido el 4 nov en `inscripcion.html` (fase 1, **envío simulado**). Funcion
 
 | Campo | Tipo | Obligatorio |
 | --- | --- | --- |
-| Perfil | Lista: Especialista médico · Enfermería, paramédicos y rescatistas · Otras áreas (farmacia, investigación, nutrición, psicología) · Estudiante de medicina | Sí |
+| Perfil | Lista: Especialista médico · Enfermería, paramédicos y rescatistas (incluye estudiantes de enfermería) · Nutrición y psicología · Estudiante de medicina (13 nov: farmacia e investigación no participan) | Sí |
 | Día o días | Se asigna según el perfil: Día 1 (miércoles 12) o Días 2 y 3 (jueves 13 y viernes 14). Estudiantes de medicina: Días 2 y 3. Otras áreas: eligen mientras se confirma | Automático |
 | Modalidad | Gratuita · Inscripción + kit ($40) | Sí |
 | Nombre y apellido | Texto | Sí |
-| Cédula | Texto con formato validado | Sí |
+| Cédula | V o E y solo números (5 a 9 dígitos). Sin pasaporte (13 nov) | Sí |
 | Correo | Correo | Sí |
 | WhatsApp | Teléfono con código de país | Sí |
 | Especialidad o área | Texto o lista | Sí |
@@ -53,7 +53,7 @@ Construido el 4 nov en `inscripcion.html` (fase 1, **envío simulado**). Funcion
 
 **Kit:** bolso, lanyard y credencial física, cooler, gorro de quirófano, bolígrafo con lámpara, cartuchera, certificado impreso (además del digital), hidratación (un agua o un café por día), obsequios exclusivos de los patrocinantes. **Gratuita:** QR en el teléfono y certificado digital.
 
-**Conexión con la acreditación:** la app del staff de 2027 reutiliza la de 2026 (repo `infocumbrechp-beep/Acreditacion-CHP`), pero lee y escribe en la misma base de Supabase. El QR lleva solo un código firmado (no los datos a la vista, como en 2026); el staff descarga la lista de inscritos antes de cada día y funciona sin internet. Al escanear muestra: válido, día equivocado, ya entró o entregar kit.
+**Conexión con la acreditación:** la app del staff de 2027 reutiliza la lógica de la de 2026 (repo `infocumbrechp-beep/Acreditacion-CHP`), pero lee y escribe en la misma base de Supabase. El QR lleva solo un código aleatorio (no los datos a la vista, como en 2026); el staff descarga la lista de inscritos antes de cada día y funciona sin internet. Al escanear muestra: válido, día equivocado, ya entró o entregar kit. Detalle en `ACREDITACION-2027.md` y `FASE2-BASE-DE-DATOS.md`.
 
 ## Formulario de patrocinio (solicitud de propuesta)
 
@@ -75,14 +75,16 @@ Es el formulario de la sección "Expositores y patrocinadores" (propuesta de Cod
 
 ## Reglas comunes de los formularios
 
-- El mismo correo no se registra dos veces en el mismo formulario; si lo intenta, ve un mensaje de que ya está registrado.
+- Inscripción de asistentes: una por cédula (13 nov). El correo se puede repetir. Si la cédula ya está inscrita, ve "Ya estás inscrito", el correo registrado a medias y el botón "Pedir ayuda" por correo.
 - Al enviar, mensaje en pantalla de registro recibido.
 - Antispam: verificación invisible y campo trampa, sin acertijos.
 
 ## Base de datos y panel
 
-- **Recorrido:** página → función en Vercel (valida, filtra spam, revisa duplicados) → Supabase. Solo la función tiene la llave de escritura.
-- **Tablas:** `asistentes` (campos del formulario + modalidad + estado de pago + fecha de registro + origen) y `solicitudes_patrocinio` (campos + fecha + origen + estado de seguimiento: Nuevo · Contactado · Propuesta enviada · Confirmado · Descartado).
+> Desde el 13 nov la fuente vigente de la base de datos es `docs/FASE2-BASE-DE-DATOS.md` (tablas, reglas y permisos). Lo de abajo queda como resumen.
+
+- **Recorrido:** página → función en Supabase (valida, filtra spam, revisa duplicados por cédula) → base del proyecto "cumbre". Solo la función escribe. (Antes: función en Vercel; reemplazado el 12 nov.)
+- **Tablas:** `inscritos` y `solicitudes_patrocinio`, más las de la acreditación (charlas, asistencias, registros de puerta, certificados) y `staff`. Estados de seguimiento del patrocinio: nuevo · contactado · propuesta enviada · confirmado · descartado.
 - **Panel:** acceso con cuenta, solo correos autorizados y segundo factor; lista con filtros por perfil, tipo de empresa y fecha; descarga CSV; cambio de estado en stands.
 - **Aviso:** correo al responsable comercial por cada solicitud de patrocinio nueva (destinatario por definir).
 

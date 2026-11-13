@@ -1,0 +1,67 @@
+OK     staff: crear admin, puerta y admin inactivo
+OK     staff: rol inexistente (pagos) → new row for relation "staff" violates check constraint "staff_rol_check"
+OK     inscritos: inscripción web válida (gratuita)
+OK     inscritos: código generado con formato correcto (= 1)
+OK     inscritos: mailchimp queda pendiente (= 1)
+OK     inscritos: misma cédula otra vez → duplicate key value violates unique constraint "inscritos_cedula_unica"
+OK     inscritos: mismo correo con otra cédula (permitido)
+OK     inscritos: misma cifra con E es otra cédula
+OK     inscritos: tipo de documento P (pasaporte) → new row for relation "inscritos" violates check constraint "inscritos_cedula_tipo_check"
+OK     inscritos: cédula con puntos → new row for relation "inscritos" violates check constraint "inscritos_cedula_numero_check"
+OK     inscritos: correo con mayúsculas → new row for relation "inscritos" violates check constraint "inscritos_correo_check"
+OK     inscritos: WhatsApp sin + → new row for relation "inscritos" violates check constraint "inscritos_whatsapp_check"
+OK     inscritos: web sin aceptar privacidad → new row for relation "inscritos" violates check constraint "inscritos_datos_web"
+OK     inscritos: web sin ciudad → new row for relation "inscritos" violates check constraint "inscritos_datos_web"
+OK     inscritos: pase de tres días desde la web → new row for relation "inscritos" violates check constraint "inscritos_tres_dias_solo_panel"
+OK     inscritos: kit sin estado de pago → new row for relation "inscritos" violates check constraint "inscritos_pago_segun_modalidad"
+OK     inscritos: panel sin autor → new row for relation "inscritos" violates check constraint "inscritos_panel_con_autor"
+OK     inscritos: pase de tres días desde el panel
+OK     inscritos: misma idempotency_key (doble envío) → duplicate key value violates unique constraint "inscritos_idempotency_key_key"
+OK     inscritos: código con letra O → new row for relation "inscritos" violates check constraint "inscritos_codigo_check"
+OK     charlas: crear D1-01 y D2-07 (clave automática)
+OK     charlas: clave de 16 caracteres (= 2)
+OK     charlas: id D2 con día 1 → new row for relation "charlas" violates check constraint "charlas_dia_coincide"
+OK     charlas: fin antes del inicio → new row for relation "charlas" violates check constraint "charlas_horario"
+OK     asistencias: registrar una
+OK     asistencias: la misma charla dos veces → duplicate key value violates unique constraint "asistencias_una_por_charla"
+OK     puerta: registrar entrada
+OK     puerta: subir el mismo registro dos veces → duplicate key value violates unique constraint "registros_puerta_pkey"
+OK     puerta: mesa de soluciones sin motivo → new row for relation "registros_puerta" violates check constraint "registros_incidencia_con_motivo"
+OK     puerta: "No está en la lista" con motivo y búsqueda manual
+OK     certificados: emitir dos
+OK     certificados: folios C27-00001 y C27-00002 (= 2)
+OK     certificados: segundo del mismo tipo → duplicate key value violates unique constraint "certificados_uno_por_tipo"
+OK     patrocinio: solicitud desde el plano (stand 45)
+OK     patrocinio: stand con opción "mesa" → new row for relation "solicitudes_patrocinio" violates check constraint "solicitudes_stand_solo_si_aplica"
+OK     patrocinio: opción inexistente → new row for relation "solicitudes_patrocinio" violates check constraint "solicitudes_patrocinio_opcion_patrocinio_check"
+OK     anon: leer inscritos → permission denied for table inscritos
+OK     anon: inscribirse directo en la tabla → permission denied for table inscritos
+OK     anon: leer solicitudes de patrocinio → permission denied for table solicitudes_patrocinio
+OK     anon: leer claves de charlas → permission denied for table charlas
+OK     anon: leer staff → permission denied for table staff
+OK     anon: generar códigos → permission denied for function generar_codigo_pase
+OK     puerta: no ve inscritos directo (= 0)
+OK     puerta: no ve charlas (= 0)
+OK     puerta: ve solo su propia fila de staff (= 1)
+OK     puerta: escribir un registro directo → permission denied for table registros_puerta
+OK     puerta: hacerse admin → permission denied for table staff
+OK     admin sin segundo factor: no ve inscritos (= 0)
+OK     admin inactivo: no ve inscritos (= 0)
+OK     admin: ve todos los inscritos (= 4)
+OK     admin: ve las solicitudes (= 1)
+OK     admin: ve a todo el staff (= 3)
+OK     admin: corregir correo mal escrito y reenviar
+OK     admin: el correo quedó corregido (= 1)
+OK     admin: cambiar la cédula → permission denied for table inscritos
+OK     admin: cambiar el código → permission denied for table inscritos
+OK     admin: cambiar el pase → permission denied for table inscritos
+OK     admin: borrar un inscrito → permission denied for table inscritos
+OK     admin: marcar solicitud como contactada
+OK     admin: estado de seguimiento inválido → new row for relation "solicitudes_patrocinio" violates check constraint "solicitudes_patrocinio_estado_seguimiento_check"
+OK     admin: emitir certificado directo → permission denied for table certificados
+OK     admin: cambiar la configuración directo → permission denied for table configuracion
+OK     actualizado_en se movió con la corrección del admin (= 1)
+OK     códigos: 50.000 sin repetidos (= 50000)
+OK     códigos: todos con el formato (= 50000)
+OK     códigos: usan los 32 caracteres (= 32)
+OK     códigos: ningún carácter se aleja más de 5% del promedio (= 0)

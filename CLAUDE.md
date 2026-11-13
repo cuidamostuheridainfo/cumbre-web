@@ -12,6 +12,7 @@ Antes de proponer o tocar algo, leer en este orden:
 4. `docs/DECISIONES-VIGENTES.md`: lo que ya se decidió y no se vuelve a discutir sin motivo.
 5. `docs/ESTRUCTURA.md`: solo si la sesión toca contenido, formularios, base de datos o construcción.
 6. `docs/FLUJO-DISENO.md`: solo si la sesión cambia el diseño (lienzo, imágenes o `index.html`).
+7. `docs/FASE2-BASE-DE-DATOS.md` y `docs/ACREDITACION-2027.md`: solo si la sesión toca Supabase, la inscripción real o la acreditación.
 
 Después de leer, decir en dos o tres líneas en qué punto estamos y cuál es el siguiente paso, y esperar confirmación antes de cambiar archivos.
 
@@ -41,6 +42,7 @@ Después de leer, decir en dos o tres líneas en qué punto estamos y cuál es e
 | `ponencias.html` | Página interna "Ponencias 2026". |
 | `assets/css/sitio.css`, `assets/js/` | Estilos y comportamiento compartidos; `assets/js/ponencias.js` es la lista de videos. |
 | `docs/` | Documentación del proyecto (ritual de inicio). |
+| `supabase/` | Base de datos de la fase 2 (proyecto Supabase "cumbre"): `migrations/`, `reversiones/` y `pruebas/`. Ver `docs/FASE2-BASE-DE-DATOS.md`. Una migración se aplica solo con autorización de Jenny. |
 | `herramientas/build_index.py` | Script de la v2 (lienzo → `index.html`). Ya no se usa desde la v3. |
 | `herramientas/generar_plano.py` | Genera `assets/img/plano-sede.svg` desde el PDF de Producciones 24. |
 
