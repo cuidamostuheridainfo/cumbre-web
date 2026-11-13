@@ -10,7 +10,7 @@ Desde la v3, **la fuente del diseño son los archivos del repositorio** (`index.
 
 La construcción del sitio definitivo (Astro, formularios reales, panel) **no ha empezado**. Los formularios de patrocinio y de inscripción (`inscripcion.html`, desde el 4 nov) validan los campos y **simulan** el envío; no guardan datos.
 
-**Fase 2 (13 nov):** creado el proyecto de Supabase "cumbre" (plan Free, vacío). Escrita y probada en local la migración de la base de datos (8 tablas, 67 de 67 pruebas correctas), **sin aplicar todavía** en Supabase. Detalle en `docs/FASE2-BASE-DE-DATOS.md`. Siguiente: que Jenny revise la migración y autorice aplicarla; después, las funciones del servidor (inscribir y mi-pase).
+**Fase 2 (13 nov):** creado el proyecto de Supabase "cumbre" (plan Free, vacío). Migración de la base de datos escrita, probada en local (67 de 67 pruebas), revisada con Jenny y **aplicada en Supabase el 13 nov** (8 tablas con RLS, base vacía). Registro libre de cuentas cerrado. Detalle en `docs/FASE2-BASE-DE-DATOS.md`. Siguiente: segundo factor para administración y funciones del servidor (inscribir y mi-pase).
 
 ## Qué existe y dónde
 
@@ -28,7 +28,7 @@ La construcción del sitio definitivo (Astro, formularios reales, panel) **no ha
 | Sitio actual | https://cumbrechp.org | WordPress. Activo hasta el cambio de DNS. |
 | Maqueta del ecosistema del grupo (11 nov) | https://cuidamostuheridainfo.github.io/cumbre-web/propuesta-ecosistema.html | Página aparte (`propuesta-ecosistema.html`, `assets/css/ecosistema-propuesta.css`, `assets/js/ecosistema-propuesta.js`, `assets/img/ecosistema/`). Sin enlace en el menú, con `noindex`. La portada no cambia. |
 | Repositorio | github.com/cuidamostuheridainfo/cumbre-web | Clonado en `C:\Users\Jenny Lopez\Documents\GitHub\cumbre-web\cumbre-web`. |
-| Proyecto Supabase "cumbre" (13 nov) | https://jjkerycznrxaqkbzvnjh.supabase.co · organización Medical Shields, plan Free, East US (Ohio) | Vacío. Migración en `supabase/migrations/`, sin aplicar. Ver `docs/FASE2-BASE-DE-DATOS.md`. |
+| Proyecto Supabase "cumbre" (13 nov) | https://jjkerycznrxaqkbzvnjh.supabase.co · organización Medical Shields, plan Free, East US (Ohio) | Migración 001 aplicada el 13 nov: 8 tablas con RLS, vacías. Registro libre cerrado. Ver `docs/FASE2-BASE-DE-DATOS.md`. |
 | App de acreditación 2026 | github.com/infocumbrechp-beep/Acreditacion-CHP | Referencia de 2026 (lógica de la puerta y lector de QR). |
 
 ## Qué tiene hoy la portada (en orden, v3)

@@ -1,6 +1,6 @@
 # Fase 2 · Base de datos (proyecto Supabase "cumbre")
 
-Versión 1.1 · 13 de noviembre de 2026. Migración escrita, probada en local y revisada con Jenny; **todavía no aplicada en Supabase**.
+Versión 1.2 · 13 de noviembre de 2026. Migración escrita, probada en local, revisada con Jenny y **aplicada en Supabase el 13 nov** (ver "Aplicación" al final).
 
 Complementa `docs/ACREDITACION-2027.md` (diseño general de la fase 2). Si algo de aquí contradice ese documento, vale esto.
 
@@ -134,3 +134,10 @@ Propios de la Cumbre: `opcion_patrocinio` (al pasar a GMS se traduce a su `inten
 - La lista de especialidades de `inscripcion.html` todavía ofrece Farmacia e Investigación, que no participan desde el 13 nov.
 - Antes de pasar la primera solicitud de patrocinio al CRM: confirmar el esquema de `casos` en la base de GMS y la lista de `intencion_comercial`.
 - Pase de tres días: si recibe certificado y cuál (por definir).
+
+## Aplicación (13 nov 2026, autorizada por Jenny)
+
+- Migración aplicada en el proyecto "cumbre" desde el SQL Editor, con el texto del commit 3f37551 (se comprobó que el texto pegado era idéntico al archivo antes de ejecutarlo). Resultado: sin errores.
+- Verificación de solo lectura: 8 tablas, todas con RLS activa; 10 reglas de acceso; ningún permiso para anon; configuración cargada (5 charlas por día, venta del kit en false, aviso 2026-11-13); el generador de códigos funciona. Base vacía.
+- Registro libre de cuentas cerrado: Authentication → Sign In / Providers → "Allow new users to sign up" desactivado.
+- Falta: activar el segundo factor (TOTP) en Authentication → Multi-Factor antes de crear las cuentas de administración.

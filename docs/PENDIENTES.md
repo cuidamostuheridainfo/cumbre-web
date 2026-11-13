@@ -40,7 +40,6 @@
 | Correcciones a la presentación del ecosistema: "Medical Shields" (no "Medical Shield"), nombre y logo nuevos de la Cumbre, teléfono de MS +58 412-2853958 | Social media | Antes de volver a presentarla |
 | "Herida" o "lesión" en los textos clínicos, con criterio médico | Dra. Milagros y Social media | Antes de escribir los textos del ecosistema |
 | Ethical Shields AI: confirmar el texto de su tarjeta (en la maqueta, "IA financiera para empresas"; alternativa: "Finanzas y operación con IA") | Jenny | Fase 1 |
-| Revisar la migración `supabase/migrations/20261113000001_esquema_inicial.sql` y autorizar aplicarla en el proyecto "cumbre" (13 nov) | Jenny | Funciones de la fase 2 |
 | Pase de tres días (VIP, ponentes, invitados): si recibe certificado y cuál | Organización | Regla del certificado |
 
 ## Decisiones por confirmar
@@ -55,7 +54,7 @@
 1. Aplicar los comentarios de Marketing a la segunda propuesta.
 2. Secciones que faltan en el diseño: ponentes, programa, talleres y contenido del brochure.
 3. Construir el sitio definitivo en Astro + Tailwind en este repo, con el contenido en archivos de datos.
-4. Fase 2 en Supabase. **Hecho el 13 nov:** plan y costo revisados con Jenny, proyecto "cumbre" creado en Free, migración de la base escrita y probada en local (`docs/FASE2-BASE-DE-DATOS.md`). **Sigue:** aplicar la migración cuando Jenny la autorice; funciones `inscribir` y `mi-pase` conectadas a `inscripcion.html` y `/app/`; panel; staff con 8 cuentas; QR de las charlas y certificado; Mailchimp; app del asistente (bienvenida, programa, plano, conferencias, mi QR). Sin pagos hasta que se lance el kit.
+4. Fase 2 en Supabase. **Hecho el 13 nov:** plan y costo revisados con Jenny, proyecto "cumbre" creado en Free, migración de la base escrita y probada en local (`docs/FASE2-BASE-DE-DATOS.md`). Migración aplicada el 13 nov y registro libre de cuentas cerrado. **Sigue:** segundo factor (TOTP) para administración; funciones `inscribir` y `mi-pase` conectadas a `inscripcion.html` y `/app/`; panel; staff con 8 cuentas; QR de las charlas y certificado; Mailchimp; app del asistente (bienvenida, programa, plano, conferencias, mi QR). Sin pagos hasta que se lance el kit.
    - Cambios de páginas decididos el 13 nov (se aplican al construir la fase 2): pantalla "Ya estás inscrito" con el correo a medias y el botón "Pedir ayuda" por correo; cédula grande y código pequeño debajo del QR; QR negro sobre blanco, con borde y más corrección de errores; linterna en la app del staff; confirmación del nombre cuando la entrada se hace con la cédula escrita; puestos del staff: Puesto 1 a 6 y Mesa de soluciones 1 y 2.
    - `inscripcion.html` todavía ofrece Farmacia e Investigación en la lista de especialidades, aunque no participan desde el 13 nov. Se corrige junto con los cambios de la fase 2.
    - El formulario de patrocinio no tiene casilla de aceptación del aviso de privacidad, solo el enlace. Si se quiere guardar la aceptación, hay que agregarla.
