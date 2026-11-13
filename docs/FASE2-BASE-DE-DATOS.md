@@ -1,6 +1,6 @@
 # Fase 2 · Base de datos (proyecto Supabase "cumbre")
 
-Versión 1 · 13 de noviembre de 2026. Migración escrita y probada en local; **todavía no aplicada en Supabase**.
+Versión 1.1 · 13 de noviembre de 2026. Migración escrita, probada en local y revisada con Jenny; **todavía no aplicada en Supabase**.
 
 Complementa `docs/ACREDITACION-2027.md` (diseño general de la fase 2). Si algo de aquí contradice ese documento, vale esto.
 
@@ -37,6 +37,13 @@ Complementa `docs/ACREDITACION-2027.md` (diseño general de la fase 2). Si algo 
 7. **Entrada con la cédula escrita a mano:** la app muestra el nombre en grande y pide "Confirmar que es esta persona".
 8. **Mejoras de lectura del QR que entran:** QR negro puro sobre blanco con borde blanco; más corrección de errores; botón de linterna en la app del staff. (No entraron: aviso de brillo, lector nativo del teléfono y prueba con teléfonos variados.)
 9. **Campos de patrocinio con los nombres de GMS Comercial** (ver abajo).
+10. **Revisión de las reglas de la base (13 nov, tarde): todas aceptadas por Jenny.**
+    - Administración corrige datos de contacto, pero no cambia cédula, código, pase, modalidad ni aceptación del aviso.
+    - El pase de tres días y el perfil interno ("Invitado de la organización": VIP, ponentes e invitados, según Social media el 9 nov) solo desde el panel, con su autor.
+    - Se guarda la versión del aviso de privacidad aceptado.
+    - Folio de certificados correlativo, C27-00001.
+    - El número de stand se guarda aparte como **registro de interés**, sin bloquear ni reservar nada. Sirve para la estadística: cuántas solicitudes llegaron desde el plano (`origen_lead_detalle` = plano) o desde el formulario (web) y qué stands se piden más.
+    - Seguimiento del correo de confirmación en cuatro estados (pendiente, enviado, error, no aplica).
 
 ### Por qué no se leían los QR en 2026
 
