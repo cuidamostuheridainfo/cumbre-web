@@ -213,7 +213,7 @@ Pedido de Jenny, para no repetir los problemas de 2026 (inscripción en WordPres
 
 ## Respuestas de la organización a la planilla (13 nov 2026)
 
-Fuente: planilla "Cumbre-2027-datos-pendientes.xlsx" respondida, y aclaraciones de Jenny del mismo día. Reemplaza lo que contradiga las secciones anteriores. **Todavía no aplicado en la web.**
+Fuente: planilla "Cumbre-2027-datos-pendientes.xlsx" respondida, y aclaraciones de Jenny del mismo día. Reemplaza lo que contradiga las secciones anteriores. **Aplicado en la web el 13 nov** (portada, inscripción, ponencias, privacidad, maqueta del ecosistema, app y staff).
 
 - **Inscripción solo gratuita por ahora.** El kit no se vende ni se paga en la web hasta que se lance oficialmente; entonces se habilitan los datos de pago (segunda etapa). Mientras tanto, el kit se muestra con una cinta "Próximamente", sin precio ni pago.
 - **Fase 2 sin pagos por ahora:** la tabla de pagos, los comprobantes, la función revisar-pago y el panel de pagos se dejan para cuando se lance el kit.
@@ -225,5 +225,7 @@ Fuente: planilla "Cumbre-2027-datos-pendientes.xlsx" respondida, y aclaraciones 
 - **Redes (se mantienen las que existen):** Instagram y TikTok @cumbreinternacionalchp; YouTube "Comunidad Cumbre Heridas y Piel" (@ComunidadCumbreHeridasyPiel); LinkedIn https://www.linkedin.com/company/cumbre-internacional-para-el-cuidado-avanzado-de-heridas-y-piel-2026. El canal de YouTube de CTH no se enlaza desde la Cumbre.
 - **Avisos de patrocinio y acceso a los inscritos:** Marisol y Génesis; los avisos llegan a informacion@cumbrechp.org.
 - **Mínimo de conferencias para el certificado:** el mismo de 2026, 5 conferencias (Jenny, 13 nov). Se cuenta por día (confirmado por Jenny): 5 el Día 1 para su certificado, y 5 el Día 2 y 5 el Día 3 para el certificado de los Días 2 y 3.
-- **Aviso de privacidad:** el mismo de 2026, el de cumbrechp.org/politica-de-privacidad, con el nombre nuevo de la Cumbre.
+- **Aviso de privacidad:** el mismo de 2026, el de cumbrechp.org/politica-de-privacidad, con el nombre nuevo de la Cumbre. Página propia `politica-de-privacidad.html`. Solo se cambió el nombre y dos errores de escritura ("estás" por "estas" y "comprometido" por "comprometida").
+- **Pie de página:** las redes van como botones de texto (Instagram, TikTok, YouTube, LinkedIn), no como íconos de las marcas.
+- **Kit desactivado con un interruptor:** `ventaKit: false` en `assets/js/inscripcion-config.js` desactiva el kit en la inscripción y oculta la Mesa de kits, el modo "Entrega de kit" y su contador en la app del staff. La ventana de la portada se cambió a mano; la versión con precio y botón está en el commit 0c15631.
 - **Puertas y mesas:** no se le pregunta a la organización. La app del staff deja la lista actual (Puerta 1, 2 y 3, Mesa de soluciones) y se ajusta en la configuración si el día del evento hay otras.

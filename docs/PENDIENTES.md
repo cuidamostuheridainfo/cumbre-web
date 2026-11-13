@@ -25,7 +25,6 @@
 | Video de bienvenida | Organización del evento | Por definir dónde va |
 | Programa y ponentes de la nueva edición | Comité científico | Secciones Programa y Ponentes |
 | Contenido del brochure y del kit del participante (en evaluación) | Marketing | Contenido |
-| Aviso de privacidad: copiar el de 2026 (cumbrechp.org/politica-de-privacidad) con el nombre nuevo, en una página propia de la web nueva | Claude | Pie y formularios |
 
 | Contenido de la app del asistente: video de bienvenida, programa, plano con ubicaciones | Organización / Comité | App del asistente |
 

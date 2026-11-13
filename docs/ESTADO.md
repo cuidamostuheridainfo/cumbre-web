@@ -1,6 +1,6 @@
 # Estado del proyecto
 
-Última actualización: 12 de noviembre de 2026.
+Última actualización: 13 de noviembre de 2026.
 
 ## Fase actual
 
@@ -36,13 +36,15 @@ La construcción del sitio definitivo (Astro, formularios reales, base de datos,
 5. **Patrocinio:** presentación (con una foto que rota entre 19 fotos de stands y del equipo, solo en PC), beneficios, "¿Quién asiste a la Cumbre?", opciones del brochure del 2 nov (niveles Diamante/Platino/Oro, espacios, complementos y "otras opciones" por confirmar, sin precios; plegables en teléfono), "Así se vivió la Cumbre 2026" con el video resumen y cinco cuadros (dos al lado y tres debajo) que rotan entre 29 fotos distintas, sin repetir ninguna entre cuadros (en teléfono, "Ver más fotos"), plano del área de exhibición.
 6. **Formulario de patrocinio** (envío simulado).
 7. **Ponencias 2026 (vista previa):** "Más de 30 ponencias de médicos especialistas en nuestra primera edición", 3 tarjetas en PC y 1 en teléfono, "Explorar ponencias 2026" y "Suscríbete al canal".
-8. **Modalidades de participación (2027):** Día 1 (miércoles 12), Días 2 y 3 (jueves 13 y viernes 14), Talleres precumbre. "Inscribirme al Día 1" y "a los Días 2 y 3" abren la ventana "Elige tu participación": inscripción + kit $40 (destacada, con su contenido) o gratuita, y cada opción lleva a `inscripcion.html` con el día y la modalidad ya elegidos.
+8. **Modalidades de participación (2027):** Día 1 (miércoles 12), Días 2 y 3 (jueves 13 y viernes 14), Talleres precumbre. "Inscribirme al Día 1" y "a los Días 2 y 3" abren la ventana "Elige tu participación": inscripción gratuita (única opción por ahora) y el kit con la cinta "Próximamente", sin precio ni botón (13 nov).
 9. **Videos y entrevistas (10 nov):** "Camino a la Cumbre 2027", con los videos de promoción y las entrevistas de radio en video. Se cargan en `assets/js/videos-2027.js`; mientras no hay ninguno, muestra "Muy pronto, los primeros videos" y la invitación a suscribirse al canal. Con videos de los dos tipos aparecen los filtros Todos, Videos y Entrevistas de radio.
-10. **Organizan y avalan**, pie (con enlace al canal de YouTube), WhatsApp flotante y etiqueta de borrador.
+10. **Organizan y avalan**, pie (correo informacion@cumbrechp.org, WhatsApp, Instagram, TikTok, YouTube, LinkedIn y Política de privacidad, 13 nov), WhatsApp flotante y etiqueta de borrador.
 
 **ponencias.html:** las 14 ponencias publicadas que se pueden ver dentro del sitio (9 y "Cargar más"; las 4 con restricción de edad de YouTube no se incluyen), cada una con miniatura, título, ponente, duración, etiqueta "Edición 2026", "Ver ponencia" (se reproduce en la misma tarjeta) y "Ver en YouTube". Cierra con la invitación a suscribirse y dos pasos: "Conocer opciones de patrocinio" (destacado) y "Ver modalidades de participación".
 
-**inscripcion.html:** inscripción de asistentes en tres pasos (datos, modalidad, confirmación). Enlace propio para compartir en redes. Envío simulado; los datos de pago aparecen entre corchetes hasta que se confirmen.
+**inscripcion.html:** inscripción de asistentes en tres pasos (datos, modalidad, confirmación). Enlace propio para compartir en redes. Envío simulado. Desde el 13 nov solo gratuita: el kit se ve con la cinta "Próximamente" y no se puede elegir (`ventaKit: false` en `assets/js/inscripcion-config.js`; al lanzar el kit se cambia a `true` y vuelven la opción con kit y el pago).
+
+**politica-de-privacidad.html (13 nov):** el aviso de privacidad de 2026 con el nombre nuevo de la Cumbre. Lo enlazan el pie de las páginas y los formularios de inscripción y patrocinio.
 
 **Acreditación 2027 (9 nov, fase 1 con lista de prueba):** `app/` (pase del participante, identidad visual propia) y `staff/` (acreditación en la puerta). Detalle en `docs/ACREDITACION-2027.md`.
 

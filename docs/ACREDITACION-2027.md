@@ -34,6 +34,8 @@ Paleta arena (referencia):
 - **Interacción:** la acreditación digital gira para mostrar el QR. Al abrir "Mi QR", la tarjeta gira sola para que en la puerta el QR esté listo; si se toca, vuelve al frente.
 - **Navegación:** barra inferior con Inicio, Mi QR, Conferencias y La sede.
 
+**Kit en pausa (13 nov):** mientras `ventaKit` sea `false` en `inscripcion-config.js`, la inscripción es solo gratuita y la app del staff oculta la Mesa de kits, el modo "Entrega de kit" y el contador de kits.
+
 **Credencial física:** solo la reciben quienes compran el kit, en la mesa de kits. Los de inscripción gratuita entran únicamente con el QR del teléfono. El diseño de la credencial impresa queda en espera: Jenny consulta si lo desarrollamos nosotras.
 
 La app del staff usa las mismas tipografías, pero con fondo claro y alto contraste. Es una herramienta de puerta: el resultado aparece en un bloque de color a todo lo ancho.

@@ -26,7 +26,7 @@
   A.perfiles = {
     especialista: 'Especialista médico',
     enfermeria: 'Enfermería, paramédicos y rescatistas',
-    otras: 'Otras áreas de la salud',
+    otras: 'Nutrición y psicología',
     estudiante: 'Estudiante de medicina',
     interno: 'Invitado de la organización'
   };

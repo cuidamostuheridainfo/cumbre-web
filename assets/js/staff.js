@@ -18,6 +18,15 @@
   var nomDe = function (a) { return a.nombre + ' ' + a.apellido; };
   var modo = function () { return ($('input[name="modo"]:checked') || {}).value || 'entrada'; };
 
+  // Kit todavía sin venta (inscripcion-config.js, ventaKit: false): se ocultan la Mesa de kits, el modo "Entrega de kit"
+  // y el contador de kits. No se borran: vuelven solos al cambiar ventaKit a true.
+  if (C.ventaKit === false) {
+    var opKit = $('#sel-puesto option[value="Mesa de kits"]'); if (opKit) opKit.parentNode.removeChild(opKit);
+    var grupoModo = $('.modo'); if (grupoModo) grupoModo.style.display = 'none';
+    var cKits = $('#c-kits'); if (cKits) cKits.parentNode.style.display = 'none';
+    if (cfg && cfg.puesto === 'Mesa de kits') cfg = null;
+  }
+
   // ---------- Preparación ----------
   var pintarLista = function () {
     $('#lista-txt').textContent = lista

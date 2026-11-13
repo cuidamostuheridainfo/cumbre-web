@@ -21,6 +21,17 @@
   var dl = function (o, etiquetas) { return Object.keys(etiquetas).map(function (k) { return '<dt>' + etiquetas[k] + '</dt><dd>' + esc(o[k]) + '</dd>'; }).join(''); };
   $('#dp-pagomovil').innerHTML = dl(C.pagoMovil, { banco: 'Banco', telefono: 'Teléfono', documento: 'RIF' });
   $('#dp-transferencia').innerHTML = dl(C.transferencia, { titular: 'Titular', banco: 'Banco', cuenta: 'Cuenta', documento: 'RIF' });
+  // Kit "Próximamente" mientras no se vende (inscripcion-config.js, ventaKit: false): se ve, pero no se puede elegir.
+  if (!C.ventaKit) {
+    var kitIn = $('input[name="modalidad"][value="kit"]'), kitOp = kitIn.closest('.ins-op'), tag = $('.dlg-tag', kitOp);
+    kitIn.disabled = true; kitOp.classList.add('ins-op-pronto'); kitOp.setAttribute('aria-disabled', 'true');
+    if (tag) tag.parentNode.removeChild(tag);
+    $('.ins-op-in', kitOp).insertAdjacentHTML('afterbegin', '<span class="cinta-pronto" aria-hidden="true">Próximamente</span>');
+    $('strong', kitOp).textContent = 'Kit de la Cumbre';
+    $('.ins-op-in', kitOp).insertAdjacentHTML('beforeend', '<span class="ins-pronto-nota">Muy pronto anunciaremos cómo adquirirlo.</span>');
+    $('.ins-mods').classList.add('sin-kit');
+    modURL = 'gratuita';
+  }
   if (modURL) $('input[name="modalidad"][value="' + modURL + '"]').checked = true;
 
   var val = function (name) { var r = $('input[name="' + name + '"]:checked', form); return r ? r.value : ''; };

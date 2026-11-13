@@ -382,3 +382,28 @@ section h2,section h3{text-transform:none!important}
 @media (max-width: 760px){.v27-vacio{padding:28px 18px}.v27-vacio-tit{font-size:22px}}
 /* Con "Videos" en el menú (10 nov), el menú completo no cabe por debajo de 1020 px: se usa el menú desplegable */
 @media (max-width: 1020px){.nav-links{display:none}.cab-movil{display:flex}}
+
+/* Kit "Próximamente" (13 nov 2026): cinta en la esquina; la tarjeta se ve pero no se elige */
+.cinta-pronto{position:absolute;top:22px;right:-46px;z-index:2;width:180px;padding:5px 0;transform:rotate(38deg);text-align:center;background:#F7153B;color:#FFFFFF;font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;box-shadow:0 6px 16px rgba(247,21,59,0.3);pointer-events:none}
+.dlg-kit-pronto{overflow:hidden;box-shadow:none}
+.dlg-kit-pronto .dlg-lab{padding-right:80px}
+.ins-op-pronto{cursor:default}
+.ins-op-pronto .ins-op-in{overflow:hidden;padding-top:14px}
+.ins-op-pronto .ins-kit{margin-top:14px}
+.ins-op-pronto:hover .ins-op-in{border-color:#CDB066}
+.ins-op-pronto strong{padding-right:84px}
+.ins-pronto-nota{margin-top:6px;font-size:13px;color:#8A6F2A}
+@media (min-width: 761px){.dlg-grid-sin-kit{grid-template-columns:1fr 1.35fr}.ins-mods.sin-kit{grid-template-columns:1fr 1.3fr}}
+.ins-mods.sin-kit .ins-op-kit{order:2}
+
+/* Pie: redes y contacto (13 nov 2026) */
+.pie-redes{max-width:1280px;margin:0 auto;padding:0 32px 24px;display:flex;flex-wrap:wrap;align-items:center;gap:10px;font-size:13px}
+.pie-redes span{font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#C8CEEA;margin-right:4px}
+.pie-redes a{color:#FFFFFF;text-decoration:none;font-weight:600;padding:8px 16px;border:1px solid rgba(255,255,255,0.3);border-radius:999px;transition:border-color 160ms ease,color 160ms ease}
+.pie-redes a:hover{border-color:#F3E3A6;color:#F3E3A6}
+.pie-contacto a{color:#FFFFFF}
+
+/* Página de texto legal */
+.legal{max-width:820px;display:flex;flex-direction:column;gap:14px;color:#2B3360;font-size:17px;line-height:1.7}
+.legal h2{margin:18px 0 0;font-family:'Barlow Semi Condensed',sans-serif;font-style:italic;font-weight:700;font-size:28px;text-transform:uppercase;color:#0A1040}
+.legal p{margin:0}
