@@ -429,3 +429,22 @@ section h2,section h3{text-transform:none!important}
 .plano-desliza{display:block}
 .plano-info{padding:14px 16px}.plano-info-btn{width:100%}
 }
+
+/* Opciones comerciales en pestañas (13 nov 2026) */
+.opt-tabs{display:flex;flex-direction:column;gap:22px}
+.opt-pestanas{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+.opt-pestanas button{font:inherit;font-size:15px;font-weight:700;color:#0A1040;background:#FFFFFF;border:2px solid #D5DBEB;border-radius:999px;padding:12px 22px;cursor:pointer;transition:border-color 160ms ease,background 160ms ease,color 160ms ease}
+.opt-pestanas button:hover{border-color:#0A1040}
+.opt-pestanas button[aria-selected="true"]{background:#0A1040;border-color:#0A1040;color:#FFFFFF}
+.opt-pestanas button:focus-visible{outline:3px solid #CDB066;outline-offset:2px}
+.opt-tabs .opt-grupo-tit{display:none!important}
+.opt-grupo[hidden]{display:none!important}
+.opt-tabs details.opt summary{cursor:default}
+.opt-tabs details.opt summary::after{display:none}
+@media (max-width: 760px){.opt-pestanas{display:grid;grid-template-columns:1fr 1fr;gap:8px}.opt-pestanas button{padding:11px 10px;font-size:14px;line-height:1.25}}
+
+/* Nuestro enfoque con cinco fichas (13 nov 2026) */
+.enf-tiles{grid-template-columns:repeat(5,minmax(0,1fr))!important}
+.enf-tiles span{font-size:21px!important;overflow-wrap:normal;word-break:normal;hyphens:manual}
+@media (max-width: 1100px){.enf-tiles{grid-template-columns:repeat(2,minmax(0,1fr))!important}.enf-tiles>div:last-child{grid-column:1 / -1}.enf-tiles span{font-size:26px!important}}
+@media (max-width: 760px){.enf-tiles span{font-size:17px!important}}

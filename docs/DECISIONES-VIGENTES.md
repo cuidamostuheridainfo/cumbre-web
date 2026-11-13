@@ -245,3 +245,8 @@ Fuente: planilla "Cumbre-2027-datos-pendientes.xlsx" respondida, y aclaraciones 
 - **"Backing firmas":** queda solo el de la Entrada. El PDF tenía un segundo "Backing firma" al centro, arriba de la sala; se quitó a pedido de Jenny porque se veía duplicado.
 - **Interacción:** al tocar un stand aparece su número y "Consultar disponibilidad", que abre el formulario de patrocinio con "Stand o espacio de exposición" elegido y "Me interesa el stand N del plano." escrito. **No muestra disponibilidad** (decisión vigente: no se publica hasta que Comercial lo autorice).
 - **En teléfono** el plano se desliza hacia los lados y empieza mostrando la zona de stands.
+
+## Longevidad en su propio cuadro y opciones en pestañas (13 nov 2026)
+
+- **Longevidad en su propio cuadro (pedido de la organización vía Jenny):** "Nuestro enfoque" pasa a cinco cuadros: Manejo integral de heridas, Cuidado de la piel, **Longevidad** (azul #0A6CFF, letra blanca), Emergencias y desastres, y Visión multidisciplinaria. Reemplaza el cuadro "Cuidado de la piel y longevidad" del 12 nov. En PC van los cinco en una fila; en tablet y teléfono, de dos en dos, con Visión multidisciplinaria a lo ancho.
+- **"Elige cómo quieres participar" en pestañas (pedido de Jenny, en PC y teléfono):** cuatro pestañas, Niveles de patrocinio · Espacios de exposición · Otras opciones de marca · Complementos. Al tocar una, se ven solo las tarjetas de ese grupo, siempre abiertas (ya no son plegables). Se abre en Niveles de patrocinio. En teléfono las pestañas van en dos filas de dos. Así el teléfono no tiene un desplazamiento interminable.

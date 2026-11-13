@@ -71,10 +71,24 @@
     dlg.addEventListener('click', function (e) { if (e.target === dlg) dlg.close(); });
   }
 
-  // Opciones comerciales: abiertas en PC, plegadas en teléfono
+  // Opciones comerciales en pestañas (13 nov): cada pestaña muestra un grupo con sus tarjetas abiertas.
   var opts = $$('details.opt');
-  var ajustarOpts = function () { opts.forEach(function (d) { d.open = !movil.matches; }); };
-  ajustarOpts(); if (movil.addEventListener) movil.addEventListener('change', ajustarOpts);
+  opts.forEach(function (d) { d.open = true; d.addEventListener('toggle', function () { if (!d.open) d.open = true; }); });
+  var pestanas = $$('.opt-pestanas [role="tab"]');
+  var elegirPestana = function (b, foco) {
+    pestanas.forEach(function (x) {
+      var on = x === b; x.setAttribute('aria-selected', on ? 'true' : 'false'); x.tabIndex = on ? 0 : -1;
+      var panel = document.getElementById(x.getAttribute('aria-controls')); if (panel) panel.hidden = !on;
+    });
+    if (foco) b.focus();
+  };
+  pestanas.forEach(function (b, i) {
+    b.addEventListener('click', function () { elegirPestana(b); });
+    b.addEventListener('keydown', function (e) {
+      var k = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0; if (!k) return;
+      e.preventDefault(); elegirPestana(pestanas[(i + k + pestanas.length) % pestanas.length], true);
+    });
+  });
 
   // Videos de YouTube: el reproductor solo se carga al pulsar la miniatura
   var tarjetaVideo = function (p, extra) {
