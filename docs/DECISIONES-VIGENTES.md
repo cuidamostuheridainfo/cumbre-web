@@ -10,7 +10,7 @@ Lo que está aquí ya se decidió. No se reabre salvo que Jenny lo pida o aparez
 - **Publicación provisional:** GitHub Pages en este repo público, con `noindex`.
 - **Repositorio:** `cumbre-web` en la cuenta cuidamostuheridainfo. Commits con GitHub Desktop.
 - **Base de datos:** Supabase, en la misma organización del CRM de Medical Shields, pero en un **proyecto separado** ("cumbre"). Motivo: el formulario es público y su llave no debe tener acceso al CRM.
-- **Formularios:** envían a una función en Vercel que valida, filtra spam y revisa duplicados; solo esa función escribe en la base. La página pública nunca lee los registros.
+- **Formularios:** ~~envían a una función en Vercel~~ (reemplazado el 12 nov: funciones de Supabase, ver "Fase 2"). Una función valida, filtra spam y revisa duplicados; solo esa función escribe en la base. La página pública nunca lee los registros.
 - **Stands y CRM:** los campos del formulario de stand (empresa, RIF, contacto, correo, WhatsApp) usan los mismos nombres y formatos que GMS, para pasarlos al CRM después. Primera versión: exportación manual desde el panel.
 - **Dominio:** cumbrechp.org, DNS en GoDaddy (con acceso). WordPress sigue activo hasta el cambio de DNS; los registros de correo (MX) no se tocan.
 - **Pulido final:** skills de Emil Kowalski (emil-design-eng, apple-design, mobile-native, break-ui, review-animations) en Claude Code, al terminar la construcción.
@@ -199,3 +199,31 @@ Basada en los comentarios de Social media y la revisión de Codex. Reemplaza lo 
 - **"Así se vivió la Cumbre 2026" (reemplazado el mismo día, pedido de Jenny):** el video y **cinco cuadros**: dos al lado del video y tres debajo. Entre los cinco rotan **todas** las fotos de las carpetas `sponsor` y `variadas`, más la del equipo con la camioneta de CTH: 29 fotos, cada una en un solo cuadro, para que no parezca que hay pocas fotos. Cada cuadro cambia cada 4,5 s, con un desfase entre cuadros para que no cambien a la vez. En teléfono, el quinto cuadro va a lo ancho, y del tercero al quinto siguen detrás de "Ver más fotos".
 - **Fotos repetidas, aceptadas por Jenny:** `_88A2667`, `_88A2749` e `IMG_7739` también están en las tarjetas de Modalidades, y las de `sponsor` también rotan en "Conecta tu marca".
 - **Foto de "Conecta tu marca" (pedido de Jenny):** rota entre todas las fotos de la carpeta `sponsor` y la del equipo con la camioneta de CTH (19 fotos, una cada 4,5 s, con fundido). Cada foto se descarga justo antes de mostrarse, para no hacer más pesada la página. Las fotos se repiten en "Así se vivió la Cumbre" por decisión de Jenny. En teléfono esta foto no se muestra, como antes.
+
+## Fase 2: inscripción, correos y certificado (12 nov 2026)
+
+Pedido de Jenny, para no repetir los problemas de 2026 (inscripción en WordPress y certificados que meses después la gente decía no haber recibido).
+
+- **La base de inscripción vive en Supabase** (proyecto "cumbre"), no en WordPress. La inscripción, la app del participante y la app del staff leen la misma base: al inscribirse, la persona ya existe para la app y para la puerta.
+- **Correos con Mailchimp, cuenta de Medical Shields:** cada inscrito pasa a Mailchimp para la confirmación (con el enlace a su pase) y los avisos.
+- **Funciones en Supabase:** las funciones que reciben los formularios (inscripción y patrocinio) y que pasan los datos a Mailchimp viven en Supabase, no en Vercel. Así la fase 2 no depende de elegir dónde se publica el sitio (Vercel Pro o Cloudflare Pages).
+- **Certificado automático:** en cada charla la persona escanea el QR de la sala con su app; cuando completa el mínimo, el certificado se descarga directamente desde la app, sin esperar a que se envíe. Mínimo: ~~entre 3 y 5 charlas por día~~ 5 conferencias por día (13 nov, ver "Respuestas de la organización a la planilla").
+- **Un certificado por modalidad:** uno para el Día 1 y uno para los Días 2 y 3 (un solo certificado que cubre los dos días). Para el de los Días 2 y 3 hay que cumplir el mínimo **en cada uno** de los dos días (confirmado por Jenny).
+- Los registros de 2026 ya se descargaron de WordPress.
+
+## Respuestas de la organización a la planilla (13 nov 2026)
+
+Fuente: planilla "Cumbre-2027-datos-pendientes.xlsx" respondida, y aclaraciones de Jenny del mismo día. Reemplaza lo que contradiga las secciones anteriores. **Todavía no aplicado en la web.**
+
+- **Inscripción solo gratuita por ahora.** El kit no se vende ni se paga en la web hasta que se lance oficialmente; entonces se habilitan los datos de pago (segunda etapa). Mientras tanto, el kit se muestra con una cinta "Próximamente", sin precio ni pago.
+- **Fase 2 sin pagos por ahora:** la tabla de pagos, los comprobantes, la función revisar-pago y el panel de pagos se dejan para cuando se lance el kit.
+- **Estudiantes de enfermería:** se inscriben como Enfermería, Día 1.
+- **Otras áreas de la salud:** solo nutrición y psicología, en los Días 2 y 3. Farmacia no participa. Investigación no entra por ahora.
+- **Talleres precumbre:** sin fechas; se definirán más adelante.
+- **Horarios de cada día:** por definir (la cuenta regresiva sigue suponiendo 8:00 a. m.).
+- **Contacto:** correo informacion@cumbrechp.org · WhatsApp +58 414-2577408 (el mismo del botón flotante).
+- **Redes (se mantienen las que existen):** Instagram y TikTok @cumbreinternacionalchp; YouTube "Comunidad Cumbre Heridas y Piel" (@ComunidadCumbreHeridasyPiel); LinkedIn https://www.linkedin.com/company/cumbre-internacional-para-el-cuidado-avanzado-de-heridas-y-piel-2026. El canal de YouTube de CTH no se enlaza desde la Cumbre.
+- **Avisos de patrocinio y acceso a los inscritos:** Marisol y Génesis; los avisos llegan a informacion@cumbrechp.org.
+- **Mínimo de conferencias para el certificado:** el mismo de 2026, 5 conferencias (Jenny, 13 nov). Se cuenta por día (confirmado por Jenny): 5 el Día 1 para su certificado, y 5 el Día 2 y 5 el Día 3 para el certificado de los Días 2 y 3.
+- **Aviso de privacidad:** el mismo de 2026, el de cumbrechp.org/politica-de-privacidad, con el nombre nuevo de la Cumbre.
+- **Puertas y mesas:** no se le pregunta a la organización. La app del staff deja la lista actual (Puerta 1, 2 y 3, Mesa de soluciones) y se ajusta en la configuración si el día del evento hay otras.

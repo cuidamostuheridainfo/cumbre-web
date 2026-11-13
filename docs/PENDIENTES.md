@@ -1,6 +1,8 @@
 # Pendientes
 
-Última actualización: 11 de noviembre de 2026.
+Última actualización: 13 de noviembre de 2026.
+
+**12 nov:** se envió a la organización la planilla "Cumbre-2027-datos-pendientes.xlsx" (24 datos: pagos y venta de kits, horarios, inscripción, talleres, acreditación, contacto y avisos). Cubre las filas marcadas con (planilla 12 nov). **13 nov: respondida en parte** (ver "Respuestas de la organización a la planilla" en DECISIONES-VIGENTES); se quitaron las filas ya resueltas. La planilla no va en el repositorio porque es público y tendrá datos bancarios.
 
 ## Esperando de otros
 
@@ -12,27 +14,22 @@
 | Restricción de edad en 4 videos (hoy fuera de la página): solo si el canal la quita se vuelven a incluir | Social media | Opcional |
 | Verificar título de Valentina Kube: el canal dice "Dra." y la miniatura dice "Lic." | Organización | Tarjeta destacada 2 |
 | Revisión de títulos de ponencias por el comité o la Dra. Milagros (contenido médico) | Comité científico | Publicación |
-| Datos de pago del kit: empresa, banco, cuentas, factura, dólares | Administración (vía Social media) | Pago del kit |
-| Límite de kits y fecha de cierre de la venta (probable: unas semanas antes) | Organización | Inscripción |
-| Talleres precumbre: fecha, hora, lugar, costo y cupos (se anunciarán más adelante) | Organización | Tarjeta e inscripción de talleres |
-| Estudiantes de enfermería: ¿perfil Enfermería (Día 1)? Desde el 9 nov "Estudiante" es solo de medicina | Organización | Inscripción |
-| · Contacto comercial (vacío en el brochure) | Comercial | Pie y patrocinio |
+| Kit y pagos: diferidos hasta que se lance el kit (datos de pago, límite y cierre de la venta, credencial física). Mientras tanto, inscripción solo gratuita | Organización | Segunda etapa del kit |
+| (planilla 12 nov) Talleres precumbre: fecha, hora, lugar, costo y cupos (se anunciarán más adelante) | Organización | Tarjeta e inscripción de talleres |
 | Correcciones del brochure (no de la web): espacio libre a $750/m², "vigentes hasta" el 31/12/2026, "Día 1" = 12 de mayo, nombre con "Avanzado" | Social media | Brochure |
-| Objetivos y contenidos de cada taller | Organización | Tarjeta de Talleres |
-| Hora de inicio del 12 de mayo (la cuenta regresiva asume 8:00 a. m.) | Organización del evento | Cuenta regresiva |
+| (planilla 12 nov) Objetivos y contenidos de cada taller | Organización | Tarjeta de Talleres |
+| (planilla 12 nov) Hora de inicio del 12 de mayo (la cuenta regresiva asume 8:00 a. m.) | Organización del evento | Cuenta regresiva |
 | Fotos de talleres prácticos de 2026 (hoy la tarjeta usa fotos de ponencias) | Jenny | Tarjeta de Talleres |
 | Logo de la Cumbre para fondo claro (hoy es una versión recoloreada provisional) | Diseño / Marketing | Encabezado |
 | Logos de organizadores y aval en buena calidad (PNG transparente o SVG) | Jenny | Cinta "Organizan y avalan" |
 | Video de bienvenida | Organización del evento | Por definir dónde va |
 | Programa y ponentes de la nueva edición | Comité científico | Secciones Programa y Ponentes |
 | Contenido del brochure y del kit del participante (en evaluación) | Marketing | Contenido |
-| Contacto, redes y aviso de privacidad para el pie y el formulario | Jenny / Marketing | Pie y formulario |
+| Aviso de privacidad: copiar el de 2026 (cumbrechp.org/politica-de-privacidad) con el nombre nuevo, en una página propia de la web nueva | Claude | Pie y formularios |
 
-| Otras áreas de la salud (farmacia, nutrición, psicología, investigación): ¿Día 1 o Días 2 y 3? Hoy eligen en el formulario | Organización | Inscripción |
 | Contenido de la app del asistente: video de bienvenida, programa, plano con ubicaciones | Organización / Comité | App del asistente |
 
-| Credencial física del kit: ¿la diseñamos nosotras? | Organización (consulta de Jenny) | Credenciales impresas |
-| Acreditación: conferencias necesarias para el certificado, entrada de personas con pago del kit sin confirmar, cantidad de puertas y mesas | Organización | Acreditación |
+| Migración: acceso al administrador de WordPress (registros de los formularios de contacto y proveedor; las inscripciones de 2026 ya se descargaron), cuál de los dos píxeles de Meta usan las campañas y quién maneja Google Site Kit. Ver `docs/MIGRACION-CUMBRECHP.md` | Jenny / Marketing | Migración |
 
 | Enlaces de YouTube de los videos de promoción y las entrevistas de radio 2027, a medida que se publiquen (título, invitado, emisora y programa, fecha) | Social media | Sección Videos y entrevistas |
 
@@ -52,7 +49,7 @@
 - ¿Se entregan certificados de asistencia? Si es así, el formulario de asistentes necesita la cédula.
 - ¿Se envía correo de confirmación además del mensaje en pantalla? Requiere definir remitente.
 - ¿Quién accede al panel de registros y quién recibe el aviso de nuevas solicitudes de patrocinio?
-- Plan Pro en Vercel ($20/mes, uso comercial) o alternativa gratuita (Cloudflare Pages).
+- Plan Pro en Vercel ($20/mes, uso comercial) o alternativa gratuita (Cloudflare Pages). Desde el 12 nov ya no bloquea los formularios (funciones en Supabase); solo decide dónde se publica el sitio.
 - Plan Pro de la organización de Supabase activo antes de publicar formularios.
 
 ## Trabajo de Claude, en orden
@@ -63,7 +60,7 @@
 4. Crear con Jenny el proyecto de Supabase "cumbre" (fase 2 de la inscripción: tablas, función con QR firmado, comprobantes) y la app del asistente (bienvenida, programa, plano, conferencias, mi QR), reutilizando la de 2026. Incluye la función en Vercel para los formularios (patrocinio y asistentes).
 5. Panel de registros con descarga CSV.
 6. Pulido de interacción con las skills de Emil Kowalski.
-7. Migración: exportar registros de WordPress, píxeles de Facebook, redirecciones, revisar correo del dominio, cambio de DNS en GoDaddy.
+7. Migración: exportar registros de WordPress, píxeles de Facebook, redirecciones, revisar correo del dominio, cambio de DNS en GoDaddy. Inventario del sitio actual y redirecciones propuestas en `docs/MIGRACION-CUMBRECHP.md` (12 nov).
 
 ## Otro proyecto pendiente
 
