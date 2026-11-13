@@ -52,13 +52,13 @@ La construcción del sitio definitivo (Astro, formularios reales, base de datos,
 
 1. Editar `index.html`, `ponencias.html`, `assets/css/sitio.css` o `assets/js/` (ver `docs/FLUJO-DISENO.md`).
 2. Jenny hace commit en GitHub Desktop y Push origin.
-3. GitHub Pages actualiza en uno o dos minutos. Si alguien ve la versión anterior, recargar la página.
+3. GitHub Pages actualiza en uno o dos minutos, pero el navegador puede guardar la versión anterior de `sitio.css` y `sitio.js` hasta unos 10 minutos. Si alguien ve la versión anterior, recargar con Ctrl+F5.
 
 ## Relación con otros proyectos
 
 - **Ecosistema del Grupo Medical Shields (desde el 10 nov):** Medical Shields, CTH, la Cumbre y Ethical Shields AI se mostrarán como un solo grupo ("Ecosistema de Salud y Bienestar Integral"), con barra y pie iguales en las cuatro webs, logo del grupo y puentes comunes. El plan y el registro de cambios compartido están en el documento "Grupo Medical Shields: un solo ecosistema web" (https://claude.ai/artifact/C9587Udj2jDw2fovZcsVv1).
   - **Maqueta publicada (11 nov):** `propuesta-ecosistema.html`, con las cuatro propuestas del logo del grupo y sus pies, para el comité y el video. Ver "Maqueta del ecosistema" en `docs/DECISIONES-VIGENTES.md`.
-  - **Logo del grupo:** sin definir. El 11 nov se envió al comité la maqueta con una encuesta de WhatsApp para votar entre las cuatro propuestas.
+  - **Logo del grupo y pie:** sin definir al 13 nov. El 11 nov se envió al comité la maqueta con una encuesta de WhatsApp para votar entre las cuatro propuestas. La encuesta del 12 nov fue de la paleta de la app del participante (ganó Cielo), no del logo.
   - En la web real todavía no se aplica nada.
 
 - **Supabase:** los formularios irán a un proyecto nuevo dentro de la misma organización donde vive el CRM de Medical Shields (GMS Comercial), separado del proyecto del CRM.

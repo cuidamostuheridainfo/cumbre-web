@@ -32,7 +32,7 @@
 
 | Enlaces de YouTube de los videos de promoción y las entrevistas de radio 2027, a medida que se publiquen (título, invitado, emisora y programa, fecha) | Social media | Sección Videos y entrevistas |
 
-| Ecosistema del grupo: resultado de la encuesta del comité sobre el logo del grupo (propuestas 1 a 4, enviada el 11 nov). Si gana la 2, la 3 o la 4, encuesta corta de la franja del pie (clara o azul marino) | Comité | Video y fase 1 |
+| Ecosistema del grupo: decisión del comité sobre el logo del grupo (propuestas 1 a 4, enviada el 11 nov) y el pie. Al 13 nov sigue sin decisión (la encuesta del 12 nov fue de la paleta de la app, ganó Cielo). Si gana la 2, la 3 o la 4, encuesta corta de la franja del pie (clara o azul marino) | Comité | Video y fase 1 |
 | Ecosistema del grupo: video de presentación al cliente, grabado sobre la maqueta `propuesta-ecosistema.html` | Claude con Jenny | Fase 0 del plan del grupo |
 | Ecosistema del grupo: si gana una propuesta de Codex, sus archivos originales o vectoriales (en la maqueta son recortes de imágenes) | Jenny | Fase 1 |
 | Ecosistema del grupo: dirección web de Ethical Shields AI, enlace de la propuesta corporativa y página "Conoce el grupo" (hoy sin destino en la maqueta) | Jenny / Marketing | Fase 1 |
@@ -43,11 +43,8 @@
 
 ## Decisiones por confirmar
 
-- **Inscripción de asistentes:** tres perfiles (Estudiantes · Especialistas médicos · Enfermería, paramédicos y rescatistas) y dos modalidades (gratuita y con kit de $40). Página construida el 4 nov con envío simulado.
-- **Pagos (kit y sponsors):** entidad que recibe, métodos (Pago Móvil, transferencia), moneda y tasa BCV, quién verifica, factura del kit, cupos, política de reembolso. Los sponsors pagan fuera de la web con propuesta comercial.
-- ¿Se entregan certificados de asistencia? Si es así, el formulario de asistentes necesita la cédula.
-- ¿Se envía correo de confirmación además del mensaje en pantalla? Requiere definir remitente.
-- ¿Quién accede al panel de registros y quién recibe el aviso de nuevas solicitudes de patrocinio?
+- **Pagos del kit:** entidad que recibe, métodos (Pago Móvil, transferencia), moneda y tasa BCV, quién verifica, factura, cupos y política de reembolso. Diferido hasta que se lance el kit (13 nov); hoy la inscripción es solo gratuita. Los sponsors pagan fuera de la web con propuesta comercial.
+- **Correo de confirmación:** decidido que sale por Mailchimp, cuenta de Medical Shields (12 nov). Falta definir el remitente que verá la persona (nombre y dirección).
 - Plan Pro en Vercel ($20/mes, uso comercial) o alternativa gratuita (Cloudflare Pages). Desde el 12 nov ya no bloquea los formularios (funciones en Supabase); solo decide dónde se publica el sitio.
 - Plan Pro de la organización de Supabase activo antes de publicar formularios.
 
@@ -56,10 +53,14 @@
 1. Aplicar los comentarios de Marketing a la segunda propuesta.
 2. Secciones que faltan en el diseño: ponentes, programa, talleres y contenido del brochure.
 3. Construir el sitio definitivo en Astro + Tailwind en este repo, con el contenido en archivos de datos.
-4. Crear con Jenny el proyecto de Supabase "cumbre" (fase 2 de la inscripción: tablas, función con QR firmado, comprobantes) y la app del asistente (bienvenida, programa, plano, conferencias, mi QR), reutilizando la de 2026. Incluye la función en Vercel para los formularios (patrocinio y asistentes).
+4. Crear con Jenny el proyecto de Supabase "cumbre" (fase 2 de la inscripción: tablas, función con QR firmado, comprobantes) y la app del asistente (bienvenida, programa, plano, conferencias, mi QR), reutilizando la de 2026. Incluye las funciones en Supabase para los formularios (patrocinio y asistentes) y el paso de los inscritos a Mailchimp. Antes de crear el proyecto, revisar con Jenny el plan y el costo de la organización de Supabase; no se crea nada sin su confirmación.
 5. Panel de registros con descarga CSV.
 6. Pulido de interacción con las skills de Emil Kowalski.
 7. Migración: exportar registros de WordPress, píxeles de Facebook, redirecciones, revisar correo del dominio, cambio de DNS en GoDaddy. Inventario del sitio actual y redirecciones propuestas en `docs/MIGRACION-CUMBRECHP.md` (12 nov).
+
+## Opcional, ofrecido y no pedido
+
+- Agregar un número de versión a los enlaces de `sitio.css` y `sitio.js` (por ejemplo `sitio.js?v=20261113`) para que, después de un push, nadie tenga que recargar con Ctrl+F5 para ver los cambios.
 
 ## Otro proyecto pendiente
 
