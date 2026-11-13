@@ -392,8 +392,10 @@ section h2,section h3{text-transform:none!important}
 .ins-op-pronto .ins-kit{margin-top:14px}
 .ins-op-pronto:hover .ins-op-in{border-color:#CDB066}
 .ins-op-pronto strong{padding-right:84px}
-.ins-pronto-nota{margin-top:6px;font-size:13px;color:#8A6F2A}
-@media (min-width: 761px){.dlg-grid-sin-kit{grid-template-columns:1fr 1.35fr}.ins-mods.sin-kit{grid-template-columns:1fr 1.3fr}}
+.ins-pronto-nota{margin-top:6px;padding-right:84px;font-size:15px;line-height:1.45;color:#5C4A12}
+.dlg-kit-pronto{justify-content:center}
+.dlg-sorpresa{font-family:'Barlow Semi Condensed',sans-serif;font-style:italic;font-weight:700;font-size:30px!important;line-height:1.1!important;color:#0A1040!important;flex:0!important}
+@media (min-width: 761px){.dlg-grid-sin-kit{grid-template-columns:1fr 1fr}.ins-mods.sin-kit{grid-template-columns:1fr 1fr}}
 .ins-mods.sin-kit .ins-op-kit{order:2}
 
 /* Pie: redes y contacto (13 nov 2026) */
@@ -407,3 +409,23 @@ section h2,section h3{text-transform:none!important}
 .legal{max-width:820px;display:flex;flex-direction:column;gap:14px;color:#2B3360;font-size:17px;line-height:1.7}
 .legal h2{margin:18px 0 0;font-family:'Barlow Semi Condensed',sans-serif;font-style:italic;font-weight:700;font-size:28px;text-transform:uppercase;color:#0A1040}
 .legal p{margin:0}
+
+/* Plano interactivo (13 nov 2026) */
+.plano-top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px 16px}
+.plano-ayuda{font-size:14px;color:#4A5280}
+.plano-ampliar{font-size:15px;font-weight:700;color:#0A1040;text-decoration:none}
+.plano-mapa{border-radius:14px;overflow:hidden;background:#FFFFFF;border:1px solid #E3E7F2}
+.plano-mapa svg,.plano-img{display:block;width:100%;height:auto}
+.plano-desliza{display:none;margin:0;font-size:13px;color:#5A6290;text-align:center}
+.plano-info{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 20px;padding:16px 20px;border-radius:14px;background:#0A1040;color:#FFFFFF}
+.plano-info[hidden]{display:none}
+.plano-info div{display:flex;flex-direction:column;gap:2px}
+.plano-info strong{font-family:'Barlow Semi Condensed',sans-serif;font-style:italic;font-weight:700;font-size:26px;text-transform:uppercase;line-height:1.05}
+.plano-info span{font-size:15px;color:#C8CEEA}
+.plano-info-btn{font:inherit;font-weight:700;font-size:16px;color:#0A1040;background:linear-gradient(135deg,#F3E3A6,#CDB066);border:0;border-radius:999px;padding:13px 24px;cursor:pointer}
+@media (max-width: 760px){
+.plano-mapa{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.plano-mapa svg,.plano-mapa .plano-img{width:760px;max-width:none}
+.plano-desliza{display:block}
+.plano-info{padding:14px 16px}.plano-info-btn{width:100%}
+}

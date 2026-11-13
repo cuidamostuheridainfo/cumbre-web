@@ -186,9 +186,12 @@
 <h3 style="margin: 0; font-family: 'Barlow Semi Condensed', sans-serif; font-style: italic; text-transform: uppercase; font-weight: 700; line-height: 1.02; color: #0A1040; font-size: 40px">Explora el área de exhibición</h3>
 <p style="margin: 0; max-width: 640px; font-size: 17px; line-height: 1.55; color: #4A5280">Consulta la distribución de los espacios y conversa con nuestro equipo sobre las opciones disponibles para tu marca.</p>
 </div>
-<figure class="plan-card" style="margin: 0 auto; width: 100%; max-width: 980px; box-sizing: border-box; background: #F7F9FD; border: 2px solid #E3E7F2; border-radius: 22px; padding: 22px; display: flex; flex-direction: column; gap: 16px">
-<div style="display: flex; justify-content: flex-end"><a href="assets/img/plano-sede-v2.jpg" target="_blank" rel="noopener" style="font-size: 15px; font-weight: 700; color: #0A1040; text-decoration: none">Ampliar plano ↗</a></div>
-<a href="assets/img/plano-sede-v2.jpg" target="_blank" rel="noopener" style="display: block; border-radius: 14px; overflow: hidden; background: #FFFFFF"><img src="assets/img/plano-sede-v2.jpg" alt="Plano del área de exhibición con la ubicación numerada de los stands, la sala de conferencias, las estaciones de café y el área VIP" style="display: block; width: 100%; height: auto"></a>
+<figure class="plan-card" style="margin: 0 auto; width: 100%; max-width: 1240px; box-sizing: border-box; background: #F7F9FD; border: 2px solid #E3E7F2; border-radius: 22px; padding: 22px; display: flex; flex-direction: column; gap: 16px">
+<div class="plano-top"><span class="plano-ayuda">Toca un stand para ver su número y consultar su disponibilidad.</span><a href="assets/img/plano-sede.svg" target="_blank" rel="noopener" class="plano-ampliar">Ampliar plano ↗</a></div>
+<!-- Plano redibujado (13 nov) desde el PDF de Producciones 24, con las mismas posiciones. Lo arma assets/js/plano.js; si no carga, se ve la imagen. -->
+<div id="plano-mapa" class="plano-mapa" data-svg="assets/img/plano-sede.svg"><img src="assets/img/plano-sede.svg" alt="Plano del área de exhibición: 142 stands numerados, sala de conferencias, área VIP, cafés, puntos de comida y bebidas, entrada, salidas y baños" class="plano-img"></div>
+<p class="plano-desliza">Desliza hacia los lados para ver todo el plano.</p>
+<div id="plano-info" class="plano-info" hidden aria-live="polite"><div><strong id="plano-info-tit"></strong><span id="plano-info-txt"></span></div><button type="button" id="plano-info-btn" class="plano-info-btn">Consultar disponibilidad</button></div>
 <figcaption style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px 24px">
 <span style="font-size: 14px; color: #4A5280">Distribución sujeta a actualización. La disponibilidad de cada espacio se confirma con el equipo comercial.</span>
 <a href="#formulario-patrocinio" id="pre-stand" style="font-size: 16px; font-weight: 700; color: #F7153B; text-decoration: none">Consultar disponibilidad de stands →</a>
@@ -292,7 +295,7 @@
 <button type="button" class="dlg-cerrar" data-cerrar aria-label="Cerrar">×</button>
 <span class="dlg-eyebrow" id="dlg-dia">Día 1 · Miércoles 12 de mayo</span>
 <h2 id="dlg-tit" class="dlg-tit">Elige tu participación</h2>
-<!-- Kit "Próximamente" (13 nov): sin precio ni botón hasta que se lance. La versión con precio y botón está en el commit 0c15631. -->
+<!-- Kit "Próximamente" (13 nov): sin precio, botón ni contenido (el contenido del kit está en definición) hasta que se lance. La versión con precio y botón está en el commit 0c15631. -->
 <div class="dlg-grid dlg-grid-sin-kit">
 <div class="dlg-op">
 <span class="dlg-lab">Inscripción gratuita</span>
@@ -303,8 +306,7 @@
 <div class="dlg-op dlg-kit dlg-kit-pronto" role="group" aria-label="Kit de la Cumbre, próximamente">
 <span class="cinta-pronto" aria-hidden="true">Próximamente</span>
 <span class="dlg-lab">Kit de la Cumbre</span>
-<ul><li>Bolso</li><li>Lanyard y credencial física</li><li>Cooler de la Cumbre</li><li>Gorro de quirófano</li><li>Bolígrafo con lámpara</li><li>Cartuchera</li><li>Certificado impreso, además del digital</li><li>Hidratación: un agua o un café por día</li><li>Obsequios exclusivos de nuestros patrocinantes</li></ul>
-<span class="dlg-nota">Muy pronto anunciaremos cómo adquirirlo.</span>
+<p class="dlg-sorpresa">Pronto estará disponible esta gran sorpresa.</p>
 </div>
 </div>
 <p class="dlg-pronto">En el siguiente paso completas tus datos y recibes tu código QR.</p>
@@ -360,5 +362,6 @@
 <script src="assets/js/ponencias.js"></script>
 <script src="assets/js/videos-2027.js"></script>
 <script src="assets/js/sitio.js"></script>
+<script src="assets/js/plano.js"></script>
 </body>
 </html>

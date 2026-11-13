@@ -215,7 +215,7 @@ Pedido de Jenny, para no repetir los problemas de 2026 (inscripción en WordPres
 
 Fuente: planilla "Cumbre-2027-datos-pendientes.xlsx" respondida, y aclaraciones de Jenny del mismo día. Reemplaza lo que contradiga las secciones anteriores. **Aplicado en la web el 13 nov** (portada, inscripción, ponencias, privacidad, maqueta del ecosistema, app y staff).
 
-- **Inscripción solo gratuita por ahora.** El kit no se vende ni se paga en la web hasta que se lance oficialmente; entonces se habilitan los datos de pago (segunda etapa). Mientras tanto, el kit se muestra con una cinta "Próximamente", sin precio ni pago.
+- **Inscripción solo gratuita por ahora.** El kit no se vende ni se paga en la web hasta que se lance oficialmente; entonces se habilitan los datos de pago (segunda etapa). Mientras tanto, el kit se muestra con una cinta "Próximamente", sin precio ni pago. **Sin su contenido** (13 nov, pedido de Jenny): la organización también lo está definiendo. La tarjeta dice solo "Kit de la Cumbre" y "Pronto estará disponible esta gran sorpresa."
 - **Fase 2 sin pagos por ahora:** la tabla de pagos, los comprobantes, la función revisar-pago y el panel de pagos se dejan para cuando se lance el kit.
 - **Estudiantes de enfermería:** se inscriben como Enfermería, Día 1.
 - **Otras áreas de la salud:** solo nutrición y psicología, en los Días 2 y 3. Farmacia no participa. Investigación no entra por ahora.
@@ -229,3 +229,19 @@ Fuente: planilla "Cumbre-2027-datos-pendientes.xlsx" respondida, y aclaraciones 
 - **Pie de página:** las redes van como botones de texto (Instagram, TikTok, YouTube, LinkedIn), no como íconos de las marcas.
 - **Kit desactivado con un interruptor:** `ventaKit: false` en `assets/js/inscripcion-config.js` desactiva el kit en la inscripción y oculta la Mesa de kits, el modo "Entrega de kit" y su contador en la app del staff. La ventana de la portada se cambió a mano; la versión con precio y botón está en el commit 0c15631.
 - **Puertas y mesas:** no se le pregunta a la organización. La app del staff deja la lista actual (Puerta 1, 2 y 3, Mesa de soluciones) y se ajusta en la configuración si el día del evento hay otras.
+
+## Plano interactivo del área de exhibición (13 nov 2026)
+
+- **El plano se redibujó** con la identidad de la Cumbre, a pedido de Jenny ("mantener espacios y ubicaciones, solo mejorar el diseño"). Las posiciones salen del PDF vectorial de Producciones 24 (`cumbrefinal copia.pdf`): los 142 stands, la sala, el VIP, los cafés, el stand de Medical Shields y el contorno del local están en el mismo lugar. Los baños se ubicaron a mano desde la imagen, porque en el PDF no son vectoriales.
+- **Archivos:** `assets/img/plano-sede.svg` (el dibujo, también es el enlace "Ampliar plano"), `assets/js/plano.js` (lo hace interactivo) y `herramientas/generar_plano.py` (vuelve a generar el SVG si Producciones 24 manda un plano nuevo). La imagen anterior, `plano-sede-v2.jpg`, queda en el repositorio sin uso.
+- **Zonas (respuestas de Jenny):** el área lima es un patio del C.C. Líder que viene de la feria de comida (va como zona del centro comercial); el área celeste junto a Camerinos es parte de los camerinos; el rectángulo morado es el stand de Medical Shields (con su nombre, sin logo); los stands 116 a 122 son de comida y bebidas; "Backing firmas" se deja con ese nombre.
+- **Colores (corrección de Jenny, 13 nov):** nada de azules oscuros, porque no dejaban ver las líneas. Piso del local en arena (#F2EADB); sala de conferencias en azul claro (#BFE0F7); área VIP en el verde claro del logo de Cuidamos tu Herida (#84B853); camerinos en el azul de la parte de abajo de la cruz de Medical Shields (#0086FF); stands blancos con borde azul marino; comida y bebidas en rojo; stand de Medical Shields en azul marino con su nombre al lado. Textos más grandes.
+- **Se mantienen las líneas del local** (entradas, salidas, baños, escaleras, rotondas), tomadas del PDF y dibujadas en gris pardo. Se quitaron las flechas rojas, los extintores y los logos de las empresas.
+- **Logos de los organizadores en el plano (13 nov):** Producciones 24, Espacio, Cuidamos tu Herida y Medical Shields, los mismos del plano original, tomados del PDF (Producciones 24 en vector; los otros, en imagen).
+- **Orden del plano (corrección de Jenny, 13 nov):** a la izquierda solo los logos de los organizadores ("Organizan"); a la derecha una leyenda corta con Stand 2 × 2 m, Comida y bebidas y Café (las demás zonas llevan su nombre en el mapa). El plano se ve más grande (hasta 1240 px) y los stands más pequeños, para que no se vean montados.
+- **Stand de Medical Shields:** blanco con borde azul y el logo de Medical Shields adentro (en vez del bloque oscuro).
+- **Patio del C.C. Líder:** solo el color gris, sin texto (Jenny, 13 nov).
+- **Plano aprobado por Jenny el 13 nov** (revisado como imagen sola, `plano-solo.png`, antes de colocarlo en la página).
+- **"Backing firmas":** queda solo el de la Entrada. El PDF tenía un segundo "Backing firma" al centro, arriba de la sala; se quitó a pedido de Jenny porque se veía duplicado.
+- **Interacción:** al tocar un stand aparece su número y "Consultar disponibilidad", que abre el formulario de patrocinio con "Stand o espacio de exposición" elegido y "Me interesa el stand N del plano." escrito. **No muestra disponibilidad** (decisión vigente: no se publica hasta que Comercial lo autorice).
+- **En teléfono** el plano se desliza hacia los lados y empieza mostrando la zona de stands.

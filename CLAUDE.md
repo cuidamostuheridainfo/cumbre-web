@@ -42,5 +42,6 @@ Después de leer, decir en dos o tres líneas en qué punto estamos y cuál es e
 | `assets/css/sitio.css`, `assets/js/` | Estilos y comportamiento compartidos; `assets/js/ponencias.js` es la lista de videos. |
 | `docs/` | Documentación del proyecto (ritual de inicio). |
 | `herramientas/build_index.py` | Script de la v2 (lienzo → `index.html`). Ya no se usa desde la v3. |
+| `herramientas/generar_plano.py` | Genera `assets/img/plano-sede.svg` desde el PDF de Producciones 24. |
 
 Cuando empiece la construcción definitiva en Astro, la propuesta se reemplaza en este mismo repositorio.

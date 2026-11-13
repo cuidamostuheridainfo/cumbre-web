@@ -28,7 +28,8 @@
     if (tag) tag.parentNode.removeChild(tag);
     $('.ins-op-in', kitOp).insertAdjacentHTML('afterbegin', '<span class="cinta-pronto" aria-hidden="true">Próximamente</span>');
     $('strong', kitOp).textContent = 'Kit de la Cumbre';
-    $('.ins-op-in', kitOp).insertAdjacentHTML('beforeend', '<span class="ins-pronto-nota">Muy pronto anunciaremos cómo adquirirlo.</span>');
+    var lista = $('#ins-kit-lista'); if (lista) lista.parentNode.removeChild(lista); // el contenido del kit está en definición
+    $('.ins-op-in', kitOp).insertAdjacentHTML('beforeend', '<span class="ins-pronto-nota">Pronto estará disponible esta gran sorpresa.</span>');
     $('.ins-mods').classList.add('sin-kit');
     modURL = 'gratuita';
   }

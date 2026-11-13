@@ -12,7 +12,7 @@ window.INSCRIPCION_CONFIG = {
   // "Próximamente", sin precio ni pago, y la app del staff oculta la Mesa de kits. Al lanzar el kit, cambiar a true.
   ventaKit: false,
 
-  // Contenido del kit (confirmado el 4 nov 2026; credencial física, certificado impreso e hidratación por día y obsequios exclusivos de los patrocinantes, 9 nov).
+  // Contenido del kit (4 y 9 nov 2026). El 13 nov la organización lo volvió a poner en definición: mientras ventaKit sea false no se muestra.
   kit: ['Bolso', 'Lanyard y credencial física', 'Cooler de la Cumbre', 'Gorro de quirófano', 'Bolígrafo con lámpara',
         'Cartuchera', 'Certificado impreso, además del digital', 'Hidratación: un agua o un café por día',
         'Obsequios exclusivos de nuestros patrocinantes'],
